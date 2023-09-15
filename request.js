@@ -1,100 +1,127 @@
-const { v4: uuid } = require('uuid');
-const fs = require('fs');
-const FormData = require('form-data');
-const axios = require('axios');
+import { v4 as uuid } from 'uuid';
+import fs from 'fs';
+import FormData from 'form-data';
+import axios from 'axios';
 
-const xml2js = require('xml2js');
+import xml2js from 'xml2js';
 const parseString = xml2js.parseString;
 const builder = new xml2js.Builder();
 
-const filename = process.argv.slice(2)[0];
-const readData = "C:\\Users\\a907441\\Projects\\INCM\\sample\\" + filename + ".xml";
-const output = "C:\\Users\\a907441\\Projects\\INCM\\output\\" + filename + "Output.xml";
-const report = "C:\\Users\\a907441\\Projects\\INCM\\report\\report.xml";
-const errors = "C:\\Users\\a907441\\Projects\\INCM\\report\\errors.xml";
+export async function testForm(filename, folder) {
 
-const XMLData = fs.readFileSync(readData);
-const date = new Date(Date.now());
-const year = date.getFullYear();
-const month = () => {
-  let d = date.getMonth() + 1;
-  if (d < 10) {
-    return `0${d}`
-  }
-  return d
-};
-const hour = () => {
-  let h = date.getHours() - 1;
-  if (h < 10) {
-    return `0${h}`
-  }
-  return h
-};
+  const dir = folder || "sample\\";
+  const readData = "C:\\Users\\a907441\\Projects\\INCM\\" + dir + "\\" + filename + ".xml";
+  const output = "C:\\Users\\a907441\\Projects\\INCM\\output\\" + filename + "Output.xml";
+  const report = "C:\\Users\\a907441\\Projects\\INCM\\report\\report.xml";
+  const errors = "C:\\Users\\a907441\\Projects\\INCM\\report\\errors.xml";
 
-const day = date.getDate();
-const fullDate = `${year}-${month()}-${day}+01:00`;
-const fullHour = `${hour()}:00:00+01:00`;
+  const XMLData = fs.readFileSync(readData);
+  const date = new Date(Date.now());
+  const year = date.getFullYear();
 
-let xmlObj;
-parseString(XMLData, (err, result) => {
-  xmlObj = result;
-});
+  const day = () => {
+    let d = date.getDate();
+    if (d < 10) {
+      return `0${d}`
+    }
+    return d
+  };
 
-xmlObj.PriorInformationNotice['cbc:ID'][0]._ = uuid();
-xmlObj.PriorInformationNotice['cbc:IssueDate'][0] = fullDate;
-xmlObj.PriorInformationNotice['cbc:IssueTime'][0] = fullHour;
+  const month = () => {
+    let d = date.getMonth() + 1;
+    if (d < 10) {
+      return `0${d}`
+    }
+    return d
+  };
+  const hour = () => {
+    let h = date.getHours() - 1;
+    if (h < 10) {
+      return `0${h}`
+    }
+    return h
+  };
 
-let xml = builder.buildObject(xmlObj)
-fs.writeFileSync(output, xml);
+  const fullDate = `${year}-${month()}-${day()}+01:00`;
+  const fullHour = `${hour()}:00:00+01:00`;
 
-const form = new FormData();
-form.append('metadata', '{"noticeAuthorEmail":"john@doe.com","noticeAuthorLocale": "pt"}');
-form.append('notice', fs.createReadStream(output));
+  parseString(XMLData, (err, xmlObj) => {
 
-axios({
-  method: 'post',
-  url: 'https://enotices2.preview.ted.europa.eu/esenders/api/v2/notice/notices/submit',
-  data: form,
-  headers: {
-    Authorization: "Bearer e0e31bf3087d4cbd936c72fe7f12af89"
-  }
-}).then(res => res.data)
-  .then(data => {
-    if (data.success === false) {
-      axios({
-        method: 'get',
-        url: data.validationReportUrl,
-        headers: {
-          Authorization: "Bearer e0e31bf3087d4cbd936c72fe7f12af89"
-        }
-      })
-        .then(res => {
-          fs.writeFileSync(report, res.data)
+    try {
+      if (xmlObj === undefined) throw "Cannot parse XML, wrong format";
 
-          const XMLReport = res.data;
-          parseString(XMLReport, (err, result) => {
+      let contractType = Object.keys(xmlObj)[0];
 
-            delete result['svrl:schematron-output']['svrl:active-pattern'];
-            delete result['svrl:schematron-output']['svrl:fired-rule'];
-            delete result['svrl:schematron-output']['svrl:ns-prefix-in-attribute-values'];
-            delete result['svrl:schematron-output']['$'];
+      let noticeId = xmlObj[contractType]['cbc:ID'];
+      xmlObj[contractType]['cbc:IssueDate'][0] = fullDate;
+      xmlObj[contractType]['cbc:IssueTime'][0] = fullHour;
 
-            console.log("Errors: " + result['svrl:schematron-output']['svrl:failed-assert'].length)
-            Object.keys(result['svrl:schematron-output']['svrl:failed-assert']).forEach((key, i) => {
-              console.log("\nError " + (i + 1));
-              console.log(result['svrl:schematron-output']['svrl:failed-assert'][key]['$'].location);
-              console.log(result['svrl:schematron-output']['svrl:failed-assert'][key]['$'].test);
-              console.log("---------------------------------\n");
-            });
-            let fail = builder.buildObject(result);
-            fs.writeFileSync(errors, fail);
-          });
-        })
-    } else {
-      console.log("Congrats you rock!!!!");
+      if (noticeId) noticeId[0]._ = uuid()
+
+      let xml = builder.buildObject(xmlObj)
+      fs.writeFileSync(output, xml);
+    }
+    catch (err) {
+      console.log(err);
+      process.exit();
     }
   })
-  .catch(err => {
-    console.log("CATCH BLOCK!!!!");
-    console.log(err.response.data);
-  });
+
+  const form = new FormData();
+  form.append('metadata', '{"noticeAuthorEmail":"john@doe.com","noticeAuthorLocale": "pt"}');
+  form.append('notice', fs.createReadStream(output));
+
+  return await axios({
+    method: 'post',
+    url: 'https://enotices2.preview.ted.europa.eu/esenders/api/v2/notice/notices/submit',
+    data: form,
+    headers: {
+      Authorization: "Bearer e0e31bf3087d4cbd936c72fe7f12af89"
+    }
+  }).then(res => res.data)
+    .then(data => {
+      if (data.success === false) {
+        axios({
+          method: 'get',
+          url: data.validationReportUrl,
+          headers: {
+            Authorization: "Bearer e0e31bf3087d4cbd936c72fe7f12af89"
+          }
+        })
+          .then(res => {
+            fs.writeFileSync(report, res.data)
+
+            const XMLReport = res.data;
+            parseString(XMLReport, (err, result) => {
+
+              delete result['svrl:schematron-output']['svrl:active-pattern'];
+              delete result['svrl:schematron-output']['svrl:fired-rule'];
+              delete result['svrl:schematron-output']['svrl:ns-prefix-in-attribute-values'];
+              delete result['svrl:schematron-output']['$'];
+
+              // console.log("Errors: " + result['svrl:schematron-output']['svrl:failed-assert'].length)
+              Object.keys(result['svrl:schematron-output']['svrl:failed-assert']).forEach((key, i) => {
+                // console.log("\nError " + (i + 1));
+                // console.log(result['svrl:schematron-output']['svrl:failed-assert'][key]['$'].location);
+                // console.log(result['svrl:schematron-output']['svrl:failed-assert'][key]['$'].test);
+                // console.log("---------------------------------\n");
+              });
+              let fail = builder.buildObject(result);
+              fs.writeFileSync(errors, fail);
+            });
+          })
+          console.log("VALIDATED!!!!!!");
+          console.log("---------------");
+          return false;
+      } else {
+        if (fs.existsSync(report)) fs.unlinkSync(report);
+        if (fs.existsSync(errors)) fs.unlinkSync(errors);
+        console.log("Congrats you rock!!!!");
+        return false;
+      }
+    })
+    .catch(err => {
+      console.log(err.response.data);
+      return true;
+    });
+}
