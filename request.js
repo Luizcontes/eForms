@@ -79,9 +79,12 @@ export async function testForm(filename, folder) {
       Authorization: "Bearer e0e31bf3087d4cbd936c72fe7f12af89"
     }
   }).then(res => res.data)
-    .then(data => {
+    .then(async data => {
       if (data.success === false) {
-        axios({
+        // console.log("before timer!!!" + new Date(Date.now()));
+        // await timer();
+        // console.log("after timer!!!" + new Date(Date.now()));
+        await axios({
           method: 'get',
           url: data.validationReportUrl,
           headers: {
@@ -99,7 +102,7 @@ export async function testForm(filename, folder) {
               delete result['svrl:schematron-output']['svrl:ns-prefix-in-attribute-values'];
               delete result['svrl:schematron-output']['$'];
 
-              // console.log("Errors: " + result['svrl:schematron-output']['svrl:failed-assert'].length)
+              console.log("Errors: " + result['svrl:schematron-output']['svrl:failed-assert'].length)
               Object.keys(result['svrl:schematron-output']['svrl:failed-assert']).forEach((key, i) => {
                 // console.log("\nError " + (i + 1));
                 // console.log(result['svrl:schematron-output']['svrl:failed-assert'][key]['$'].location);
@@ -110,9 +113,9 @@ export async function testForm(filename, folder) {
               fs.writeFileSync(errors, fail);
             });
           })
-          console.log("VALIDATED!!!!!!");
-          console.log("---------------");
-          return false;
+        console.log("VALIDATED!!!!!!");
+        console.log("---------------");
+        return false;
       } else {
         if (fs.existsSync(report)) fs.unlinkSync(report);
         if (fs.existsSync(errors)) fs.unlinkSync(errors);
@@ -125,3 +128,7 @@ export async function testForm(filename, folder) {
       return true;
     });
 }
+
+// async function timer() {
+//   return new Promise(resolve => setTimeout(resolve, 5000));
+// }

@@ -6,5 +6,5 @@ export function fieldFinder(fieldCode) {
   const fieldsString = fieldsData.toString()
   const fieldsJson = JSON.parse(fieldsString)
   const fields = fieldsJson.fieldsJson.fields;
-  return fields.filter( f => f.id === fieldCode )[0];
+  return fields.filter(f => f.id === fieldCode)[0];
 }

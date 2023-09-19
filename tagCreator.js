@@ -1,29 +1,44 @@
 import fs from 'fs';
 
-export function pathArray(filename) {
-  const readData = "C:\\Users\\a907441\\Projects\\INCM\\codeJson\\" + filename + "-json-input.json";
+export async function pathArray(filename) {
+
+  const pwd = process.cwd();
+  const readData = `${pwd}\\codeJson\\${filename}.json`;
+
   try {
     const streamData = fs.readFileSync(readData);
 
     const stringData = streamData.toString();
     const jsonData = JSON.parse(stringData);
 
-    const regex = /[^\[\(][a-z]{3,5}:[a-zA-Z]*[^\)\/](@[a-zA-Z='-]*\])?/g;
+    const regex = /(\w{3,5}:\w+)(\[.*?\])?/g;
+    const subRegex = /\[.*\]/g;
 
     function removeSubString(tmpStr) {
       let results = [];
       let result;
       while ((result = regex.exec(tmpStr)) !== null) {
-        result = result[0].slice(1);
-        let lastChar = result.length - 1;
-        let squareBracket = result.charAt(lastChar);
-        if (squareBracket === '[') result = result.slice(0, lastChar);
+        result = result[0];
         results.push(result);
       }
-      return results;
+
+      return results.map((e, i, a) => {
+        if (!(i === 0) && !(i === a.length - 1)) {
+          let subResult = subRegex.exec(e);
+          if (subResult !== null) {
+            let index = subResult.index;
+            return e.slice(0, index);
+          }
+        }
+        return e;
+      });
     }
 
-    return jsonData.map(e => removeSubString(e.xpathAbsolute));
+    return Object.keys(jsonData)
+      .reduce((acum, e) => {
+        acum[e] = jsonData[e].map(f => removeSubString(f.xpathAbsolute));
+        return acum;
+      }, {});
   }
   catch (err) {
     console.log(err.message);

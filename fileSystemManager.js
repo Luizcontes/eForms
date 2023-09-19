@@ -1,10 +1,9 @@
 import fs from 'fs';
 
-const pwd = "C:\\Users\\a907441\\Projects\\INCM\\";
+const pwd = process.cwd();
 
 export function fileSaver(dir, filename, file) {
-  const folder = `${dir}\\`;
-  const path = pwd + folder + filename;
+  const path = `${pwd}\\${dir}\\${filename}`;
   try {
     fs.writeFileSync(path, file);
   }
@@ -14,8 +13,7 @@ export function fileSaver(dir, filename, file) {
 }
 
 export function fileReader(dir, filename) {
-  const folder = `${dir}\\`;
-  const path = pwd + folder + filename;
+  const path = `${pwd}\\${dir}\\${filename}`;
   try {
     return fs.readFileSync(path);
   }

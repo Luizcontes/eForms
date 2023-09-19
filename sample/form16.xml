@@ -1,697 +1,851 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ContractNotice xmlns="urn:oasis:names:specification:ubl:schema:xsd:ContractNotice-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1" xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1" xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <ext:UBLExtensions>
-    <ext:UBLExtension>
-      <ext:ExtensionContent>
-        <efext:EformsExtension>
-          <efac:Changes>
-            <efbc:ChangedNoticeIdentifier></efbc:ChangedNoticeIdentifier>
-            <efac:Change>
-              <efbc:ChangeDescription></efbc:ChangeDescription>
-              <efbc:ProcurementDocumentsChangeDate>2023-09-15+01:00</efbc:ProcurementDocumentsChangeDate>
-              <efbc:ProcurementDocumentsChangeIndicator>true</efbc:ProcurementDocumentsChangeIndicator>
-              <efac:ChangedSection>
-                <efbc:ChangedSectionIdentifier></efbc:ChangedSectionIdentifier>
-              </efac:ChangedSection>
-            </efac:Change>
-            <efac:ChangeReason>
-              <cbc:ReasonCode></cbc:ReasonCode>
-              <efbc:ReasonDescription></efbc:ReasonDescription>
-            </efac:ChangeReason>
-          </efac:Changes>
-          <efac:NoticeSubType>
-            <cbc:SubTypeCode>16</cbc:SubTypeCode>
-          </efac:NoticeSubType>
-          <efac:Organizations>
-            <efac:Organization>
-              <efbc:GroupLeadIndicator>true</efbc:GroupLeadIndicator>
-              <efbc:AcquiringCPBIndicator>false</efbc:AcquiringCPBIndicator>
-              <efbc:AwardingCPBIndicator>false</efbc:AwardingCPBIndicator>
-              <efac:Company>
-                <cbc:WebsiteURI>https://www.google.com</cbc:WebsiteURI>
-                <cbc:EndpointID></cbc:EndpointID>
-                <cac:PartyIdentification>
-                  <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
-                </cac:PartyIdentification>
-                <cac:PartyName>
-                  <cbc:Name languageID="POR">Município</cbc:Name>
-                </cac:PartyName>
-                <cac:PostalAddress>
-                  <cbc:StreetName>Praça</cbc:StreetName>
-                  <cbc:AdditionalStreetName>Beco</cbc:AdditionalStreetName>
-                  <cbc:Department>Sao Paulo</cbc:Department>
-                  <cbc:CityName>lisboa</cbc:CityName>
-                  <cbc:PostalZone>7670-130</cbc:PostalZone>
-                  <cbc:CountrySubentityCode listName="nuts">PT16D</cbc:CountrySubentityCode>
-                  <cac:AddressLine>
-                    <cbc:Line>22</cbc:Line>
-                  </cac:AddressLine>
-                  <cac:Country>
-                    <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
-                  </cac:Country>
-                </cac:PostalAddress>
-                <cac:PartyLegalEntity>
-                  <cbc:CompanyID>PartyLegalEntityCID1234</cbc:CompanyID>
-                </cac:PartyLegalEntity>
-                <cac:Contact>
-                  <cbc:Name>Serviço de Contratação Pública</cbc:Name>
-                  <cbc:Telephone>+351 286555145</cbc:Telephone>
-                  <cbc:Telefax>+351 8193848585</cbc:Telefax>
-                  <cbc:ElectronicMail>atos@net.com</cbc:ElectronicMail>
-                </cac:Contact>
-              </efac:Company>
-              <efac:TouchPoint>
-                <cbc:WebsiteURI></cbc:WebsiteURI>
-                <cbc:EndpointID></cbc:EndpointID>
-                <cac:PartyIdentification>
-                  <cbc:ID schemeName="touchpoint">TPO-0001</cbc:ID>
-                </cac:PartyIdentification>
-                <cac:PostalAddress>
-                  <cbc:StreetName>Praça</cbc:StreetName>
-                  <cbc:AdditionalStreetName>Beco</cbc:AdditionalStreetName>
-                  <cbc:Department>Sao Paulo</cbc:Department>
-                  <cbc:CityName>lisboa</cbc:CityName>
-                  <cbc:PostalZone>7670-130</cbc:PostalZone>
-                  <cbc:CountrySubentityCode listName="nuts">PT16D</cbc:CountrySubentityCode>
-                  <cac:AddressLine>
-                    <cbc:Line>22</cbc:Line>
-                  </cac:AddressLine>
-                  <cac:Country>
-                    <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
-                  </cac:Country>
-                </cac:PostalAddress>
-                <cac:Contact>
-                  <cbc:Name></cbc:Name>
-                  <cbc:Telephone></cbc:Telephone>
-                  <cbc:Telefax></cbc:Telefax>
-                  <cbc:ElectronicMail></cbc:ElectronicMail>
-                </cac:Contact>
-              </efac:TouchPoint>
-            </efac:Organization>
-            <efac:Organization>
-              <efac:Company>
-                <cbc:WebsiteURI>https://www.google.com</cbc:WebsiteURI>
-                <cac:PartyIdentification>
-                  <cbc:ID schemeName="organization">ORG-0002</cbc:ID>
-                </cac:PartyIdentification>
-                <cac:PartyName>
-                  <cbc:Name languageID="POR">Município</cbc:Name>
-                </cac:PartyName>
-                <cac:PostalAddress>
-                  <cbc:StreetName>Praça</cbc:StreetName>
-                  <cbc:AdditionalStreetName>Beco</cbc:AdditionalStreetName>
-                  <cbc:Department>Sao Paulo</cbc:Department>
-                  <cbc:CityName>lisboa</cbc:CityName>
-                  <cbc:PostalZone>7670-130</cbc:PostalZone>
-                  <cbc:CountrySubentityCode listName="nuts">PT16D</cbc:CountrySubentityCode>
-                  <cac:AddressLine>
-                    <cbc:Line>22</cbc:Line>
-                  </cac:AddressLine>
-                  <cac:Country>
-                    <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
-                  </cac:Country>
-                </cac:PostalAddress>
-                <cac:PartyLegalEntity>
-                  <cbc:CompanyID>PartyLegalEntityCID1234</cbc:CompanyID>
-                </cac:PartyLegalEntity>
-                <cac:Contact>
-                  <cbc:Name>Serviço de Contratação Pública</cbc:Name>
-                  <cbc:Telephone>+351 286555145</cbc:Telephone>
-                  <cbc:Telefax>+351 8193848585</cbc:Telefax>
-                  <cbc:ElectronicMail>atos@net.com</cbc:ElectronicMail>
-                </cac:Contact>
-              </efac:Company>
-            </efac:Organization>
-          </efac:Organizations>
-          <efac:Publication>
-            <efbc:NoticePublicationID schemeName="ojs-notice-id">12345678-2023</efbc:NoticePublicationID>
-            <efbc:GazetteID schemeName="ojs-id">42/1987</efbc:GazetteID>
-            <efbc:PublicationDate>2023-08-18+01:00</efbc:PublicationDate>
-          </efac:Publication>
-          <efac:TenderSubcontractingRequirements>
-            <efbc:TenderSubcontractingRequirementsCode listName="subcontracting-indication">shar-subc</efbc:TenderSubcontractingRequirementsCode>
-          </efac:TenderSubcontractingRequirements>
-        </efext:EformsExtension>
-      </ext:ExtensionContent>
-    </ext:UBLExtension>
-  </ext:UBLExtensions>
-  <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
-  <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id"></cbc:ID>
-  <cbc:ContractFolderID>314792be-3af9-4859-99ae-9ee97189b622</cbc:ContractFolderID>
-  <cbc:IssueDate></cbc:IssueDate>
-  <cbc:IssueTime></cbc:IssueTime>
-  <cbc:VersionID>01</cbc:VersionID>
-  <cbc:RequestedPublicationDate>2023-09-06+01:00</cbc:RequestedPublicationDate>
-  <cbc:RegulatoryDomain>32014L0024</cbc:RegulatoryDomain>
-  <cbc:NoticeTypeCode listName="competition">cn-standard</cbc:NoticeTypeCode>
-  <cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>
-  <cac:ContractingParty>
-    <cbc:BuyerProfileURI>https://www.google.com</cbc:BuyerProfileURI>
-    <cac:ContractingPartyType>
-      <cbc:PartyTypeCode listName="buyer-legal-type">ra</cbc:PartyTypeCode>
-    </cac:ContractingPartyType>
-    <cac:ContractingActivity>
-      <cbc:ActivityTypeCode listName="authority-activity">rcr</cbc:ActivityTypeCode>
-    </cac:ContractingActivity>
-    <cac:Party>
-      <cac:PartyIdentification>
-        <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
-      </cac:PartyIdentification>
-      <cac:ServiceProviderParty>
-        <cbc:ServiceTypeCode listName="service-provider-type">ted-esen</cbc:ServiceTypeCode>
-        <cac:Party>
-          <cac:PartyIdentification>
-            <cbc:ID schemeName="organization">ORG-0002</cbc:ID>
-          </cac:PartyIdentification>
-        </cac:Party>
-      </cac:ServiceProviderParty>
-    </cac:Party>
-  </cac:ContractingParty>
-  <cac:TenderingTerms>
-    <cac:ProcurementLegislationDocumentReference>
-      <cbc:ID>Test Code</cbc:ID>
-      <cbc:DocumentDescription languageID="POR">Descriptoin in portugues</cbc:DocumentDescription>
-    </cac:ProcurementLegislationDocumentReference>
-    <cac:ProcurementLegislationDocumentReference>
-      <cbc:ID schemeName="CrossBorderLaw">Id Qualquer</cbc:ID>
-      <cbc:DocumentDescription languageID="POR">Testando campo</cbc:DocumentDescription>
-    </cac:ProcurementLegislationDocumentReference>
-    <cac:ProcurementLegislationDocumentReference>
-      <cbc:ID schemeName="LocalLegalBasis">Id Qualquer</cbc:ID>
-      <cbc:DocumentDescription languageID="POR">Testando campo</cbc:DocumentDescription>
-    </cac:ProcurementLegislationDocumentReference>
-    <cac:TendererQualificationRequest>
-      <cac:SpecificTendererRequirement>
-        <cbc:TendererRequirementTypeCode listName="exclusion-ground">bankr-nat</cbc:TendererRequirementTypeCode>
-        <cbc:Description languageID="POR">AUCTION</cbc:Description>
-      </cac:SpecificTendererRequirement>
-    </cac:TendererQualificationRequest>
-    <cac:LotDistribution>
-      <cbc:MaximumLotsAwardedNumeric>1</cbc:MaximumLotsAwardedNumeric>
-      <cbc:MaximumLotsSubmittedNumeric>1</cbc:MaximumLotsSubmittedNumeric>
-      <cac:LotsGroup>
-        <cbc:LotsGroupID></cbc:LotsGroupID>
-        <cac:ProcurementProjectLotReference>
-          <cbc:ID schemeName="Lot"></cbc:ID>
-        </cac:ProcurementProjectLotReference>
-      </cac:LotsGroup>
-    </cac:LotDistribution>
-  </cac:TenderingTerms>
-  <cac:TenderingProcess>
-    <ext:UBLExtensions>
-      <ext:UBLExtension>
-        <ext:ExtensionContent>
-          <efext:EformsExtension>
-            <efbc:ProcedureRelaunchIndicator>true</efbc:ProcedureRelaunchIndicator>
-          </efext:EformsExtension>
-        </ext:ExtensionContent>
-      </ext:UBLExtension>
-    </ext:UBLExtensions>
-    <cbc:Description></cbc:Description>
-    <cbc:ProcedureCode listName="procurement-procedure-type">comp-dial</cbc:ProcedureCode>
-    <cbc:PartPresentationCode></cbc:PartPresentationCode>
-    <cac:NoticeDocumentReference>
-      <cbc:ID>99999999-2023</cbc:ID>
-    </cac:NoticeDocumentReference>
-    <cac:ProcessJustification>
-      <cbc:ProcessReasonCode listName="accelerated-procedure"></cbc:ProcessReasonCode>
-      <cbc:ProcessReason></cbc:ProcessReason>
-    </cac:ProcessJustification>
-  </cac:TenderingProcess>
-  <cac:ProcurementProject>
-    <cbc:ID>RA/DAF/SERV-96/18</cbc:ID>
-    <cbc:Name languageID="POR">Public road transport services</cbc:Name>
-    <cbc:Description languageID="POR">AUCTION</cbc:Description>
-    <cbc:ProcurementTypeCode listName="contract-nature">supplies</cbc:ProcurementTypeCode>
-    <cbc:Note languageID="POR">Some additional information on the procurement ... blablabla</cbc:Note>
-    <cac:ProcurementAdditionalType>
-      <cbc:ProcurementTypeCode listName="contract-nature">works</cbc:ProcurementTypeCode>
-    </cac:ProcurementAdditionalType>
-    <cac:RequestedTenderTotal>
-      <ext:UBLExtensions>
-        <ext:UBLExtension>
-          <ext:ExtensionContent>
-            <efext:EformsExtension>
-              <efbc:FrameworkMaximumAmount currencyID="EUR">1</efbc:FrameworkMaximumAmount>
-            </efext:EformsExtension>
-          </ext:ExtensionContent>
-        </ext:UBLExtension>
-      </ext:UBLExtensions>
-      <cbc:EstimatedOverallContractAmount currencyID="EUR">1</cbc:EstimatedOverallContractAmount>
-    </cac:RequestedTenderTotal>
-    <cac:MainCommodityClassification>
-      <cbc:ItemClassificationCode listName="cpv">03111900</cbc:ItemClassificationCode>
-    </cac:MainCommodityClassification>
-    <cac:AdditionalCommodityClassification>
-      <cbc:ItemClassificationCode listName="cpv">98513310</cbc:ItemClassificationCode>
-    </cac:AdditionalCommodityClassification>
-    <cac:RealizedLocation>
-      <cbc:Description></cbc:Description>
-      <cac:Address>
-        <cbc:StreetName>25 Rua Antônio Monteiro da Cruz</cbc:StreetName>
-        <cbc:AdditionalStreetName>25 Rua Antônio Monteiro da Cruz</cbc:AdditionalStreetName>
-        <cbc:CityName>Guaruja</cbc:CityName>
-        <cbc:PostalZone>11462-310</cbc:PostalZone>
-        <cbc:CountrySubentityCode listName="nuts">AT125</cbc:CountrySubentityCode>
-        <cbc:Region></cbc:Region>
-        <cac:AddressLine>
-          <cbc:Line>25 Rua Antônio Monteiro da Cruz</cbc:Line>
-        </cac:AddressLine>
-        <cac:Country>
-          <cbc:IdentificationCode listName="country">BRA</cbc:IdentificationCode>
-        </cac:Country>
-      </cac:Address>
-    </cac:RealizedLocation>
-  </cac:ProcurementProject>
-  <cac:ProcurementProjectLot>
-    <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
-    <cac:TenderingTerms>
-      <ext:UBLExtensions>
-        <ext:UBLExtension>
-          <ext:ExtensionContent>
-            <efext:EformsExtension>
-              <efac:SelectionCriteria>
-                <cbc:CriterionTypeCode listName="selection-criterion">sui-act</cbc:CriterionTypeCode>
-                <cbc:Name></cbc:Name>
-                <cbc:Description></cbc:Description>
-                <cbc:CalculationExpressionCode listName="usage"></cbc:CalculationExpressionCode>
-                <efbc:SecondStageIndicator>true</efbc:SecondStageIndicator>
-                <efac:CriterionParameter>
-                  <efbc:ParameterCode listName="number-weight"></efbc:ParameterCode>
-                  <efbc:ParameterNumeric>1</efbc:ParameterNumeric>
-                </efac:CriterionParameter>
-                <efac:CriterionParameter>
-                  <efbc:ParameterCode listName="number-threshold"></efbc:ParameterCode>
-                  <efbc:ParameterNumeric>1</efbc:ParameterNumeric>
-                </efac:CriterionParameter>
-              </efac:SelectionCriteria>
-            </efext:EformsExtension>
-          </ext:ExtensionContent>
-        </ext:UBLExtension>
-      </ext:UBLExtensions>
-      <cbc:VariantConstraintCode></cbc:VariantConstraintCode>
-      <cbc:FundingProgramCode listName="eu-funded">eu-funds</cbc:FundingProgramCode>
-      <cbc:RequiredCurriculaCode></cbc:RequiredCurriculaCode>
-      <cbc:RecurringProcurementIndicator>true</cbc:RecurringProcurementIndicator>
-      <cbc:RecurringProcurementDescription></cbc:RecurringProcurementDescription>
-      <cbc:LatestSecurityClearanceDate>2023-09-15+01:00</cbc:LatestSecurityClearanceDate>
-      <cbc:MultipleTendersCode></cbc:MultipleTendersCode>
-      <cac:FiscalLegislationDocumentReference>
-        <cbc:ID></cbc:ID>
-        <cac:Attachment>
-          <cac:ExternalReference>
-            <cbc:URI></cbc:URI>
-          </cac:ExternalReference>
-        </cac:Attachment>
-        <cac:IssuerParty>
-          <cac:PartyIdentification>
-            <cbc:ID></cbc:ID>
-          </cac:PartyIdentification>
-        </cac:IssuerParty>
-      </cac:FiscalLegislationDocumentReference>
-      <cac:EnvironmentalLegislationDocumentReference>
-        <cbc:ID></cbc:ID>
-        <cac:Attachment>
-          <cac:ExternalReference>
-            <cbc:URI></cbc:URI>
-          </cac:ExternalReference>
-        </cac:Attachment>
-        <cac:IssuerParty>
-          <cac:PartyIdentification>
-            <cbc:ID></cbc:ID>
-          </cac:PartyIdentification>
-        </cac:IssuerParty>
-      </cac:EnvironmentalLegislationDocumentReference>
-      <cac:EmploymentLegislationDocumentReference>
-        <cbc:ID></cbc:ID>
-        <cac:Attachment>
-          <cac:ExternalReference>
-            <cbc:URI></cbc:URI>
-          </cac:ExternalReference>
-        </cac:Attachment>
-        <cac:IssuerParty>
-          <cac:PartyIdentification>
-            <cbc:ID></cbc:ID>
-          </cac:PartyIdentification>
-        </cac:IssuerParty>
-      </cac:EmploymentLegislationDocumentReference>
-      <cac:CallForTendersDocumentReference>
-        <cbc:ID>55</cbc:ID>
-        <cbc:DocumentTypeCode listName="communication-justification">phy-mod</cbc:DocumentTypeCode>
-        <cbc:DocumentType>restricted-document</cbc:DocumentType>
-        <cbc:LanguageID>POR</cbc:LanguageID>
-        <cbc:DocumentStatusCode listName="document-status">non-official</cbc:DocumentStatusCode>
-        <cac:Attachment>
-          <cac:ExternalReference>
-            <cbc:URI>http://www.site.con</cbc:URI>
-          </cac:ExternalReference>
-        </cac:Attachment>
-      </cac:CallForTendersDocumentReference>
-      <cac:PaymentTerms>
-        <cbc:Note></cbc:Note>
-      </cac:PaymentTerms>
-      <cac:TendererQualificationRequest>
-        <cbc:CompanyLegalFormCode></cbc:CompanyLegalFormCode>
-        <cbc:CompanyLegalForm></cbc:CompanyLegalForm>
-        <cac:SpecificTendererRequirement>
-          <cbc:TendererRequirementTypeCode listName="reserved-procurement">none</cbc:TendererRequirementTypeCode>
-          <cbc:Description languageID="POR">AUCTION</cbc:Description>
-        </cac:SpecificTendererRequirement>
-      </cac:TendererQualificationRequest>
-      <cac:ContractExecutionRequirement>
-        <cbc:ExecutionRequirementCode listName="nda">true</cbc:ExecutionRequirementCode>
-        <cbc:Description languageID="POR">NDA</cbc:Description>
-      </cac:ContractExecutionRequirement>
-      <cac:ContractExecutionRequirement>
-        <cbc:ExecutionRequirementCode listName="reserved-execution">no</cbc:ExecutionRequirementCode>
-      </cac:ContractExecutionRequirement>
-      <cac:ContractExecutionRequirement>
-        <cbc:ExecutionRequirementCode listName="ecatalog-submission">allowed</cbc:ExecutionRequirementCode>
-      </cac:ContractExecutionRequirement>
-      <cac:ContractExecutionRequirement>
-        <cbc:ExecutionRequirementCode listName="einvoicing">required</cbc:ExecutionRequirementCode>
-      </cac:ContractExecutionRequirement>
-      <cac:ContractExecutionRequirement>
-        <cbc:ExecutionRequirementCode listName="esignature-submission">required</cbc:ExecutionRequirementCode>
-      </cac:ContractExecutionRequirement>
-      <cac:AwardingTerms>
-        <cbc:NoFurtherNegotiationIndicator>true</cbc:NoFurtherNegotiationIndicator>
-        <cac:AwardingCriterion>
-          <cbc:Description></cbc:Description>
-          <cbc:CalculationExpression></cbc:CalculationExpression>
-          <cac:SubordinateAwardingCriterion>
-            <ext:UBLExtensions>
-              <ext:UBLExtension>
-                <ext:ExtensionContent>
-                  <efext:EformsExtension>
-                    <efac:AwardCriterionParameter>
-                      <efbc:ParameterCode listName="number-weight"></efbc:ParameterCode>
-                      <efbc:ParameterNumeric>2</efbc:ParameterNumeric>
-                    </efac:AwardCriterionParameter>
-                    <efac:AwardCriterionParameter>
-                      <efbc:ParameterCode listName="number-fixed"></efbc:ParameterCode>
-                      <efbc:ParameterNumeric>2</efbc:ParameterNumeric>
-                    </efac:AwardCriterionParameter>
-                    <efac:AwardCriterionParameter>
-                      <efbc:ParameterCode listName="number-threshold"></efbc:ParameterCode>
-                      <efbc:ParameterNumeric>2</efbc:ParameterNumeric>
-                    </efac:AwardCriterionParameter>
-                  </efext:EformsExtension>
-                </ext:ExtensionContent>
-              </ext:UBLExtension>
-            </ext:UBLExtensions>
-            <cbc:AwardingCriterionTypeCode listName="award-criterion-type"></cbc:AwardingCriterionTypeCode>
-            <cbc:Name></cbc:Name>
-            <cbc:Description></cbc:Description>
-          </cac:SubordinateAwardingCriterion>
-        </cac:AwardingCriterion>
-      </cac:AwardingTerms>
-      <cac:AdditionalInformationParty>
-        <cac:PartyIdentification>
-          <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
-        </cac:PartyIdentification>
-      </cac:AdditionalInformationParty>
-      <cac:DocumentProviderParty>
-        <cac:PartyIdentification>
-          <cbc:ID></cbc:ID>
-        </cac:PartyIdentification>
-      </cac:DocumentProviderParty>
-      <cac:TenderRecipientParty>
-        <cbc:EndpointID></cbc:EndpointID>
-        <cac:PartyIdentification>
-          <cbc:ID></cbc:ID>
-        </cac:PartyIdentification>
-      </cac:TenderRecipientParty>
-      <cac:TenderEvaluationParty>
-        <cac:PartyIdentification>
-          <cbc:ID></cbc:ID>
-        </cac:PartyIdentification>
-      </cac:TenderEvaluationParty>
-      <cac:TenderValidityPeriod>
-        <cbc:DurationMeasure unitCode="MONTH">60</cbc:DurationMeasure>
-      </cac:TenderValidityPeriod>
-      <cac:AppealTerms>
-        <cac:PresentationPeriod>
-          <cbc:Description languageID="POR">AUCTION</cbc:Description>
-        </cac:PresentationPeriod>
-        <cac:AppealInformationParty>
-          <cac:PartyIdentification>
-            <cbc:ID schemeName="organisation">ORG-0001</cbc:ID>
-          </cac:PartyIdentification>
-        </cac:AppealInformationParty>
-        <cac:AppealReceiverParty>
-          <cac:PartyIdentification>
-            <cbc:ID schemeName="organisation">ORG-0001</cbc:ID>
-          </cac:PartyIdentification>
-        </cac:AppealReceiverParty>
-        <cac:MediationParty>
-          <cac:PartyIdentification>
-            <cbc:ID></cbc:ID>
-          </cac:PartyIdentification>
-        </cac:MediationParty>
-      </cac:AppealTerms>
-      <cac:Language>
-        <cbc:ID>POR</cbc:ID>
-      </cac:Language>
-      <cac:PostAwardProcess>
-        <cbc:ElectronicOrderUsageIndicator>true</cbc:ElectronicOrderUsageIndicator>
-        <cbc:ElectronicPaymentUsageIndicator>true</cbc:ElectronicPaymentUsageIndicator>
-      </cac:PostAwardProcess>
-      <cac:SecurityClearanceTerm>
-        <cbc:Code>false</cbc:Code>
-        <cbc:Description></cbc:Description>
-      </cac:SecurityClearanceTerm>
-    </cac:TenderingTerms>
-    <cac:TenderingProcess>
-      <ext:UBLExtensions>
-        <ext:UBLExtension>
-          <ext:ExtensionContent>
-            <efext:EformsExtension>
-              <efbc:AccessToolName></efbc:AccessToolName>
-              <efbc:ProcedureRelaunchIndicator>false</efbc:ProcedureRelaunchIndicator>
-            </efext:EformsExtension>
-          </ext:ExtensionContent>
-        </ext:UBLExtension>
-      </ext:UBLExtensions>
-      <cbc:SubmissionMethodCode listName="esubmission">not-allowed</cbc:SubmissionMethodCode>
-      <cbc:CandidateReductionConstraintIndicator>true</cbc:CandidateReductionConstraintIndicator>
-      <cbc:GovernmentAgreementConstraintIndicator>true</cbc:GovernmentAgreementConstraintIndicator>
-      <cbc:AccessToolsURI></cbc:AccessToolsURI>
-      <cac:TenderSubmissionDeadlinePeriod>
-        <cbc:EndDate>2023-09-15+01:00</cbc:EndDate>
-        <cbc:EndTime>10:10:10+01:00</cbc:EndTime>
-      </cac:TenderSubmissionDeadlinePeriod>
-      <cac:InvitationSubmissionPeriod>
-        <cbc:StartDate>2023-09-16+01:00</cbc:StartDate>
-      </cac:InvitationSubmissionPeriod>
-      <cac:ParticipationRequestReceptionPeriod>
-        <cbc:EndDate>2023-09-17+01:00</cbc:EndDate>
-        <cbc:EndTime>10:00:00+01:00</cbc:EndTime>
-      </cac:ParticipationRequestReceptionPeriod>
-      <cac:AdditionalInformationRequestPeriod>
-        <cbc:EndDate>2023-09-15+01:00</cbc:EndDate>
-        <cbc:EndTime>10:00:00+01:00</cbc:EndTime>
-      </cac:AdditionalInformationRequestPeriod>
-      <cac:NoticeDocumentReference>
-        <cbc:ID></cbc:ID>
-        <cbc:ReferencedDocumentInternalAddress></cbc:ReferencedDocumentInternalAddress>
-      </cac:NoticeDocumentReference>
-      <cac:ProcessJustification>
-        <cbc:ProcessReasonCode listName="accelerated-procedure"></cbc:ProcessReasonCode>
-        <cbc:Description></cbc:Description>
-      </cac:ProcessJustification>
-      <cac:EconomicOperatorShortList>
-        <cbc:LimitationDescription></cbc:LimitationDescription>
-        <cbc:MaximumQuantity>2</cbc:MaximumQuantity>
-        <cbc:MinimumQuantity>1</cbc:MinimumQuantity>
-      </cac:EconomicOperatorShortList>
-      <cac:OpenTenderEvent>
-        <cbc:OccurrenceDate>2023-09-15+01:00</cbc:OccurrenceDate>
-        <cbc:OccurrenceTime>10:00:00+01:00</cbc:OccurrenceTime>
-        <cbc:Description></cbc:Description>
-        <cac:OccurenceLocation>
-          <cbc:Description></cbc:Description>
-        </cac:OccurenceLocation>
-      </cac:OpenTenderEvent>
-      <cac:AuctionTerms>
-        <cbc:AuctionConstraintIndicator>true</cbc:AuctionConstraintIndicator>
-        <cbc:Description languageID="POR">AUCTION</cbc:Description>
-        <cbc:AuctionURI>HTTP://www.site.com</cbc:AuctionURI>
-      </cac:AuctionTerms>
-      <cac:FrameworkAgreement>
-        <cbc:MaximumOperatorQuantity>1</cbc:MaximumOperatorQuantity>
-        <cbc:Justification languageID="POR">INFORMATION</cbc:Justification>
-        <cac:SubsequentProcessTenderRequirement>
-          <cbc:Name></cbc:Name>
-          <cbc:Description></cbc:Description>
-        </cac:SubsequentProcessTenderRequirement>
-      </cac:FrameworkAgreement>
-      <cac:ContractingSystem>
-        <cbc:ContractingSystemTypeCode listName="framework-agreement">fa-mix</cbc:ContractingSystemTypeCode>
-      </cac:ContractingSystem>
-      <cac:ContractingSystem>
-        <cbc:ContractingSystemTypeCode listName="dps-usage">dps-nlist</cbc:ContractingSystemTypeCode>
-      </cac:ContractingSystem>
-    </cac:TenderingProcess>
-    <cac:ProcurementProject>
-      <cbc:ID>RA/DAF/SERV-96/18</cbc:ID>
-      <cbc:Name languageID="POR">Serviço público de transportes de passageiros de Águeda</cbc:Name>
-      <cbc:Description languageID="POR">Serviço público de transportes de passageiros de Águeda.</cbc:Description>
-      <cbc:ProcurementTypeCode listName="contract-nature">services</cbc:ProcurementTypeCode>
-      <cbc:EstimatedOverallContractQuantity unitCode="3C">2</cbc:EstimatedOverallContractQuantity>
-      <cbc:Note></cbc:Note>
-      <cbc:SMESuitableIndicator>true</cbc:SMESuitableIndicator>
-      <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="contract-nature">works</cbc:ProcurementTypeCode>
-        <cbc:ProcurementType></cbc:ProcurementType>
-      </cac:ProcurementAdditionalType>
-      <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="transporte-service">bus-s</cbc:ProcurementTypeCode>
-        <cbc:ProcurementType></cbc:ProcurementType>
-      </cac:ProcurementAdditionalType>
-      <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="environmental-impact">bus-s</cbc:ProcurementTypeCode>
-        <cbc:ProcurementType></cbc:ProcurementType>
-      </cac:ProcurementAdditionalType>
-      <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="social-objective">bus-s</cbc:ProcurementTypeCode>
-        <cbc:ProcurementType></cbc:ProcurementType>
-      </cac:ProcurementAdditionalType>
-      <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="strategic-procurement">bus-s</cbc:ProcurementTypeCode>
-        <cbc:ProcurementType></cbc:ProcurementType>
-      </cac:ProcurementAdditionalType>
-      <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="accessibility">bus-s</cbc:ProcurementTypeCode>
-        <cbc:ProcurementType></cbc:ProcurementType>
-      </cac:ProcurementAdditionalType>
-      <cac:RequestedTenderTotal>
-        <ext:UBLExtensions>
-          <ext:UBLExtension>
-            <ext:ExtensionContent>
-              <efext:EformsExtension>
-                <efbc:FrameworkMaximumAmount currencyID="EUR">
-									20
-                </efbc:FrameworkMaximumAmount>
-              </efext:EformsExtension>
-            </ext:ExtensionContent>
-          </ext:UBLExtension>
-        </ext:UBLExtensions>
-        <cbc:EstimatedOverallContractAmount currencyID="EUR">10.00</cbc:EstimatedOverallContractAmount>
-      </cac:RequestedTenderTotal>
-      <cac:MainCommodityClassification>
-        <cbc:ItemClassificationCode listName="cpv">50420000</cbc:ItemClassificationCode>
-      </cac:MainCommodityClassification>
-      <cac:AdditionalCommodityClassification>
-        <cbc:ItemClassificationCode listName="cpv">98513300</cbc:ItemClassificationCode>
-      </cac:AdditionalCommodityClassification>
-      <cac:RealizedLocation>
-        <cbc:Description languageID="POR">urbano/regional</cbc:Description>
-        <cac:Address>
-          <cbc:StreetName>25 Rua Antônio Monteiro da Cruz</cbc:StreetName>
-          <cbc:AdditionalStreetName>25 Rua Antônio Monteiro da Cruz</cbc:AdditionalStreetName>
-          <cbc:CityName>Guaruja</cbc:CityName>
-          <cbc:PostalZone>11462-310</cbc:PostalZone>
-          <cbc:CountrySubentityCode listName="nuts">AT125</cbc:CountrySubentityCode>
-          <cbc:Region></cbc:Region>
-          <cac:AddressLine>
-            <cbc:Line>25 Rua Antônio Monteiro da Cruz</cbc:Line>
-          </cac:AddressLine>
-          <cac:Country>
-            <cbc:IdentificationCode listName="country">BRA</cbc:IdentificationCode>
-          </cac:Country>
-        </cac:Address>
-      </cac:RealizedLocation>
-      <cac:PlannedPeriod>
-        <cbc:StartDate>2023-09-14+01:00</cbc:StartDate>
-        <cbc:EndDate>2023-09-15+01:00</cbc:EndDate>
-        <cbc:DurationMeasure unitCode="MONTH">60</cbc:DurationMeasure>
-        <cbc:DescriptionCode listName="timeperiod">UNKNOWN</cbc:DescriptionCode>
-      </cac:PlannedPeriod>
-      <cac:ContractExtension>
-        <cbc:OptionsDescription></cbc:OptionsDescription>
-        <cbc:MaximumNumberNumeric>2</cbc:MaximumNumberNumeric>
-        <cac:Renewal>
-          <cac:Period>
-            <cbc:Description></cbc:Description>
-          </cac:Period>
-        </cac:Renewal>
-      </cac:ContractExtension>
-    </cac:ProcurementProject>
-  </cac:ProcurementProjectLot>
-  <cac:ProcurementProjectLot>
-    <cbc:ID schemeName="LotsGroup">GLO-0001</cbc:ID>
-    <cac:TenderingTerms>
-      <cac:AwardingTerms>
-        <cac:AwardingCriterion>
-          <cbc:Description languageID="POR"></cbc:Description>
-          <cbc:CalculationExpression languageID="POR"></cbc:CalculationExpression>
-          <cac:SubordinateAwardingCriterion>
-            <ext:UBLExtensions>
-              <ext:UBLExtension>
-                <ext:ExtensionContent>
-                  <efext:EformsExtension>
-                    <efac:AwardCriterionParameter>
-                      <efbc:ParameterCode listName="number-threshold"></efbc:ParameterCode>
-                      <efbc:ParameterNumeric>0</efbc:ParameterNumeric>
-                    </efac:AwardCriterionParameter>
-                    <efac:AwardCriterionParameter>
-                      <efbc:ParameterCode listName="number-weight"></efbc:ParameterCode>
-                      <efbc:ParameterNumeric>0</efbc:ParameterNumeric>
-                    </efac:AwardCriterionParameter>
-                    <efac:AwardCriterionParameter>
-                      <efbc:ParameterCode listName="number-weight"></efbc:ParameterCode>
-                      <efbc:ParameterNumeric>0</efbc:ParameterNumeric>
-                    </efac:AwardCriterionParameter>
-                  </efext:EformsExtension>
-                </ext:ExtensionContent>
-              </ext:UBLExtension>
-            </ext:UBLExtensions>
-            <cbc:AwardingCriterionTypeCode listName="award-criterion-type"></cbc:AwardingCriterionTypeCode>
-            <cbc:Name languageID="POR"></cbc:Name>
-            <cbc:Description languageID="POR"></cbc:Description>
-          </cac:SubordinateAwardingCriterion>
-        </cac:AwardingCriterion>
-      </cac:AwardingTerms>
-    </cac:TenderingTerms>
-    <cac:TenderingProcess>
-      <cac:FrameworkAgreement>
-        <cbc:EstimatedMaximumValueAmount currencyID="EUR">
-					10
-        </cbc:EstimatedMaximumValueAmount>
-      </cac:FrameworkAgreement>
-    </cac:TenderingProcess>
-    <cac:ProcurementProject>
-      <cbc:ID schemeName="InternalID">
-				GROUPID
-      </cbc:ID>
-      <cbc:Name languageID="POR">
-				GROUPNAME
-      </cbc:Name>
-      <cbc:Description languageID="POR">
-				GROUPDESCRIPTION
-      </cbc:Description>
-      <cbc:Note languageID="POR">
-				INFORMACOESADICIONAIS
-      </cbc:Note>
-      <cbc:SMESuitableIndicator>false</cbc:SMESuitableIndicator>
-      <cac:RequestedTenderTotal>
-        <ext:UBLExtensions>
-          <ext:UBLExtension>
-            <ext:ExtensionContent>
-              <efext:EformsExtension>
-                <efbc:FrameworkMaximumAmount currencyID="EUR">
-									20
-                </efbc:FrameworkMaximumAmount>
-              </efext:EformsExtension>
-            </ext:ExtensionContent>
-          </ext:UBLExtension>
-        </ext:UBLExtensions>
-        <cbc:EstimatedOverallContractAmount currencyID="EUR">
-					50
-        </cbc:EstimatedOverallContractAmount>
-      </cac:RequestedTenderTotal>
-    </cac:ProcurementProject>
-  </cac:ProcurementProjectLot>
+<?xml version="1.0" encoding="UTF-8"?>
+<ContractNotice xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1" xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1" xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1" xmlns="urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2">
+	<ext:UBLExtensions>
+		<ext:UBLExtension>
+			<ext:ExtensionContent>
+				<efext:EformsExtension>
+					<efac:NoticeSubType>
+						<cbc:SubTypeCode listName="notice-subtype">
+							16
+						</cbc:SubTypeCode>
+					</efac:NoticeSubType>
+					<efac:Organizations>
+						<efac:Organization>
+							<efbc:GroupLeadIndicator>false</efbc:GroupLeadIndicator>
+							<efbc:AcquiringCPBIndicator>false</efbc:AcquiringCPBIndicator>
+							<efbc:AwardingCPBIndicator>false</efbc:AwardingCPBIndicator>
+							<efac:Company>
+								<cac:PartyIdentification>
+									<cbc:ID schemeName="organization">
+										ORG-0001
+									</cbc:ID>
+								</cac:PartyIdentification>
+								<cac:PartyName>
+									<cbc:Name languageID="POR">
+										
+									</cbc:Name>
+								</cac:PartyName>
+								<cac:PostalAddress>
+									<cbc:CountrySubentityCode listName="nuts">
+										
+									</cbc:CountrySubentityCode>
+									<cac:AddressLine>
+									</cac:AddressLine>
+									<cac:Country>
+										<cbc:IdentificationCode listName="country">
+											
+										</cbc:IdentificationCode>
+									</cac:Country>
+								</cac:PostalAddress>
+								<cac:PartyLegalEntity>
+								</cac:PartyLegalEntity>
+								<cac:Contact>
+								</cac:Contact>
+							</efac:Company>
+							<efac:TouchPoint>
+								<cac:PartyIdentification>
+									<cbc:ID schemeName="touchpoint">
+										TPO-0001
+									</cbc:ID>
+								</cac:PartyIdentification>
+								<cac:PartyName>
+									<cbc:Name languageID="POR">
+										
+									</cbc:Name>
+								</cac:PartyName>
+								<cac:PostalAddress>
+									<cbc:CountrySubentityCode listName="nuts">
+										
+									</cbc:CountrySubentityCode>
+									<cac:AddressLine>
+									</cac:AddressLine>
+									<cac:Country>
+										<cbc:IdentificationCode listName="country">
+											
+										</cbc:IdentificationCode>
+									</cac:Country>
+								</cac:PostalAddress>
+								<cac:Contact>
+								</cac:Contact>
+							</efac:TouchPoint>
+						</efac:Organization>
+					</efac:Organizations>
+					<efac:Changes>
+						<efac:ChangeReason>
+						</efac:ChangeReason>
+					</efac:Changes>
+					<efac:Publication>
+						<efbc:NoticePublicationID schemeName="ojs-notice-id">
+							
+						</efbc:NoticePublicationID>
+						<efbc:GazetteID schemeName="ojs-id">
+							
+						</efbc:GazetteID>
+						<efbc:PublicationDate>2023-08-18+01:00</efbc:PublicationDate>
+					</efac:Publication>
+          
+
+				</efext:EformsExtension>
+			</ext:ExtensionContent>
+		</ext:UBLExtension>
+	</ext:UBLExtensions>
+	<cbc:UBLVersionID>2.3</cbc:UBLVersionID>
+	<cbc:CustomizationID>eforms-sdk-1.7</cbc:CustomizationID>
+	<cbc:ID schemeName="notice-id">
+		
+	</cbc:ID>
+	<ContractFolderID>contractFolderID-defaultValue</ContractFolderID>
+	<cbc:IssueDate>2023-09-15+01:00</cbc:IssueDate>
+	<cbc:IssueTime>17:44:36+01:00</cbc:IssueTime>
+	<cbc:VersionID>01</cbc:VersionID>
+	<cbc:RequestedPublicationDate>2023-09-17+01:00</cbc:RequestedPublicationDate>
+	<cbc:RegulatoryDomain>32014L0024</cbc:RegulatoryDomain>
+	<cbc:NoticeTypeCode listName="competition">
+		cn-standard
+	</cbc:NoticeTypeCode>
+	<cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>
+	<cac:ContractingParty>
+		<cac:ContractingPartyType>
+			<cbc:PartyTypeCode listName="buyer-legal-type">
+				
+			</cbc:PartyTypeCode>
+		</cac:ContractingPartyType>
+		<cac:ContractingActivity>
+			<cbc:ActivityTypeCode listName="authority-activity">
+				
+			</cbc:ActivityTypeCode>
+		</cac:ContractingActivity>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeName="organization">
+					
+				</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:ServiceProviderParty>
+				<cbc:ServiceTypeCode listName="service-provider-type">
+					
+				</cbc:ServiceTypeCode>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeName="organization">
+							
+						</cbc:ID>
+					</cac:PartyIdentification>
+				</cac:Party>
+			</cac:ServiceProviderParty>
+		</cac:Party>
+	</cac:ContractingParty>
+	<cac:TenderingTerms>
+		<cac:TendererQualificationRequest>
+			<cac:SpecificTendererRequirement>
+				<cbc:TendererRequirementTypeCode listName="exclusion-ground">
+					
+				</cbc:TendererRequirementTypeCode>
+				<cbc:Description languageID="POR">
+					
+				</cbc:Description>
+			</cac:SpecificTendererRequirement>
+		</cac:TendererQualificationRequest>
+		<cac:ProcurementLegislationDocumentReference>
+			<cbc:DocumentDescription languageID="POR">
+				
+			</cbc:DocumentDescription>
+		</cac:ProcurementLegislationDocumentReference>
+		<cac:ProcurementLegislationDocumentReference>
+			<cbc:ID schemeName="LocalLegalBasis">
+				
+			</cbc:ID>
+			<cbc:DocumentDescription languageID="POR">
+				
+			</cbc:DocumentDescription>
+		</cac:ProcurementLegislationDocumentReference>
+		<cac:ProcurementLegislationDocumentReference>
+			<cbc:ID schemeName="CrossBorderLaw">
+				
+			</cbc:ID>
+			<cbc:DocumentDescription languageID="POR">
+				
+			</cbc:DocumentDescription>
+		</cac:ProcurementLegislationDocumentReference>
+		<cac:LotDistribution>
+			<cac:LotsGroup>
+				<cbc:LotsGroupID schemeName="">
+					
+				</cbc:LotsGroupID>
+				<cac:ProcurementProjectLotReference>
+					<cbc:ID schemeName="Lot">
+						
+					</cbc:ID>
+				</cac:ProcurementProjectLotReference>
+			</cac:LotsGroup>
+			<cbc:MaximumLotsSubmittedNumeric>0</cbc:MaximumLotsSubmittedNumeric>
+			<cbc:MaximumLotsAwardedNumeric>0</cbc:MaximumLotsAwardedNumeric>
+		</cac:LotDistribution>
+	</cac:TenderingTerms>
+	<cac:TenderingProcess>
+		<cac:NoticeDocumentReference>
+			<cbc:ID schemeName="ojs-notice-id">
+				
+			</cbc:ID>
+		</cac:NoticeDocumentReference>
+		<ext:UBLExtensions>
+			<ext:UBLExtension>
+				<ext:ExtensionContent>
+					<efext:EformsExtension>
+						<efbc:ProcedureRelaunchIndicator>false</efbc:ProcedureRelaunchIndicator>
+					</efext:EformsExtension>
+				</ext:ExtensionContent>
+			</ext:UBLExtension>
+		</ext:UBLExtensions>
+		<cac:ProcessJustification>
+			<cbc:ProcessReasonCode listName="accelerated-procedure">
+				true
+			</cbc:ProcessReasonCode>
+			<cbc:ProcessReason languageID="POR">
+				POR
+			</cbc:ProcessReason>
+		</cac:ProcessJustification>
+		<cbc:Description languageID="POR">
+			
+		</cbc:Description>
+		<cbc:ProcedureCode listName="procurement-procedure-type">
+			
+		</cbc:ProcedureCode>
+		<cbc:PartPresentationCode listName="tenderlot-presentation">
+			all
+		</cbc:PartPresentationCode>
+	</cac:TenderingProcess>
+	<cac:ProcurementProject>
+		<cac:RequestedTenderTotal>
+			<ext:UBLExtensions>
+				<ext:UBLExtension>
+					<ext:ExtensionContent>
+						<efext:EformsExtension>
+							<efbc:FrameworkMaximumAmount currencyID="EUR">
+								0
+							</efbc:FrameworkMaximumAmount>
+						</efext:EformsExtension>
+					</ext:ExtensionContent>
+				</ext:UBLExtension>
+			</ext:UBLExtensions>
+			<cbc:EstimatedOverallContractAmount currencyID="EUR">
+				0
+			</cbc:EstimatedOverallContractAmount>
+		</cac:RequestedTenderTotal>
+		<cbc:Name languageID="POR">
+			
+		</cbc:Name>
+		<cbc:Description languageID="POR">
+			
+		</cbc:Description>
+		<cbc:ProcurementTypeCode listName="contract-nature">
+			
+		</cbc:ProcurementTypeCode>
+		<cac:ProcurementAdditionalType>
+			<cbc:ProcurementTypeCode listName="contract-nature">
+				
+			</cbc:ProcurementTypeCode>
+		</cac:ProcurementAdditionalType>
+		<cac:MainCommodityClassification>
+			<cbc:ItemClassificationCode listName="">
+				
+			</cbc:ItemClassificationCode>
+		</cac:MainCommodityClassification>
+		<cac:AddittionalCommodityClassification>
+			<cbc:ItemClassificationCode listName="">
+				
+			</cbc:ItemClassificationCode>
+		</cac:AddittionalCommodityClassification>
+		<cac:RealizedLocation>
+			<cbc:Description languageID="POR">
+				
+			</cbc:Description>
+			<cac:Address>
+				<cbc:CountrySubentityCode listName="nuts">
+					
+				</cbc:CountrySubentityCode>
+				<cac:AddressLine>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode listName="country">
+						
+					</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:Address>
+		</cac:RealizedLocation>
+		<cbc:Note languageID="POR">
+			
+		</cbc:Note>
+	</cac:ProcurementProject>
+	<cac:ProcurementProjectLot>
+		<cbc:ID schemeName="Lot">
+			LOT-0001
+		</cbc:ID>
+		<cac:ProcurementProject>
+			<cbc:ID schemeName="InternalID">
+				
+			</cbc:ID>
+			<cbc:Name languageID="POR">
+				
+			</cbc:Name>
+			<cbc:Description languageID="POR">
+				
+			</cbc:Description>
+			<cbc:ProcurementTypeCode listName="contract-nature">
+				
+			</cbc:ProcurementTypeCode>
+			<cac:ProcurementAdditionalType>
+				<cbc:ProcurementTypeCode listName="contract-nature">
+					
+				</cbc:ProcurementTypeCode>
+			</cac:ProcurementAdditionalType>
+			<cbc:SMESuitableIndicator>false</cbc:SMESuitableIndicator>
+			<cbc:EstimatedOverallContractQuantity unitCode="">
+				0
+			</cbc:EstimatedOverallContractQuantity>
+			<cac:MainCommodityClassification>
+				<cbc:ItemClassificationCode listName="">
+					
+				</cbc:ItemClassificationCode>
+			</cac:MainCommodityClassification>
+			<cac:AddittionalCommodityClassification>
+				<cbc:ItemClassificationCode listName="">
+					
+				</cbc:ItemClassificationCode>
+			</cac:AddittionalCommodityClassification>
+			<cac:ProcurementAdditionalType>
+				<cbc:ProcurementTypeCode listName="environmental-impact">
+					
+				</cbc:ProcurementTypeCode>
+			</cac:ProcurementAdditionalType>
+			<cac:ProcurementAdditionalType>
+				<cbc:ProcurementTypeCode listName="social-objective">
+					
+				</cbc:ProcurementTypeCode>
+			</cac:ProcurementAdditionalType>
+			<cac:ProcurementAdditionalType>
+				<cbc:ProcurementTypeCode listName="innovative-acquisition">
+					
+				</cbc:ProcurementTypeCode>
+			</cac:ProcurementAdditionalType>
+			<cac:ProcurementAdditionalType>
+				<cbc:ProcurementTypeCode listName="strategic-procurement">
+					
+				</cbc:ProcurementTypeCode>
+				<cbc:ProcurementType languageID="POR">
+					
+				</cbc:ProcurementType>
+			</cac:ProcurementAdditionalType>
+			<cac:ProcurementAdditionalType>
+				<cbc:ProcurementTypeCode listName="accessibility">
+					
+				</cbc:ProcurementTypeCode>
+				<cbc:ProcurementType languageID="POR">
+					
+				</cbc:ProcurementType>
+			</cac:ProcurementAdditionalType>
+			<cac:RealizedLocation>
+				<cbc:Description languageID="POR">
+					
+				</cbc:Description>
+				<cac:Address>
+					<cbc:CountrySubentityCode listName="nuts">
+						
+					</cbc:CountrySubentityCode>
+					<cac:AddressLine>
+					</cac:AddressLine>
+					<cac:Country>
+						<cbc:IdentificationCode listName="country">
+							
+						</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:Address>
+			</cac:RealizedLocation>
+			<cac:PlannedPeriod>
+				<cbc:DurationMeasure unitCode="">
+					
+				</cbc:DurationMeasure>
+				<cbc:DescriptionCode listName="">
+					
+				</cbc:DescriptionCode>
+			</cac:PlannedPeriod>
+			<cac:ContractExtension>
+				<cbc:OptionsDescription languageID="POR">
+					
+				</cbc:OptionsDescription>
+				<cbc:MaximumNumberNumeric>0</cbc:MaximumNumberNumeric>
+				<cac:Renewal>
+					<cac:Period>
+						<cbc:Description languageID="POR">
+							
+						</cbc:Description>
+					</cac:Period>
+				</cac:Renewal>
+			</cac:ContractExtension>
+			<cac:RequestedTenderTotal>
+				<ext:UBLExtensions>
+					<ext:UBLExtension>
+						<ext:ExtensionContent>
+							<efext:EformsExtension>
+								<efbc:FrameworkMaximumAmount currencyID="">
+									0
+								</efbc:FrameworkMaximumAmount>
+							</efext:EformsExtension>
+						</ext:ExtensionContent>
+					</ext:UBLExtension>
+				</ext:UBLExtensions>
+				<cbc:EstimatedOverallContractAmount currencyID="">
+					0
+				</cbc:EstimatedOverallContractAmount>
+			</cac:RequestedTenderTotal>
+			<cbc:Note languageID="POR">
+				
+			</cbc:Note>
+		</cac:ProcurementProject>
+		<cac:TenderingTerms>
+			<cbc:FundingProgramCode listName="eu-funded">
+				
+			</cbc:FundingProgramCode>
+			<cac:FiscalLegislationDocumentReference>
+				<cac:Attachment>
+					<cac:ExternalReference>
+					</cac:ExternalReference>
+				</cac:Attachment>
+				<cac:IssuerParty>
+					<cac:PartyIdentification>
+						<cbc:ID schemeName="organization">
+							
+						</cbc:ID>
+					</cac:PartyIdentification>
+				</cac:IssuerParty>
+			</cac:FiscalLegislationDocumentReference>
+			<cbc:EnvironmentalLegislationDocumentReference>
+				<cac:Attachment>
+					<cac:ExternalReference>
+					</cac:ExternalReference>
+				</cac:Attachment>
+				<cac:IssuerParty>
+					<cac:PartyIdentification>
+						<cbc:ID schemeName="organization">
+							
+						</cbc:ID>
+					</cac:PartyIdentification>
+				</cac:IssuerParty>
+			</cbc:EnvironmentalLegislationDocumentReference>
+			<cbc:EmploymentLegislationDocumentReference>
+				<cac:Attachment>
+					<cac:ExternalReference>
+					</cac:ExternalReference>
+				</cac:Attachment>
+				<cac:IssuerParty>
+					<cac:PartyIdentification>
+						<cbc:ID schemeName="organization">
+							
+						</cbc:ID>
+					</cac:PartyIdentification>
+				</cac:IssuerParty>
+			</cbc:EmploymentLegislationDocumentReference>
+			<ext:UBLExtensions>
+				<ext:UBLExtension>
+					<ext:ExtensionContent>
+						<efext:EformsExtension>
+							<efac:SelectionCriteria>
+								<cbc:SecondStageIndicator>false</cbc:SecondStageIndicator>
+								<cac:CriterionParameter>
+									<cbc:ParameterNumeric>0</cbc:ParameterNumeric>
+								</cac:CriterionParameter>
+							</efac:SelectionCriteria>
+						</efext:EformsExtension>
+					</ext:ExtensionContent>
+				</ext:UBLExtension>
+			</ext:UBLExtensions>
+			<cac:AwardingTerms>
+				<cac:AwardingCriterion>
+					<cbc:Description languageID="POR">
+						
+					</cbc:Description>
+					<cbc:CalculationExpression languageID="POR">
+						
+					</cbc:CalculationExpression>
+					<cac:SubordinateAwardingCriterion>
+						<ext:UBLExtensions>
+							<ext:UBLExtension>
+								<ext:ExtensionContent>
+									<efext:EformsExtension>
+										<efac:AwardCriterionParameter>
+											<efbc:ParameterCode listName="number-weight">
+												
+											</efbc:ParameterCode>
+											<efbc:ParameterCode listName="number-fixed">
+												
+											</efbc:ParameterCode>
+											<efbc:ParameterCode listName="number-threshold">
+												
+											</efbc:ParameterCode>
+											<efbc:ParameterNumeric>0</efbc:ParameterNumeric>
+										</efac:AwardCriterionParameter>
+									</efext:EformsExtension>
+								</ext:ExtensionContent>
+							</ext:UBLExtension>
+						</ext:UBLExtensions>
+						<cbc:AwardingCriterionTypeCode listName="award-criterion-type">
+							
+						</cbc:AwardingCriterionTypeCode>
+						<cbc:Name languageID="POR">
+							
+						</cbc:Name>
+						<cbc:Description languageID="POR">
+							
+						</cbc:Description>
+					</cac:SubordinateAwardingCriterion>
+				</cac:AwardingCriterion>
+				<cbc:NoFurtherNegotiationIndicator>false</cbc:NoFurtherNegotiationIndicator>
+			</cac:AwardingTerms>
+			<cac:TendererQualificationRequest>
+				<cbc:CompanyLegalForm languageID="POR">
+					
+				</cbc:CompanyLegalForm>
+				<cac:SpecificTendererRequirement>
+					<cbc:TendererRequirementTypeCode listName="missing-info-submission">
+						
+					</cbc:TendererRequirementTypeCode>
+					<cbc:Description languageID="POR">
+						
+					</cbc:Description>
+				</cac:SpecificTendererRequirement>
+				<cac:SpecificTendererRequirement>
+					<cbc:TendererRequirementTypeCode listName="reserved-procurement">
+						
+					</cbc:TendererRequirementTypeCode>
+				</cac:SpecificTendererRequirement>
+			</cac:TendererQualificationRequest>
+			<cac:SecurityClearanceTerm>
+				<cbc:Code listName="required">
+					
+				</cbc:Code>
+				<cbc:Description languageID="POR">
+					
+				</cbc:Description>
+			</cac:SecurityClearanceTerm>
+			<cac:ContractExecutionRequirement>
+				<cbc:ExecutionRequirementCode listName="reserved-execution">
+					
+				</cbc:ExecutionRequirementCode>
+				<cbc:ExecutionRequirementCode listName="einvoicing">
+					
+				</cbc:ExecutionRequirementCode>
+				<cbc:Description languageID="POR">
+					
+				</cbc:Description>
+				<cbc:ExecutionRequirementCode listName="nda">
+					true
+				</cbc:ExecutionRequirementCode>
+				<cbc:Description languageID="POR">
+					
+				</cbc:Description>
+				<cbc:ExecutionRequirementCode listName="ecatalog-submission">
+					
+				</cbc:ExecutionRequirementCode>
+				<cbc:ExecutionRequirementCode listName="esignature-submission">
+					true
+				</cbc:ExecutionRequirementCode>
+			</cac:ContractExecutionRequirement>
+			<cac:PostAwardProcess>
+				<cbc:ElectronicOrderUsageIndicator>false</cbc:ElectronicOrderUsageIndicator>
+				<cbc:ElectronicPaymentUsageIndicator>false</cbc:ElectronicPaymentUsageIndicator>
+			</cac:PostAwardProcess>
+			<cac:PaymentTerms>
+				<cbc:Note languageID="POR">
+					
+				</cbc:Note>
+			</cac:PaymentTerms>
+			<cac:TenderRecipientParty>
+				<cac:PartyIdentification>
+					<cbc:ID>ORG-0010</cbc:ID>
+				</cac:PartyIdentification>
+			</cac:TenderRecipientParty>
+			<cac:TenderEvaluationParty>
+				<cac:PartyIdentification>
+					<cbc:ID>ORG-0010</cbc:ID>
+				</cac:PartyIdentification>
+			</cac:TenderEvaluationParty>
+			<cac:Language>
+				<cbc:ID listName="eforms-language">
+					
+				</cbc:ID>
+			</cac:Language>
+			<cac:RequiredFinancialGuarante>
+				<cbc:GuaranteeTypeCode listName="tender-guarantee-required">
+					true
+				</cbc:GuaranteeTypeCode>
+				<cbc:DescriptionText languageID="POR">
+					
+				</cbc:DescriptionText>
+			</cac:RequiredFinancialGuarante>
+			<cac:TenderRecipientParty>
+				<cbc:EndpointID></cbc:EndpointID>
+			</cac:TenderRecipientParty>
+			<cac:CallForTendersDocumentReference>
+				<DocumentType listName="document-distribution">
+					
+				</cbc:DocumentType>
+				<cbc:DocumentStatusCode></cbc:DocumentStatusCode>
+				<cbc:DocumentTypeCode listName="communication-justification">
+					
+				</cbc:DocumentTypeCode>
+				<ext:UBLExtensions>
+					<ext:UBLExtension>
+						<ext:ExtensionContent>
+							<efext:EformsExtension>
+								<efac:OfficialLanguages>
+									<cac:Language>
+										<cbc:ID listName="eforms-language">
+											
+										</cbc:ID>
+									</cac:Language>
+								</efac:OfficialLanguages>
+								<efac:NonOfficialLanguages>
+									<cac:Language>
+										<cbc:ID listName="eforms-language">
+											
+										</cbc:ID>
+									</cac:Language>
+								</efac:NonOfficialLanguages>
+							</efext:EformsExtension>
+						</ext:ExtensionContent>
+					</ext:UBLExtension>
+				</ext:UBLExtensions>
+				<cac:Attachment>
+					<cac:ExternalReference>
+					</cac:ExternalReference>
+				</cac:Attachment>
+				<cac:Attachment>
+					<cac:ExternalReference>
+					</cac:ExternalReference>
+				</cac:Attachment>
+				<cbc:ID></cbc:ID>
+			</cac:CallForTendersDocumentReference>
+			<cac:AdditionalInformationParty>
+				<cac:PartyIdentification>
+					<cbc:ID>ORG-0010</cbc:ID>
+				</cac:PartyIdentification>
+			</cac:AdditionalInformationParty>
+			<cac:DocumentProviderParty>
+				<cac:PartyIdentification>
+					<cbc:ID>ORG-0010</cbc:ID>
+				</cac:PartyIdentification>
+			</cac:DocumentProviderParty>
+			<cac:AppealTerms>
+				<cac:PresentationPeriod>
+					<cbc:Description languageID="POR">
+						
+					</cbc:Description>
+				</cac:PresentationPeriod>
+				<cac:AppealReceiverParty>
+					<cac:PartyIdentification>
+						<cbc:ID>ORG-0010</cbc:ID>
+					</cac:PartyIdentification>
+				</cac:AppealReceiverParty>
+				<cac:AppealInformationParty>
+					<cac:PartyIdentification>
+						<cbc:ID>ORG-0010</cbc:ID>
+					</cac:PartyIdentification>
+				</cac:AppealInformationParty>
+				<cac:MediationParty>
+					<cac:PartyIdentification>
+						<cbc:ID>ORG-0010</cbc:ID>
+					</cac:PartyIdentification>
+				</cac:MediationParty>
+			</cac:AppealTerms>
+			<cbc:RecurringProcurementIndicator>false</cbc:RecurringProcurementIndicator>
+			<cbc:RecurringProcurementDescription languageID="POR">
+				
+			</cbc:RecurringProcurementDescription>
+			<cac:TenderValidityPeriod>
+				<DurationMeasure unitCode="MOTH">
+					
+				</cbc:DurationMeasure>
+			</cac:TenderValidityPeriod>
+		</cac:TenderingTerms>
+		<cac:TenderingProcess>
+			<cac:NoticeDocumentReference>
+				<cbc:ID schemeName="notice-reference">
+					
+				</cbc:ID>
+				<cbc:ReferencedDocumentInternalAddress></cbc:ReferencedDocumentInternalAddress>
+			</cac:NoticeDocumentReference>
+			<cac:AuctionTerms>
+				<cbc:AuctionConstraintIndicator>false</cbc:AuctionConstraintIndicator>
+				<cbc:DescriptionText languageID="POR">
+					
+				</cbc:DescriptionText>
+				<cbc:AuctionURI></cbc:AuctionURI>
+			</cac:AuctionTerms>
+			<cbc:GovernmentAgreementConstraintIndicator>false</cbc:GovernmentAgreementConstraintIndicator>
+			<cac:ContractingSystem>
+				<cbc:ContractingSystemTypeCode listName="framework-agreement">
+					
+				</cbc:ContractingSystemTypeCode>
+				<cbc:ContractingSystemTypeCode listName="dps-usage">
+					
+				</cbc:ContractingSystemTypeCode>
+			</cac:ContractingSystem>
+			<cac:FrameworkAgreement>
+				<cbc:MaximumOperatorQuantity>0</cbc:MaximumOperatorQuantity>
+				<cbc:JustificationText languageID="POR">
+					
+				</cbc:JustificationText>
+				<cac:SubsequentProcessTenderRequirement>
+					<cbc:Name listName="buyer-categories">
+						
+					</cbc:Name>
+					<cbc:DescriptionText languageID="POR">
+						
+					</cbc:DescriptionText>
+				</cac:SubsequentProcessTenderRequirement>
+			</cac:FrameworkAgreement>
+			<cbc:CandidateReductionConstraintIndicator>false</cbc:CandidateReductionConstraintIndicator>
+			<cac:EconomicOperatorShortList>
+				<cbc:LimitationDescription>false</cbc:LimitationDescription>
+				<cbc:MaximumQuantity>0</cbc:MaximumQuantity>
+				<cbc:MinimumQuantity>0</cbc:MinimumQuantity>
+			</cac:EconomicOperatorShortList>
+			<cac:InvitationSubmissionPeriod>
+				<cbc:StartDate></cbc:StartDate>
+			</cac:InvitationSubmissionPeriod>
+			<cac:AdditionalInformationRequestPeriod>
+				<cbc:EndDate></cbc:EndDate>
+				<cbc:EndTime></cbc:EndTime>
+			</cac:AdditionalInformationRequestPeriod>
+			<cbc:SubmissionMethodCode listName="esubmission">
+				
+			</cbc:SubmissionMethodCode>
+			<cac:ProcessJustification>
+				<ProcessReasonCode listName="no-esubmission-justification">
+					
+				</cbc:ProcessReasonCode>
+				<cbc:DescriptionText languageID="POR">
+					
+				</cbc:DescriptionText>
+			</cac:ProcessJustification>
+			<cbc:AccessToolsURI></cbc:AccessToolsURI>
+			<ext:UBLExtensions>
+				<ext:UBLExtension>
+					<ext:ExtensionContent>
+						<efext:EformsExtension>
+							<efbc:AccessToolName></efbc:AccessToolName>
+							<efbc:ProcedureRelaunchIndicator>false</efbc:ProcedureRelaunchIndicator>
+						</efext:EformsExtension>
+					</ext:ExtensionContent>
+				</ext:UBLExtension>
+			</ext:UBLExtensions>
+			<cac:TenderSubmissionDeadlinePeriod>
+				<cbc:EndDate></cbc:EndDate>
+				<cbc:EndTime></cbc:EndTime>
+			</cac:TenderSubmissionDeadlinePeriod>
+			<cac:ParticipationRequestReceptionPeriod>
+				<cbc:EndDate></cbc:EndDate>
+				<cbc:EndTime></cbc:EndTime>
+			</cac:ParticipationRequestReceptionPeriod>
+			<cac:OpenTenderEvent>
+				<cbc:OccurrenceDate></cbc:OccurrenceDate>
+				<cbc:OccurrenceTime></cbc:OccurrenceTime>
+				<cbc:DescriptionText languageID="POR">
+					
+				</cbc:DescriptionText>
+				<cac:OccurenceLocation>
+					<cbc:DescriptionText languageID="POR">
+						
+					</cbc:DescriptionText>
+				</cac:OccurenceLocation>
+			</cac:OpenTenderEvent>
+		</cac:TenderingProcess>
+	</cac:ProcurementProjectLot>
+	<cac:ProcurementProjectLot>
+		<ID schemeName="GroupLot">
+			
+		</cbc:ID>
+		<cac:TenderingTerms>
+			<cac:AwardingTerms>
+				<cac:AwardingCriterion>
+					<cbc:Description languageID="POR">
+						
+					</cbc:Description>
+					<cbc:CalculationExpression languageID="POR">
+						
+					</cbc:CalculationExpression>
+					<cac:SubordinateAwardingCriterion>
+						<ext:UBLExtensions>
+							<ext:UBLExtension>
+								<ext:ExtensionContent>
+									<efext:EformsExtension>
+										<efac:AwardCriterionParameter>
+											<efbc:ParameterCode listName="number-weight">
+												
+											</efbc:ParameterCode>
+											<efbc:ParameterCode listName="number-fixed">
+												
+											</efbc:ParameterCode>
+											<efbc:ParameterCode listName="number-threshold">
+												
+											</efbc:ParameterCode>
+											<efbc:ParameterNumeric>0</efbc:ParameterNumeric>
+										</efac:AwardCriterionParameter>
+									</efext:EformsExtension>
+								</ext:ExtensionContent>
+							</ext:UBLExtension>
+						</ext:UBLExtensions>
+						<cbc:AwardingCriterionTypeCode listName="award-criterion-type">
+							
+						</cbc:AwardingCriterionTypeCode>
+						<cbc:Name languageID="POR">
+							
+						</cbc:Name>
+						<cbc:Description languageID="POR">
+							
+						</cbc:Description>
+					</cac:SubordinateAwardingCriterion>
+				</cac:AwardingCriterion>
+			</cac:AwardingTerms>
+		</cac:TenderingTerms>
+		<cac:TenderingProcess>
+			<cac:FrameworkAgreement>
+				<cbc:EstimatedMaximumValueAmount currencyID="EUR">
+					0
+				</cbc:EstimatedMaximumValueAmount>
+			</cac:FrameworkAgreement>
+		</cac:TenderingProcess>
+		<cac:ProcurementProject>
+			<cbc:ID schemeName="InternalID">
+				
+			</cbc:ID>
+			<cbc:Name languageID="POR">
+				
+			</cbc:Name>
+			<Description languageID="POR">
+				
+			</cbc:Description>
+			<Note languageID="POR">
+				
+			</Note>
+			<cbc:SMESuitableIndicator>false</cbc:SMESuitableIndicator>
+			<cac:RequestedTenderTotal>
+				<ext:UBLExtensions>
+					<ext:UBLExtension>
+						<ext:ExtensionContent>
+							<efext:EformsExtension>
+								<efbc:FrameworkMaximumAmount currencyID="EUR">
+									0
+								</efbc:FrameworkMaximumAmount>
+							</efext:EformsExtension>
+						</ext:ExtensionContent>
+					</ext:UBLExtension>
+				</ext:UBLExtensions>
+				<cbc:EstimatedOverallContractAmount currencyID="EUR">
+					0
+				</cbc:EstimatedOverallContractAmount>
+			</cac:RequestedTenderTotal>
+		</cac:ProcurementProject>
+	</cac:ProcurementProjectLot>
 </ContractNotice>
+

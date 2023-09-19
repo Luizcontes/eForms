@@ -7,17 +7,6 @@ import XmlDocGenerator from './xmlDocGenerator.js';
 import jsdom from 'jsdom';
 const { JSDOM } = jsdom;
 
-// import readline from 'readline';
-// const rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// });
-// async function prompt(query) {
-//   new Promise((resolve) => rl.question(query, resolve));
-// }
-
-const date = () => (new Date(Date.now()));
-
 let filename;
 let xmlGen;
 
@@ -29,9 +18,10 @@ const commands = {
   findTagLocation: testFunc,
 }
 
-const dataPath = filename => "C:\\Users\\a907441\\Projects\\INCM\\eFormHTML\\" + filename + ".html";
-const codeListPath = (filename, element) => "C:\\Users\\a907441\\Projects\\INCM\\elementsCode\\" + filename + "-code-" + element + ".json";
-const codeListJson = (filename, element) => "C:\\Users\\a907441\\Projects\\INCM\\codeJson\\" + filename + "-json-" + element + ".json";
+const pwd = process.cwd();
+const htmlPath = filename => `${pwd}\\eFormHTML\\${filename}.html`;
+const codeListPath = filename => `${pwd}\\codeList\\${filename}.json`;
+const codeListJson = filename => `${pwd}\\codeJson\\${filename}.json`;
 
 const commandArgumentSplitter = string => string.split("=");
 
@@ -42,12 +32,14 @@ const commandArgumentSplitter = string => string.split("=");
 
 async function testFunc(filename) {
 
-  const tagArray = pathArray(filename);
+  const tagArray = await pathArray(filename);
+
+  let obj = Object.keys(tagArray);
+  console.log(tagArray['fieldset']);
+  console.log(obj);
 
   // sample example of tags to test
-  // Last problem found number 71 - select
-  // Last problem found number 46 - textarea
-  let start = 73;
+  let start = 0;
   let end = tagArray.length;
   let tagSetOfRules = tagArray;
 
@@ -223,22 +215,31 @@ async function tagLocator(xml, tagArray, currentTag) {
   }
 }
 
-function getCodes(element) {
-  try {
+async function getCodes() {
 
-    const htmlFile = fs.readFileSync(dataPath(filename));
+  const elementsArray = ['fieldset', 'input', 'select', 'textarea'];
+
+  try {
+    const htmlFile = fs.readFileSync(htmlPath(filename));
     const dom = new JSDOM(htmlFile);
 
-    const selectDataContentId = dom.window.document.querySelectorAll(element);
 
-    const codeList = { codes: [] };
-    selectDataContentId.forEach((el, i, a) => {
-      let code = el.dataset.contentId;
-      if (code !== undefined) codeList.codes.push(code);
-    })
-    codeList.elementsCount = codeList.codes.length;
+    const codeList = {};
+    elementsArray.forEach(element => {
 
-    fs.writeFileSync(codeListPath(filename, element), JSON.stringify(codeList));
+      const selectDataContentId = dom.window.document.querySelectorAll(element);
+      codeList[element] = { codes: [] };
+
+      selectDataContentId.forEach((el, i, a) => {
+        let code = el.dataset.contentId;
+        if (code !== undefined) codeList[element].codes.push(code);
+      })
+      if (codeList.totalElementsCount === undefined) codeList.totalElementsCount = codeList[element].codes.length;
+      else codeList.totalElementsCount = codeList.totalElementsCount + codeList[element].codes.length;
+      codeList[element].elementsCount = codeList[element].codes.length;
+    });
+
+    fs.writeFileSync(codeListPath(filename), JSON.stringify(codeList));
   }
   catch (err) {
     console.log(err.message);
@@ -247,15 +248,23 @@ function getCodes(element) {
 
 function findPaths(formName) {
 
-  const element = "input";
   let name = formName || filename;
 
   try {
-    const codeData = fs.readFileSync(codeListPath(name, element));
+    const codeData = fs.readFileSync(codeListPath(name));
     const codesString = codeData.toString();
-    const codesArray = JSON.parse(codesString).codes;
-    const codesList = codesArray.map(c => fieldFinder(c));
-    fs.writeFileSync(codeListJson(filename, element), JSON.stringify(codesList));
+    const codesJson = JSON.parse(codesString);
+
+    const t = Object.keys(codesJson)
+      .filter(e => typeof codesJson[e] === 'object')
+      .reduce((acum, e) => {
+        const codesList = codesJson[e]['codes'];
+        const codesDescArray = codesList.map(c => fieldFinder(c));
+        acum[e] = codesDescArray;
+        return acum;
+      }, {});
+    
+    fs.writeFileSync(codeListJson(filename), JSON.stringify(t));
   }
   catch (err) { console.log("findPath: " + err.message) }
 }
@@ -265,18 +274,18 @@ function findPaths(formName) {
   args.filter(el => {
     if (el.match("filename")) {
       filename = commandArgumentSplitter(el)[1];
-      xmlGen = new XmlDocGenerator(filename);
+      // xmlGen = new XmlDocGenerator(filename);
       return false;
     }
     return true;
   })
-    .forEach(el => {
+    .forEach(async el => {
       const comAtrrArray = commandArgumentSplitter(el);
       const command = comAtrrArray[0];
       let arg = comAtrrArray[1];
       if (commands[command]) {
         if (arg === undefined) arg = filename;
-        commands[command](arg);
+        await commands[command](arg);
       }
     })
 }());
