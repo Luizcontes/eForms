@@ -15,9 +15,14 @@ export function fileSaver(dir, filename, file) {
 export function fileReader(dir, filename) {
   const path = `${pwd}\\${dir}\\${filename}`;
   try {
-    return fs.readFileSync(path);
+    if (!fs.existsSync(path)) throw new Error("fileManager: File not not found...");
+    const fileBuffer = fs.readFileSync(path);
+    const fileString = fileBuffer.toString();
+    return JSON.parse(fileString);
   }
   catch (err) {
+    console.log(path);
     console.log(err.message);
+    process.exit();
   }
 }

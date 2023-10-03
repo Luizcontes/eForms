@@ -12,6 +12,8 @@ import * as readline from 'node:readline/promises';
 import { stdin as input, stdout as output } from 'node:process';
 const rl = readline.createInterface({ input, output });
 
+const preprocessor = "preprocessor";
+const sample = "sample";
 let filename;
 let xmlGen;
 let logObj;
@@ -22,6 +24,7 @@ const commands = {
   runTest: testForm,
   findPaths: findPaths,
   findTagLocation: testFunc,
+  preprocessorSaver: preprocessorSaver,
 }
 
 const pwd = process.cwd();
@@ -61,19 +64,48 @@ async function testFunc(filename) {
   let end = tagArray.length;
 
   for (let i = start; i < end; i++) {
-    logObj[element] = i;
-    fileSaver("log", `${filename}.json`, JSON.stringify(logObj));
     let elementArray = tagArray[i];
     console.log("\nElement: <" + element + ">(" + i + "/" + (end - 1) + "): " + elementArray);
     let testar = await rl.question("Testar(s/n)?");
     if (/^n$/g.exec(testar) !== null) process.exit();
-    await tagInserter(() => {
-      if (element === "fieldset") return true;
-      return '';
-    }, elementArray);
-  }
+    xmlGen = new XmlDocGenerator(filename);
+    
+    try {
+      let tagInserted = await tagInserter(() => {
+        if (element === "fieldset") return true;
+        return '';
+      }, elementArray);
+      if (tagInserted) await xmlGen.xmlSaver(sample);
+      else console.log("\nTag ja existente!!!");
+      if (i < (tagArray.length - 1)) logObj[element] = i + 1;
+      fileSaver("log", `${filename}.json`, JSON.stringify(logObj));
+    }
+    catch (err) {
+      console.log("\nElement: <" + element + ">(" + i + "/" + (end - 1) + "): " + elementArray);
+      console.log(err.message);
+      // console.log(logObj);
+      // console.log("Testing error!!!");
+      // const rulesPath = `${pwd}\\codeJson\\${filename}.json`;
+      // const rulesBuffer = fs.readFileSync(rulesPath);
+      // const rulesStr = rulesBuffer.toString();
+      // const rulesJson = JSON.parse(rulesStr);
+      // const troubleEl = rulesJson[element][i];
 
-  rl.close();
+      // const errorPath = `${pwd}\\log\\${filename}-errorList.json`;
+      // const errorBuffer = fs.readFileSync(errorPath);
+      // const errorStr = errorBuffer.toString();
+      // const errorJson = JSON.parse(errorStr);
+      // if (errorJson[element] === undefined) errorJson[element] = {};
+      // errorJson[element][i] = troubleEl;
+      // fs.writeFileSync(errorPath, JSON.stringify(errorJson));
+
+      let keep = await rl.question("Continuar algo(s/n)?");
+      if (/^n$/g.exec(keep) !== null) process.exit();
+
+      xmlGen = new XmlDocGenerator(filename);
+      continue;
+    }
+  }
 }
 
 // verify tagArray numbers: 6, 7, 8
@@ -81,41 +113,38 @@ async function testFunc(filename) {
 async function tagInserter(getElement, tagArray) {
 
   const xml = xmlGen.xmlToJson();
-  const preprocessor = "preprocessor";
-  const sample = "sample";
 
-  let element = getElement();
-
-  try {
-    let arrayToTrack = await depthTracker(xml, tagArray);
-    if (tagArray.length !== arrayToTrack.length) {
+  // try {
+  let arrayToTrack = await depthTracker(xml, tagArray);
+  if (tagArray.length !== arrayToTrack.length) {
+    let tmpArray = [...arrayToTrack];
+    let iterator = await getIterator(xml, tmpArray);
+    let endOfIterator = false;
+    do {
+      // await rl.question("Should I stay or should I go?");
+      // await waiter();
       let tmpArray = [...arrayToTrack];
-      let iterator = await getIterator(xml, tmpArray);
-      do {
-        await waiter();
-        let tmpArray = [...arrayToTrack];
-        tmpArray.push(tagArray[arrayToTrack.length]);
-        let objMapped = await mapObjectRecursively(async (node, tag) => {
-          let nodeLength = Object.keys(node).length;
-          let iteratorLength = iterator.length;
-          let position = nodeLength - iteratorLength;
-          return await xmlChangePosition(node, tag, position, element)
-        }, xml, tmpArray);
-        await xmlGen.setXml(objMapped);
-        await xmlGen.xmlSaver(preprocessor);
-        if (!iterator.length) break;
-        iterator.pop();
-      } while (await testForm(filename, preprocessor));
-      await tagInserter(getElement, tagArray);
-    }
-    await xmlGen.xmlSaver(sample);
-  }
-  catch (err) {
-    console.log(err.message);
-    console.log(logObj);
-    xmlGen = new XmlDocGenerator(filename);
-    return;
-  }
+      tmpArray.push(tagArray[arrayToTrack.length]);
+      let objMapped = await mapObjectRecursively(async (node, tag) => {
+        let element;
+        let tagArrayIndex = tagArray.length -1;
+        let tmpTag = tagArray[tagArrayIndex];
+        if (tag === tmpTag) element = getElement();
+        let nodeLength = Object.keys(node).length;
+        let iteratorLength = iterator.length;
+        let position = nodeLength - iteratorLength;
+        return await xmlChangePosition(node, tag, position, element)
+      }, xml, tmpArray);
+      await xmlGen.setXml(objMapped);
+      await xmlGen.xmlSaver(preprocessor);
+      if (endOfIterator) throw new Error('Impossible to generate this tag!!!');
+      if (iterator.length === 0) endOfIterator = true;
+      iterator.pop();
+    } while (await testForm(filename, preprocessor));
+    await tagInserter(getElement, tagArray);
+    return true;
+  } 
+  return false;
 }
 
 async function waiter() {
@@ -134,6 +163,23 @@ async function depthTracker(node, tagArray, finalArray) {
   finalArray = finalArray || [];
   let tmpArray = [...tagArray]
   let tag = tmpArray.shift();
+  let param = (/\[.*\]/g).exec(tag);
+  if (param !== null) {
+    let index = param.index;
+    tag = tag.slice(0, index);
+  }
+
+  // let subTag;
+  // let attr;
+  // let val;
+  // if(param) {
+  //   subTag = (/\w{3,5}:\w+/g).exec(param);
+  //   attr = (/@\w+=/g).exec(param)[0];
+  //   attr = attr.slice(1, attr.length -1);
+  //   val = (/'\w+'/g).exec(param)[0];
+  //   val = val.slice(1, val.length - 1);
+  // }
+
   let keysArray = Object.keys(node);
   if (keysArray.includes(tag)) {
     if (Array.isArray(node[tag])) {
@@ -186,7 +232,7 @@ async function mapObjectRecursively(callback, obj, tagArray) {
 
 async function xmlChangePosition(node, tag, position, v) {
   let tmpObj = {};
-  let value = [''];
+  let value = v || [''];
   Object.keys(node).forEach((key, i) => {
     if (position === i) tmpObj[tag] = value;
     tmpObj[key] = node[key];
@@ -305,15 +351,21 @@ function findPaths(formName) {
   catch (err) { console.log("findPath: " + err.message) }
 }
 
+function preprocessorSaver() {
+  const preprocessorPath = `${pwd}\\${preprocessor}\\${filename}.xml`;
+  const preprocessorBuffer = fs.readFileSync(preprocessorPath);
+
+  const samplePath = `${pwd}\\${sample}\\${filename}.xml`;
+  fs.writeFileSync(samplePath, preprocessorBuffer);
+}
+
 (function argsRunner() {
   const args = process.argv.slice(2);
   args.filter(el => {
     if (el.match("filename")) {
       filename = commandArgumentSplitter(el)[1];
-      xmlGen = new XmlDocGenerator(filename);
-      let logBuffer = fileReader("log", `${filename}.json`);
-      let logStr = logBuffer.toString();
-      logObj = JSON.parse(logStr);
+      // xmlGen = new XmlDocGenerator(filename);
+      logObj = fileReader("log", `${filename}.json`);
       return false;
     }
     return true;
@@ -324,7 +376,8 @@ function findPaths(formName) {
       let arg = comAtrrArray[1];
       if (commands[command]) {
         if (arg === undefined) arg = filename;
-        commands[command](arg);
+        await commands[command](arg);
+        rl.close();
       }
     })
 }());

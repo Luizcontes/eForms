@@ -1,3 +1,5 @@
+import fs from 'fs';
+
 // import XmlDocGenerator from "./xmlDocGenerator.js";
 
 // function mapObjectRecursively(obj, callback) {
@@ -28,7 +30,6 @@
 // let newObj = mapObjectRecursively(originalObj, value => value * 2);
 // console.log(newObj);4
 
-let arrayTest = ["name"];
-console.log(arrayTest.length);
-arrayTest.shift();
-console.log(arrayTest.length);
+let str = "'part'";
+
+console.log(str.slice(1,-1));

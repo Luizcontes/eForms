@@ -456,10 +456,10 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">c73d0928-5a25-482c-8160-0b0f4c902243</cbc:ID>
+  <cbc:ID schemeName="notice-id">c602f0a6-a4ad-4ae4-bbc0-e6235344662e</cbc:ID>
   <cbc:ContractFolderID>314792be-3af9-4859-99ae-9ee97189b622</cbc:ContractFolderID>
   <cbc:IssueDate>2023-10-02+01:00</cbc:IssueDate>
-  <cbc:IssueTime>15:00:00+01:00</cbc:IssueTime>
+  <cbc:IssueTime>16:00:00+01:00</cbc:IssueTime>
   <cbc:VersionID>01</cbc:VersionID>
   <cbc:RequestedPublicationDate>2023-09-06+01:00</cbc:RequestedPublicationDate>
   <cbc:RegulatoryDomain>32014L0024</cbc:RegulatoryDomain>
@@ -650,6 +650,178 @@
       </cac:Address>
     </cac:RealizedLocation>
   </cac:ProcurementProject>
+  <cac:ProcurementProjectLot>
+    <cbc:ID schemeName="Part">PAR-0001</cbc:ID>
+    <cac:TenderingTerms>
+      <cac:FiscalLegislationDocumentReference>
+        <cbc:ID/>
+        <cac:Attachment>
+          <cac:ExternalReference>
+            <cbc:URI/>
+          </cac:ExternalReference>
+        </cac:Attachment>
+        <cac:IssuerParty>
+          <cac:PartyIdentification>
+            <cbc:ID/>
+          </cac:PartyIdentification>
+        </cac:IssuerParty>
+      </cac:FiscalLegislationDocumentReference>
+      <cac:EnvironmentalLegislationDocumentReference>
+        <cbc:ID/>
+        <cac:Attachment>
+          <cac:ExternalReference>
+            <cbc:URI/>
+          </cac:ExternalReference>
+        </cac:Attachment>
+        <cac:IssuerParty>
+          <cac:PartyIdentification>
+            <cbc:ID/>
+          </cac:PartyIdentification>
+        </cac:IssuerParty>
+      </cac:EnvironmentalLegislationDocumentReference>
+      <cac:EmploymentLegislationDocumentReference>
+        <cbc:ID/>
+        <cac:Attachment>
+          <cac:ExternalReference>
+            <cbc:URI/>
+          </cac:ExternalReference>
+        </cac:Attachment>
+        <cac:IssuerParty>
+          <cac:PartyIdentification>
+            <cbc:ID/>
+          </cac:PartyIdentification>
+        </cac:IssuerParty>
+      </cac:EmploymentLegislationDocumentReference>
+      <cac:CallForTendersDocumentReference>
+        <cbc:ID/>
+        <cbc:DocumentTypeCode/>
+        <cbc:DocumentType/>
+        <cbc:LanguageID/>
+        <cbc:DocumentStatusCode/>
+        <cac:Attachment>
+          <cac:ExternalReference>
+            <cbc:URI/>
+          </cac:ExternalReference>
+        </cac:Attachment>
+      </cac:CallForTendersDocumentReference>
+      <cac:TendererQualificationRequest>
+        <cac:SpecificTendererRequirement>
+          <cbc:TendererRequirementTypeCode listName="reserved-procurement">none</cbc:TendererRequirementTypeCode>
+        </cac:SpecificTendererRequirement>
+      </cac:TendererQualificationRequest>
+      <cac:ContractExecutionRequirement>
+        <cbc:ExecutionRequirementCode listName="reserved-execution">no</cbc:ExecutionRequirementCode>
+      </cac:ContractExecutionRequirement>
+      <cac:AdditionalInformationParty>
+        <cac:PartyIdentification>
+          <cbc:ID/>
+        </cac:PartyIdentification>
+      </cac:AdditionalInformationParty>
+      <cac:DocumentProviderParty>
+        <cac:PartyIdentification>
+          <cbc:ID/>
+        </cac:PartyIdentification>
+      </cac:DocumentProviderParty>
+      <cac:TenderRecipientParty>
+        <cac:PartyIdentification>
+          <cbc:ID/>
+        </cac:PartyIdentification>
+      </cac:TenderRecipientParty>
+      <cac:TenderEvaluationParty>
+        <cac:PartyIdentification>
+          <cbc:ID/>
+        </cac:PartyIdentification>
+      </cac:TenderEvaluationParty>
+      <cac:AppealTerms>
+        <cac:AppealInformationParty>
+          <cac:PartyIdentification>
+            <cbc:ID schemeName="organization"/>
+          </cac:PartyIdentification>
+          <cac:PartyIdentification>
+            <cbc:ID schemeName="touchpoint"/>
+          </cac:PartyIdentification>
+        </cac:AppealInformationParty>
+        <cac:AppealReceiverParty>
+          <cac:PartyIdentification>
+            <cbc:ID/>
+          </cac:PartyIdentification>
+        </cac:AppealReceiverParty>
+        <cac:MediationParty>
+          <cac:PartyIdentification>
+            <cbc:ID/>
+          </cac:PartyIdentification>
+        </cac:MediationParty>
+      </cac:AppealTerms>
+    </cac:TenderingTerms>
+    <cac:TenderingProcess>
+      <ext:UBLExtensions>
+        <ext:UBLExtension>
+          <ext:ExtensionContent>
+            <efext:EformsExtension>
+              <efbc:AccessToolName/>
+            </efext:EformsExtension>
+          </ext:ExtensionContent>
+        </ext:UBLExtension>
+      </ext:UBLExtensions>
+      <cbc:GovernmentAgreementConstraintIndicator>true</cbc:GovernmentAgreementConstraintIndicator>
+      <cbc:AccessToolsURI/>
+      <cac:AdditionalInformationRequestPeriod>
+        <cbc:EndDate>2023-10-02+01:00</cbc:EndDate>
+        <cbc:EndTime>10:10:10+01:00</cbc:EndTime>
+      </cac:AdditionalInformationRequestPeriod>
+      <cac:NoticeDocumentReference>
+        <cbc:ID/>
+        <cbc:ReferencedDocumentInternalAddress/>
+      </cac:NoticeDocumentReference>
+      <cac:ContractingSystem>
+        <cbc:ContractingSystemTypeCode listName="framework-agreement">fa-mix</cbc:ContractingSystemTypeCode>
+      </cac:ContractingSystem>
+    </cac:TenderingProcess>
+    <cac:ProcurementProject>
+      <cbc:ID/>
+      <cbc:Name/>
+      <cbc:Description/>
+      <cbc:ProcurementTypeCode listName="contract-nature">services</cbc:ProcurementTypeCode>
+      <cbc:Note/>
+      <cbc:SMESuitableIndicator>true</cbc:SMESuitableIndicator>
+      <cac:ProcurementAdditionalType>
+        <cbc:ProcurementTypeCode listName="contract-nature">works</cbc:ProcurementTypeCode>
+        <cbc:ProcurementType/>
+      </cac:ProcurementAdditionalType>
+      <cac:RequestedTenderTotal>
+        <cbc:EstimatedOverallContractAmount currencyID="EUR">1</cbc:EstimatedOverallContractAmount>
+      </cac:RequestedTenderTotal>
+      <cac:MainCommodityClassification>
+        <cbc:ItemClassificationCode listName="cpv">50420000</cbc:ItemClassificationCode>
+      </cac:MainCommodityClassification>
+      <cac:AdditionalCommodityClassification>
+        <cbc:ItemClassificationCode listName="cpv">98513300</cbc:ItemClassificationCode>
+      </cac:AdditionalCommodityClassification>
+      <cac:RealizedLocation>
+        <cbc:Description/>
+        <cac:Address>
+          <cbc:StreetName/>
+          <cbc:AdditionalStreetName/>
+          <cbc:CityName/>
+          <cbc:PostalZone/>
+          <cbc:CountrySubentityCode/>
+          <cbc:Region/>
+          <cac:AddressLine>
+            <cbc:Line/>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode/>
+          </cac:Country>
+        </cac:Address>
+      </cac:RealizedLocation>
+      <cac:PlannedPeriod>
+        <cbc:StartDate>2023-10-02+01:00</cbc:StartDate>
+        <cbc:EndDate>2023-10-02+01:00</cbc:EndDate>
+        <cbc:DurationMeasure unitCode="MONTH">2</cbc:DurationMeasure>
+        <cbc:DescriptionCode/>
+      </cac:PlannedPeriod>
+    </cac:ProcurementProject>
+  </cac:ProcurementProjectLot>
   <cac:ProcurementProjectLot>
     <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
     <cac:TenderingTerms>

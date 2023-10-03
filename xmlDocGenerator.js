@@ -1,5 +1,6 @@
 import xml2js from 'xml2js';
 import { fileReader, fileSaver } from './fileSystemManager.js';
+import fs from 'fs';
 const parseString = xml2js.parseString;
 const builder = new xml2js.Builder({ renderOpts: { 'pretty': true, 'indent': '  ', 'newline': '\n', allowEmpty: true } });
 
@@ -11,7 +12,7 @@ export default class XmlDocGenerator {
   }
 
   xmlGenerator() {
-    const XMLData = fileReader("sample", this.filename);
+    const XMLData = fs.readFileSync(`sample\\${this.filename}`);
     let xml;
     parseString(XMLData, (err, xmlObj) => {
       try {
@@ -29,6 +30,10 @@ export default class XmlDocGenerator {
   xmlToJson() {
     let contractType = Object.keys(this.xmlJson)[0];
     return this.xmlJson[contractType];
+  }
+
+  getXmlRoot() {
+    return this.xmlJson;
   }
 
   async xmlSaver(dir) {
