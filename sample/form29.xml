@@ -463,7 +463,7 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">d9d83656-f882-4782-9acc-9a6d6e77eda6</cbc:ID>
+  <cbc:ID schemeName="notice-id">44dd23f2-c4db-4ed9-8158-b5e4b36a5ab1</cbc:ID>
   <cbc:ContractFolderID>314792be-3af9-4859-99ae-9ee97189b622</cbc:ContractFolderID>
   <cbc:IssueDate>2023-09-14+01:00</cbc:IssueDate>
   <cbc:IssueTime>14:00:00+01:00</cbc:IssueTime>
@@ -485,7 +485,9 @@
     </cac:ContractingActivity>
     <cac:Party>
       <cac:PartyIdentification>
-        <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
+        <cbc:ID schemeName="organization">
+        ORG-0001
+        </cbc:ID>
       </cac:PartyIdentification>
       <cac:ServiceProviderParty>
         <cbc:ServiceTypeCode listName="service-provider-type">ted-esen</cbc:ServiceTypeCode>
@@ -805,17 +807,17 @@
                         <efbc:ReasonDescription languageID='POR'></efbc:ReasonDescription>
                         <efbc:PublicationDate>2023-09-14+01:00</efbc:PublicationDate>
                       </efac:FieldsPrivacy>
-                      <efbc:ParameterCode listName=''></efbc:ParameterCode>
+                      <!-- <efbc:ParameterCode listName=''></efbc:ParameterCode>
                       <efbc:ParameterNumeric>2</efbc:ParameterNumeric>
-                    </efac:AwardCriterionParameter>
-                    <efac:AwardCriterionParameter>
+                      </efac:AwardCriterionParameter>
+                      <efac:AwardCriterionParameter> -->
                       <efac:FieldsPrivacy>
                         <efbc:FieldIdentifierCode listName='non-publication-identifier'>awa-cri-wei</efbc:FieldIdentifierCode>
                         <cbc:ReasonCode listName='non-publication-justification'></cbc:ReasonCode>
                         <efbc:ReasonDescription languageID='POR'></efbc:ReasonDescription>
                         <efbc:PublicationDate>2023-09-14+01:00</efbc:PublicationDate>
                       </efac:FieldsPrivacy>
-                      <efbc:ParameterCode listName='number-weight'></efbc:ParameterCode>
+                      <efbc:ParameterCode listName='number-weight'>dec-mid</efbc:ParameterCode>
                       <efbc:ParameterNumeric>2</efbc:ParameterNumeric>
                     </efac:AwardCriterionParameter>
                     <efac:AwardCriterionParameter>

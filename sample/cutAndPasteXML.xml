@@ -1,792 +1,426 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ContractAwardNotice xmlns="urn:oasis:names:specification:ubl:schema:xsd:ContractAwardNotice-2"
-  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-  xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-  xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1"
-  xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1"
-  xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1"
-  xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
-  <cac:ProcurementLegislationDocumentReference>
-    <cbc:ID/>
-    <cbc:DocumentDescription/>
-  </cac:ProcurementLegislationDocumentReference>
-  <cac:ProcurementLegislationDocumentReference>
-    <cbc:ID/>
-    <cbc:DocumentDescription/>
-  </cac:ProcurementLegislationDocumentReference>
-  <cac:MainCommodityClassification>
-    <cbc:ItemClassificationCode listName="classification-type"/>
-    <cbc:ItemClassificationCode listName="cpv"/>
-  </cac:MainCommodityClassification>
-  <cac:AdditionalCommodityClassification>
-    <cbc:ItemClassificationCode listName="classification-type"/>
-    <cbc:ItemClassificationCode listName="cpv"/>
-  </cac:AdditionalCommodityClassification>
-  <cac:RealizedLocation>
-    <cac:Address>
-      <cbc:StreetName/>
-      <cbc:AdditionalStreetName/>
-      <cac:AddressLine>
-        <cbc:Line/>
-      </cac:AddressLine>
-      <cbc:CityName/>
-      <cbc:PostalZone/>
-      <cbc:CountrySubentityCode listName="nuts-lvl3"/>
-      <cac:Country>
-        <cbc:IdentificationCode listName="eforms-country"/>
-      </cac:Country>
-      <cbc:Region listName="other-place-service"/>
-    </cac:Address>
-    <cbc:Description/>
-  </cac:RealizedLocation>
-  <cac:LotDistribution>
-    <cac:LotsGroup>
-      <cbc:LotsGroupID/>
-      <cac:ProcurementProjectLotReference>
-        <cbc:ID schemeName="Lot"/>
-      </cac:ProcurementProjectLotReference>
-    </cac:LotsGroup>
-  </cac:LotDistribution>
-  <efac:NoticeResult>
-    <efac:FieldsPrivacy>
-      <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-      <efbc:ReasonDescription/>
-      <cbc:ReasonCode listName="non-publication-justification"/>
-      <efbc:PublicationDate/>
-    </efac:FieldsPrivacy>
-    <efac:FieldsPrivacy>
-      <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-      <efbc:ReasonDescription/>
-      <cbc:ReasonCode listName="non-publication-justification"/>
-      <efbc:PublicationDate/>
-    </efac:FieldsPrivacy>
-    <efac:FieldsPrivacy>
-      <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-      <efbc:ReasonDescription/>
-      <cbc:ReasonCode listName="non-publication-justification"/>
-      <efbc:PublicationDate/>
-    </efac:FieldsPrivacy>
-    <efac:GroupFramework>
-      <efac:FieldsPrivacy>
-        <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-        <efbc:ReasonDescription/>
-        <cbc:ReasonCode listName="non-publication-justification"/>
-        <efbc:PublicationDate/>
-      </efac:FieldsPrivacy>
-      <efac:FieldsPrivacy>
-        <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-        <efbc:ReasonDescription/>
-        <cbc:ReasonCode listName="non-publication-justification"/>
-        <efbc:PublicationDate/>
-      </efac:FieldsPrivacy>
-      <efac:FieldsPrivacy>
-        <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-        <efbc:ReasonDescription/>
-        <cbc:ReasonCode listName="non-publication-justification"/>
-        <efbc:PublicationDate/>
-      </efac:FieldsPrivacy>
-      <efac:TenderLot>
-        <cbc:ID/>
-      </efac:TenderLot>
-      <efbc:GroupFrameworkMaximumValueAmount/>
-      <efbc:GroupFrameworkReestimatedValueAmount/>
-    </efac:GroupFramework>
-    <efac:LotResult>
-      <efac:FieldsPrivacy>
-        <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-        <efbc:ReasonDescription/>
-        <cbc:ReasonCode listName="non-publication-justification"/>
-        <efbc:PublicationDate/>
-      </efac:FieldsPrivacy>
-      <efac:DecisionReason>
-        <efac:FieldsPrivacy>
-          <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-          <efbc:ReasonDescription/>
-          <cbc:ReasonCode listName="non-publication-justification"/>
-          <efbc:PublicationDate/>
-        </efac:FieldsPrivacy>
-      </efac:DecisionReason>
-      <efac:FrameworkAgreementValues>
-        <efbc:ReestimatedValueAmount/>
-        <cbc:MaximumValueAmount/>
-      </efac:FrameworkAgreementValues>
-      <efac:StrategicProcurement>
-        <efac:StrategicProcurementInformation>
-          <efac:ProcurementDetails>
-            <efac:StrategicProcurementStatistics>
-              <efbc:StatisticsCode listName="vehicles"/>
-              <efbc:StatisticsNumeric/>
-            </efac:StrategicProcurementStatistics>
-          </efac:ProcurementDetails>
-        </efac:StrategicProcurementInformation>
-      </efac:StrategicProcurement>
-      <efac:FieldsPrivacy>
-        <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-        <efbc:ReasonDescription/>
-        <cbc:ReasonCode listName="non-publication-justification"/>
-        <efbc:PublicationDate/>
-      </efac:FieldsPrivacy>
-      <efac:FieldsPrivacy>
-        <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-        <efbc:ReasonDescription/>
-        <cbc:ReasonCode listName="non-publication-justification"/>
-        <efbc:PublicationDate/>
-      </efac:FieldsPrivacy>
-      <efac:AppealRequestsStatistics>
-        <efac:FieldsPrivacy>
-          <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-          <efbc:ReasonDescription/>
-          <cbc:ReasonCode listName="non-publication-justification"/>
-          <efbc:PublicationDate/>
-        </efac:FieldsPrivacy>
-        <efac:FieldsPrivacy>
-          <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-          <efbc:ReasonDescription/>
-          <cbc:ReasonCode listName="non-publication-justification"/>
-          <efbc:PublicationDate/>
-        </efac:FieldsPrivacy>
-        <efbc:StatisticsCode listName="irregularity-type"/>
-        <efbc:StatisticsNumeric/>
-      </efac:AppealRequestsStatistics>
-      <efac:AppealRequestsStatistics>
-        <efac:FieldsPrivacy>
-          <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-          <efbc:ReasonDescription/>
-          <cbc:ReasonCode listName="non-publication-justification"/>
-          <efbc:PublicationDate/>
-        </efac:FieldsPrivacy>
-        <efbc:StatisticsCode listName="review-type"/>
-        <efbc:StatisticsNumeric/>
-      </efac:AppealRequestsStatistics>
-      <efac:ReceivedSubmissionsStatistics>
-        <efac:FieldsPrivacy>
-          <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-          <efbc:ReasonDescription/>
-          <cbc:ReasonCode listName="non-publication-justification"/>
-          <efbc:PublicationDate/>
-        </efac:FieldsPrivacy>
-        <efac:FieldsPrivacy>
-          <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-          <efbc:ReasonDescription/>
-          <cbc:ReasonCode listName="non-publication-justification"/>
-          <efbc:PublicationDate/>
-        </efac:FieldsPrivacy>
-        <efbc:StatisticsCode listName="received-submission-type"/>
-        <efbc:StatisticsNumeric/>
-      </efac:ReceivedSubmissionsStatistics>
-      <cbc:ID>RES-0001</cbc:ID>
-      <cbc:TenderResultCode listName="winner-selection-status"/>
-      <efac:DecisionReason>
-        <efbc:DecisionReasonCode listName="non-award-justification"/>
-      </efac:DecisionReason>
-      <efac:TenderLot>
-        <cbc:ID/>
-      </efac:TenderLot>
-      <efac:LotTender>
-        <cbc:ID/>
-      </efac:LotTender>
-      <efac:SettledContract>
-        <cbc:ID/>
-      </efac:SettledContract>
-      <efbc:DPSTerminationIndicator/>
-      <cac:FinancingParty>
-        <cac:PartyIdentification>
-          <cbc:ID/>
-        </cac:PartyIdentification>
-      </cac:FinancingParty>
-      <cac:PayerParty>
-        <cac:PartyIdentification>
-          <cbc:ID/>
-        </cac:PartyIdentification>
-      </cac:PayerParty>
-      <cbc:LowerTenderAmount/>
-      <cbc:HigherTenderAmount/>
-    </efac:LotResult>
-    <efac:LotTender>
-      <efac:FieldsPrivacy>
-        <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-        <efbc:ReasonDescription/>
-        <cbc:ReasonCode listName="non-publication-justification"/>
-        <efbc:PublicationDate/>
-      </efac:FieldsPrivacy>
-      <efac:FieldsPrivacy>
-        <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-        <efbc:ReasonDescription/>
-        <cbc:ReasonCode listName="non-publication-justification"/>
-        <efbc:PublicationDate/>
-      </efac:FieldsPrivacy>
-      <efac:FieldsPrivacy>
-        <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-        <efbc:ReasonDescription/>
-        <cbc:ReasonCode listName="non-publication-justification"/>
-        <efbc:PublicationDate/>
-      </efac:FieldsPrivacy>
-      <efac:SubcontractingTerm>
-        <efbc:TermAmount/>
-        <efbc:TermDescription/>
-        <efbc:TermPercent/>
-        <efbc:ValueKnownIndicator/>
-        <efbc:PercentageKnownIndicator/>
-      </efac:SubcontractingTerm>
-      <efac:SubcontractingTerm>
-        <efbc:TermCode listName="applicability"/>
-      </efac:SubcontractingTerm>
-      <cbc:ID>TEN-0001</cbc:ID>
-      <efac:TenderReference>
-        <cbc:ID/>
-      </efac:TenderReference>
-      <efbc:TenderRankedIndicator/>
-      <cbc:RankCode/>
-      <efbc:TenderVariantIndicator/>
-      <cac:LegalMonetaryTotal>
-        <cbc:PayableAmount/>
-      </cac:LegalMonetaryTotal>
-      <efac:TenderLot>
-        <cbc:ID/>
-      </efac:TenderLot>
-      <efac:TenderingParty>
-        <cbc:ID/>
-      </efac:TenderingParty>
-    </efac:LotTender>
-    <efac:SettledContract>
-      <efac:Funding>
-        <efbc:FinancingIdentifier/>
-        <cbc:FundingProgramCode listName="eu-programme"/>
-      </efac:Funding>
-      <cbc:ID>CON-0001</cbc:ID>
-      <efac:ContractReference>
-        <cbc:ID/>
-      </efac:ContractReference>
-      <cbc:AwardDate/>
-      <cbc:IssueDate/>
-      <cbc:Title/>
-      <cbc:URI/>
-      <efbc:ContractFrameworkIndicator/>
-      <cac:NoticeDocumentReference>
-        <cbc:ID/>
-      </cac:NoticeDocumentReference>
-      <efac:LotTender>
-        <cbc:ID/>
-      </efac:LotTender>
-      <cac:SignatoryParty>
-        <cac:PartyIdentification>
-          <cbc:ID/>
-        </cac:PartyIdentification>
-      </cac:SignatoryParty>
-    </efac:SettledContract>
-    <efac:TenderingParty>
-      <efac:Tenderer>
-        <cbc:ID/>
-        <efbc:GroupLeadIndicator/>
-      </efac:Tenderer>
-      <efac:SubContractor>
-        <cbc:ID/>
-        <efac:MainContractor>
-          <cbc:ID/>
-        </efac:MainContractor>
-      </efac:SubContractor>
-      <cbc:ID>TPA-0001</cbc:ID>
-    </efac:TenderingParty>
-    <cbc:TotalAmount/>
-    <efbc:OverallMaximumFrameworkContractsAmount/>
-    <efbc:OverallApproximateFrameworkContractsAmount/>
-  </efac:NoticeResult>
-  <efac:Change>
-    <efac:ChangedSection>
-      <efbc:ChangedSectionIdentifier/>
-    </efac:ChangedSection>
-    <efbc:ChangeDescription/>
-    <efbc:ProcurementDocumentsChangeIndicator/>
-    <efbc:ProcurementDocumentsChangeDate/>
-  </efac:Change>
-  <efac:Organization>
-    <efac:Company>
-      <cac:PartyIdentification>
-        <cbc:ID>ORG-0001</cbc:ID>
-      </cac:PartyIdentification>
-      <cac:PartyName>
-        <cbc:Name/>
-      </cac:PartyName>
-      <cac:PartyLegalEntity>
-        <cbc:CompanyID/>
-      </cac:PartyLegalEntity>
-      <cbc:WebsiteURI/>
-      <cbc:EndpointID/>
-    </efac:Company>
-    <efac:Company>
-      <efbc:CompanySizeCode listName="economic-operator-size"/>
-    </efac:Company>
-    <efac:TouchPoint>
-      <cac:PostalAddress>
-        <cbc:Department/>
-        <cbc:StreetName/>
-        <cbc:AdditionalStreetName/>
-        <cac:AddressLine>
-          <cbc:Line/>
-        </cac:AddressLine>
-        <cbc:CityName/>
-        <cbc:PostalZone/>
-        <cbc:CountrySubentityCode listName="nuts-lvl3"/>
-        <cac:Country>
-          <cbc:IdentificationCode listName="eforms-country"/>
-        </cac:Country>
-      </cac:PostalAddress>
-      <cac:Contact>
-        <cbc:Name/>
-        <cbc:ElectronicMail/>
-        <cbc:Telephone/>
-        <cbc:Telefax/>
-      </cac:Contact>
-      <cac:PartyIdentification>
-        <cbc:ID>TPO-0001</cbc:ID>
-      </cac:PartyIdentification>
-      <cac:PartyName>
-        <cbc:Name/>
-      </cac:PartyName>
-      <cbc:WebsiteURI/>
-      <cbc:EndpointID/>
-    </efac:TouchPoint>
-    <efbc:GroupLeadIndicator/>
-    <efbc:AwardingCPBIndicator/>
-    <efbc:AcquiringCPBIndicator/>
-    <efbc:NaturalPersonIndicator/>
-    <efac:UltimateBeneficialOwner>
-      <cbc:ID/>
-    </efac:UltimateBeneficialOwner>
-    <efbc:ListedOnRegulatedMarketIndicator/>
-  </efac:Organization>
-  <efac:UltimateBeneficialOwner>
-    <cac:Contact>
-      <cbc:ElectronicMail/>
-      <cbc:Telephone/>
-      <cbc:Telefax/>
-    </cac:Contact>
-    <cac:ResidenceAddress>
-      <cbc:CountrySubentityCode listName="nuts-lvl3"/>
-      <cbc:StreetName/>
-      <cbc:AdditionalStreetName/>
-      <cac:AddressLine>
-        <cbc:Line/>
-      </cac:AddressLine>
-      <cbc:PostalZone/>
-      <cbc:CityName/>
-      <cac:Country>
-        <cbc:IdentificationCode listName="eforms-country"/>
-      </cac:Country>
-    </cac:ResidenceAddress>
-    <cbc:ID>UBO-0001</cbc:ID>
-    <cbc:FamilyName/>
-    <cbc:FirstName/>
-    <efac:Nationality>
-      <cbc:NationalityID listName="eforms-country"/>
-    </efac:Nationality>
-  </efac:UltimateBeneficialOwner>
-  <ext:UBLExtensions>
-    <ext:UBLExtension>
-      <ext:ExtensionContent>
-        <efext:EformsExtension>
-          <efac:NoticeSubType>
-            <cbc:SubTypeCode listName="notice-subtype">29</cbc:SubTypeCode>
-          </efac:NoticeSubType>
-          <efac:FieldsPrivacy>
-            <efbc:FieldIdentifierCode listName="non-publication-identifier">awa-cri-des</efbc:FieldIdentifierCode>
-            <efbc:ReasonDescription/>
-            <cbc:ReasonCode listName="non-publication-justification"/>
-            <efbc:PublicationDate/>
-          </efac:FieldsPrivacy>
-          <efac:FieldsPrivacy>
-            <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-            <efbc:ReasonDescription/>
-            <cbc:ReasonCode listName="non-publication-justification"/>
-            <efbc:PublicationDate/>
-          </efac:FieldsPrivacy>
-          <efac:FieldsPrivacy>
-            <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-            <efbc:ReasonDescription/>
-            <cbc:ReasonCode listName="non-publication-justification"/>
-            <efbc:PublicationDate/>
-          </efac:FieldsPrivacy>
-          <efac:FieldsPrivacy>
-            <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-            <efbc:ReasonDescription/>
-            <cbc:ReasonCode listName="non-publication-justification"/>
-            <efbc:PublicationDate/>
-          </efac:FieldsPrivacy>
-          <efac:FieldsPrivacy>
-            <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-            <efbc:ReasonDescription/>
-            <cbc:ReasonCode listName="non-publication-justification"/>
-            <efbc:PublicationDate/>
-          </efac:FieldsPrivacy>
-          <efac:FieldsPrivacy>
-            <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-            <efbc:ReasonDescription/>
-            <cbc:ReasonCode listName="non-publication-justification"/>
-            <efbc:PublicationDate/>
-          </efac:FieldsPrivacy>
-          <efac:FieldsPrivacy>
-            <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-            <efbc:ReasonDescription/>
-            <cbc:ReasonCode listName="non-publication-justification"/>
-            <efbc:PublicationDate/>
-          </efac:FieldsPrivacy>
-        </efext:EformsExtension>
-      </ext:ExtensionContent>
-    </ext:UBLExtension>
-  </ext:UBLExtensions>
-  <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
-  <cbc:CustomizationID>eforms-sdk-1.7.0</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">eec7ab88-ba36-4375-a160-bed179a45413</cbc:ID>
-  <cbc:ContractFolderID/>
-  <cbc:IssueDate/>
-  <cbc:IssueTime/>
-  <cbc:VersionID>01</cbc:VersionID>
-  <cbc:RequestedPublicationDate/>
-  <cbc:RegulatoryDomain listName="eforms-legal-basis"/>
-  <cbc:NoticeTypeCode listName="notice-type"/>
-  <cbc:NoticeTypeCode listName="form-type"/>
-  <cbc:NoticeLanguageCode listName="eu-official-language"/>
-  <cac:AdditionalNoticeLanguage>
-    <cbc:ID listName="eu-official-language"/>
-  </cac:AdditionalNoticeLanguage>
-  <cac:ContractingParty>
-    <cac:ServiceProviderParty>
-      <cac:Party>
-        <cac:PartyIdentification>
-          <cbc:ID/>
-        </cac:PartyIdentification>
-      </cac:Party>
-      <cbc:ServiceTypeCode listName="organisation-role-service"/>
-    </cac:ServiceProviderParty>
-    <cbc:BuyerProfileURI/>
-    <cac:ContractingPartyType>
-      <cbc:PartyTypeCode listName="eforms-buyer-legal-type"/>
-    </cac:ContractingPartyType>
-    <cac:ContractingActivity>
-      <cbc:ActivityTypeCode listName="authority-activity"/>
-    </cac:ContractingActivity>
-    <cac:Party>
-      <cac:PartyIdentification>
-        <cbc:ID/>
-      </cac:PartyIdentification>
-    </cac:Party>
-  </cac:ContractingParty>
-  <cac:TenderingTerms>
-    <cac:ProcurementLegislationDocumentReference>
-      <cbc:ID/>
-      <cbc:DocumentDescription/>
-    </cac:ProcurementLegislationDocumentReference>
-  </cac:TenderingTerms>
-  <cac:TenderingProcess>
-    <ext:UBLExtensions>
-      <ext:UBLExtension>
-        <ext:ExtensionContent>
-          <efext:EformsExtension>
-            <efbc:ProcedureRelaunchIndicator/>
-          </efext:EformsExtension>
-        </ext:ExtensionContent>
-      </ext:UBLExtension>
-    </ext:UBLExtensions>
-    <cbc:Description/>
-    <cbc:ProcedureCode listName="procurement-procedure-type"/>
-    <cbc:TerminatedIndicator/>
-    <cac:NoticeDocumentReference>
-      <cbc:ID/>
-    </cac:NoticeDocumentReference>
-  </cac:TenderingProcess>
-  <cac:ProcurementProject>
-    <cbc:ID/>
-    <cbc:Name/>
-    <cbc:Description/>
-    <cbc:ProcurementTypeCode listName="eforms-contract-nature"/>
-    <cbc:Note/>
-    <cac:ProcurementAdditionalType>
-      <cbc:ProcurementTypeCode listName="eforms-contract-nature"/>
-    </cac:ProcurementAdditionalType>
-    <cac:RequestedTenderTotal>
-      <cbc:EstimatedOverallContractAmount/>
-    </cac:RequestedTenderTotal>
-  </cac:ProcurementProject>
-  <cac:ProcurementProjectLot>
-    <cac:AwardingCriterion>
-      <cac:SubordinateAwardingCriterion>
-        <efac:FieldsPrivacy>
-          <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-          <efbc:ReasonDescription/>
-          <cbc:ReasonCode listName="non-publication-justification"/>
-          <efbc:PublicationDate/>
-        </efac:FieldsPrivacy>
-        <efac:FieldsPrivacy>
-          <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-          <efbc:ReasonDescription/>
-          <cbc:ReasonCode listName="non-publication-justification"/>
-          <efbc:PublicationDate/>
-        </efac:FieldsPrivacy>
-        <ext:UBLExtensions>
-          <ext:UBLExtension>
-            <ext:ExtensionContent>
-              <efext:EformsExtension>
-                <efac:AwardCriterionParameter>
-                  <efac:FieldsPrivacy>
-                    <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                    <efbc:ReasonDescription/>
-                    <cbc:ReasonCode listName="non-publication-justification"/>
-                    <efbc:PublicationDate/>
-                  </efac:FieldsPrivacy>
-                  <efac:AwardCriterionParameter>
-                    <efac:FieldsPrivacy>
-                      <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                      <efbc:ReasonDescription/>
-                      <cbc:ReasonCode listName="non-publication-justification"/>
-                      <efbc:PublicationDate/>
-                    </efac:FieldsPrivacy>
-                  </efac:AwardCriterionParameter>
-                  <efac:AwardCriterionParameter>
-                    <efac:FieldsPrivacy>
-                      <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                      <efbc:ReasonDescription/>
-                      <cbc:ReasonCode listName="non-publication-justification"/>
-                      <efbc:PublicationDate/>
-                    </efac:FieldsPrivacy>
-                  </efac:AwardCriterionParameter>
-                  <efac:AwardCriterionParameter>
-                    <efac:FieldsPrivacy>
-                      <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                      <efbc:ReasonDescription/>
-                      <cbc:ReasonCode listName="non-publication-justification"/>
-                      <efbc:PublicationDate/>
-                    </efac:FieldsPrivacy>
-                  </efac:AwardCriterionParameter>
-                  <efbc:ParameterNumeric/>
-                  <efbc:ParameterCode listName="number-weight"/>
-                  <efbc:ParameterCode listName="number-fixed"/>
-                  <efbc:ParameterCode listName="number-threshold"/>
-                </efac:AwardCriterionParameter>
-              </efext:EformsExtension>
-            </ext:ExtensionContent>
-          </ext:UBLExtension>
-        </ext:UBLExtensions>
-        <efac:FieldsPrivacy>
-          <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-          <efbc:ReasonDescription/>
-          <cbc:ReasonCode listName="non-publication-justification"/>
-          <efbc:PublicationDate/>
-        </efac:FieldsPrivacy>
-        <cbc:AwardingCriterionTypeCode listName="award-criterion-type"/>
-        <cbc:Description/>
-        <cbc:Name/>
-      </cac:SubordinateAwardingCriterion>
-      <ext:UBLExtensions>
-        <ext:UBLExtension>
-          <ext:ExtensionContent>
-            <efext:EformsExtension>
-              <efac:FieldsPrivacy>
-                <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                <efbc:ReasonDescription/>
-                <cbc:ReasonCode listName="non-publication-justification"/>
-                <efbc:PublicationDate/>
-              </efac:FieldsPrivacy>
-              <efac:FieldsPrivacy>
-                <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                <efbc:ReasonDescription/>
-                <cbc:ReasonCode listName="non-publication-justification"/>
-                <efbc:PublicationDate/>
-              </efac:FieldsPrivacy>
-            </efext:EformsExtension>
-          </ext:ExtensionContent>
-        </ext:UBLExtension>
-      </ext:UBLExtensions>
-      <cbc:CalculationExpression/>
-      <cbc:Description/>
-    </cac:AwardingCriterion>
-    <cac:TenderingTerms>
-      <cac:AdditionalInformationParty>
-        <cac:PartyIdentification>
-          <cbc:ID/>
-        </cac:PartyIdentification>
-      </cac:AdditionalInformationParty>
-      <cac:DocumentProviderParty>
-        <cac:PartyIdentification>
-          <cbc:ID/>
-        </cac:PartyIdentification>
-      </cac:DocumentProviderParty>
-    </cac:TenderingTerms>
-    <cac:TenderingProcess>
-      <cac:MainCommodityClassification>
-        <cbc:ItemClassificationCode listName="classification-type"/>
-        <cbc:ItemClassificationCode listName="cpv"/>
-      </cac:MainCommodityClassification>
-      <cac:AdditionalCommodityClassification>
-        <cbc:ItemClassificationCode listName="classification-type"/>
-        <cbc:ItemClassificationCode listName="cpv"/>
-      </cac:AdditionalCommodityClassification>
-      <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="strategic-procurement"/>
-        <cbc:ProcurementType/>
-      </cac:ProcurementAdditionalType>
-      <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="accessibility"/>
-        <cbc:ProcurementType/>
-      </cac:ProcurementAdditionalType>
-      <cac:RealizedLocation>
-        <cac:Address>
-          <cbc:StreetName/>
-          <cbc:AdditionalStreetName/>
-          <cac:AddressLine>
-            <cbc:Line/>
-          </cac:AddressLine>
-          <cbc:CityName/>
-          <cbc:PostalZone/>
-          <cbc:CountrySubentityCode listName="nuts-lvl3"/>
-          <cac:Country>
-            <cbc:IdentificationCode listName="eforms-country"/>
-          </cac:Country>
-          <cbc:Region listName="other-place-service"/>
-        </cac:Address>
-        <cbc:Description/>
-      </cac:RealizedLocation>
-      <cac:Renewal>
-        <cac:Period>
-          <cbc:Description/>
-        </cac:Period>
-      </cac:Renewal>
-      <ext:UBLExtensions>
-        <ext:UBLExtension>
-          <ext:ExtensionContent>
-            <efext:EformsExtension>
-              <efbc:ProcedureRelaunchIndicator/>
-            </efext:EformsExtension>
-          </ext:ExtensionContent>
-        </ext:UBLExtension>
-      </ext:UBLExtensions>
-      <cbc:GovernmentAgreementConstraintIndicator/>
-      <cac:NoticeDocumentReference>
-        <cbc:ID/>
-        <cbc:ReferencedDocumentInternalAddress/>
-      </cac:NoticeDocumentReference>
-      <cac:AuctionTerms>
-        <cbc:AuctionConstraintIndicator/>
-      </cac:AuctionTerms>
-      <cac:FrameworkAgreement>
-        <cac:SubsequentProcessTenderRequirement>
-          <cbc:Name listName="buyer-categories"/>
-          <cbc:Description/>
-        </cac:SubsequentProcessTenderRequirement>
-      </cac:FrameworkAgreement>
-      <cac:ContractingSystem>
-        <cbc:ContractingSystemTypeCode listName="framework-agreement"/>
-      </cac:ContractingSystem>
-      <cac:ContractingSystem>
-        <cbc:ContractingSystemTypeCode listName="dps-usage"/>
-      </cac:ContractingSystem>
-    </cac:TenderingProcess>
-  </cac:ProcurementProjectLot>
-  <cac:ProcurementProjectLot>
-    <cac:AwardingCriterion>
-      <cac:SubordinateAwardingCriterion>
-        <efac:FieldsPrivacy>
-          <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-          <efbc:ReasonDescription/>
-          <cbc:ReasonCode listName="non-publication-justification"/>
-          <efbc:PublicationDate/>
-        </efac:FieldsPrivacy>
-        <efac:FieldsPrivacy>
-          <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-          <efbc:ReasonDescription/>
-          <cbc:ReasonCode listName="non-publication-justification"/>
-          <efbc:PublicationDate/>
-        </efac:FieldsPrivacy>
-        <ext:UBLExtensions>
-          <ext:UBLExtension>
-            <ext:ExtensionContent>
-              <efext:EformsExtension>
-                <efac:AwardCriterionParameter>
-                  <efac:FieldsPrivacy>
-                    <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                    <efbc:ReasonDescription/>
-                    <cbc:ReasonCode listName="non-publication-justification"/>
-                    <efbc:PublicationDate/>
-                  </efac:FieldsPrivacy>
-                  <efac:AwardCriterionParameter>
-                    <efac:FieldsPrivacy>
-                      <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                      <efbc:ReasonDescription/>
-                      <cbc:ReasonCode listName="non-publication-justification"/>
-                      <efbc:PublicationDate/>
-                    </efac:FieldsPrivacy>
-                  </efac:AwardCriterionParameter>
-                  <efac:AwardCriterionParameter>
-                    <efac:FieldsPrivacy>
-                      <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                      <efbc:ReasonDescription/>
-                      <cbc:ReasonCode listName="non-publication-justification"/>
-                      <efbc:PublicationDate/>
-                    </efac:FieldsPrivacy>
-                  </efac:AwardCriterionParameter>
-                  <efac:AwardCriterionParameter>
-                    <efac:FieldsPrivacy>
-                      <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                      <efbc:ReasonDescription/>
-                      <cbc:ReasonCode listName="non-publication-justification"/>
-                      <efbc:PublicationDate/>
-                    </efac:FieldsPrivacy>
-                  </efac:AwardCriterionParameter>
-                  <efbc:ParameterNumeric/>
-                  <efbc:ParameterCode listName="number-weight"/>
-                  <efbc:ParameterCode listName="number-fixed"/>
-                  <efbc:ParameterCode listName="number-threshold"/>
-                </efac:AwardCriterionParameter>
-              </efext:EformsExtension>
-            </ext:ExtensionContent>
-          </ext:UBLExtension>
-        </ext:UBLExtensions>
-        <efac:FieldsPrivacy>
-          <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-          <efbc:ReasonDescription/>
-          <cbc:ReasonCode listName="non-publication-justification"/>
-          <efbc:PublicationDate/>
-        </efac:FieldsPrivacy>
-        <cbc:AwardingCriterionTypeCode listName="award-criterion-type"/>
-        <cbc:Description/>
-        <cbc:Name/>
-      </cac:SubordinateAwardingCriterion>
-      <ext:UBLExtensions>
-        <ext:UBLExtension>
-          <ext:ExtensionContent>
-            <efext:EformsExtension>
-              <efac:FieldsPrivacy>
-                <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                <efbc:ReasonDescription/>
-                <cbc:ReasonCode listName="non-publication-justification"/>
-                <efbc:PublicationDate/>
-              </efac:FieldsPrivacy>
-              <efac:FieldsPrivacy>
-                <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                <efbc:ReasonDescription/>
-                <cbc:ReasonCode listName="non-publication-justification"/>
-                <efbc:PublicationDate/>
-              </efac:FieldsPrivacy>
-            </efext:EformsExtension>
-          </ext:ExtensionContent>
-        </ext:UBLExtension>
-      </ext:UBLExtensions>
-      <cbc:CalculationExpression/>
-      <cbc:Description/>
-    </cac:AwardingCriterion>
-    <cbc:ID>GLO-0001</cbc:ID>
-    <cac:TenderingProcess>
-      <cac:FrameworkAgreement>
-        <cbc:EstimatedMaximumValueAmount/>
-      </cac:FrameworkAgreement>
-    </cac:TenderingProcess>
-    <cac:ProcurementProject>
-      <cbc:ID/>
-      <cbc:Name/>
-      <cbc:Description/>
-      <cbc:Note/>
-    </cac:ProcurementProject>
-  </cac:ProcurementProjectLot>
-  <cac:TenderResult>
-    <cbc:AwardDate/>
-  </cac:TenderResult>
-</ContractAwardNotice>
+<Form xmlns__ext=""
+  xmlns__cbc=""
+  xmlns__cac=""
+  xmlns__efext=""
+  xmlns__efac=""
+  xmlns__efbc=""
+  xmlns__xsi=""
+  xmlns="">
+  <UBLExtensions>
+    <UBLExtension>
+      <ExtensionContent>
+        <EformsExtension>
+          <Changes>
+            <ChangedNoticeIdentifier></ChangedNoticeIdentifier>
+            <Change>
+            </Change>
+            <ChangeReason>
+              <ReasonCode listName="">
+
+              </ReasonCode>
+              <ReasonDescription languageID="">
+
+              </ReasonDescription>
+            </ChangeReason>
+          </Changes>
+          <NoticeResult>
+            <FieldsPrivacy>
+              <FieldIdentifierCode listName="">
+
+              </FieldIdentifierCode>
+              <ReasonDescription languageID="">
+
+              </ReasonDescription>
+              <ReasonCode listName="">
+
+              </ReasonCode>
+              <PublicationDate></PublicationDate>
+            </FieldsPrivacy>
+            <FieldsPrivacy2>
+              <FieldIdentifierCode listName="">
+
+              </FieldIdentifierCode>
+              <ReasonDescription languageID="">
+
+              </ReasonDescription>
+              <ReasonCode listName="">
+
+              </ReasonCode>
+              <PublicationDate></PublicationDate>
+            </FieldsPrivacy2>
+            <FieldsPrivacy3>
+              <FieldIdentifierCode listName="">
+
+              </FieldIdentifierCode>
+              <ReasonDescription languageID="">
+
+              </ReasonDescription>
+              <ReasonCode listName="">
+
+              </ReasonCode>
+              <PublicationDate></PublicationDate>
+            </FieldsPrivacy3>
+            <TotalAmount currencyID="">
+
+            </TotalAmount>
+            <OverallApproximateFrameworkContractsAmount currencyID="">
+
+            </OverallApproximateFrameworkContractsAmount>
+            <OverallMaximumFrameworkContractsAmount currencyID="">
+
+            </OverallMaximumFrameworkContractsAmount>
+            <GroupFramework>
+            </GroupFramework>
+            <LotResult>
+            </LotResult>
+            <LotTender>
+            </LotTender>
+            <SettledContract>
+            </SettledContract>
+            <TenderingParty>
+            </TenderingParty>
+          </NoticeResult>
+          <NoticeSubType>
+            <SubTypeCode listName="notice-subtype">
+
+            </SubTypeCode>
+          </NoticeSubType>
+          <Organizations>
+            <Organization>
+            </Organization>
+            <UltimateBeneficialOwner>
+            </UltimateBeneficialOwner>
+          </Organizations>
+          <Publication>
+            <NoticePublicationID schemeName="">
+
+            </NoticePublicationID>
+            <GazetteID schemeName="">
+
+            </GazetteID>
+            <PublicationDate></PublicationDate>
+          </Publication>
+        </EformsExtension>
+      </ExtensionContent>
+    </UBLExtension>
+  </UBLExtensions>
+  <UBLVersionID>2.3</UBLVersionID>
+  <CustomizationID>eforms-sdk-1.7</CustomizationID>
+  <IDForm schemeName="notice-id">
+
+  </IDForm>
+  <ContractFolderID></ContractFolderID>
+  <IssueDate>2023-10-12+01:00</IssueDate>
+  <IssueTime>16:17:49+01:00</IssueTime>
+  <VersionID>01</VersionID>
+  <RequestedPublicationDate>2023-10-14+01:00</RequestedPublicationDate>
+  <RegulatoryDomain></RegulatoryDomain>
+  <NoticeTypeCode listName="">
+
+  </NoticeTypeCode>
+  <NoticeLanguageCode>POR</NoticeLanguageCode>
+  <ContractingParty>
+  </ContractingParty>
+  <TenderingTerms>
+    <ProcurementLegislationDocumentReference>
+      <ProcurementLegislationDocumentReference>
+        <ID>2</ID>
+        <DocumentDescription languageID="POR">
+					3
+        </DocumentDescription>
+      </ProcurementLegislationDocumentReference>
+    </ProcurementLegislationDocumentReference>
+    <ProcurementLegislationDocumentReference3>
+      <ID schemeName="notice-id">
+
+      </ID>
+      <DocumentDescription languageID="">
+
+      </DocumentDescription>
+      <UBLExtensions>
+        <UBLExtension>
+          <ExtensionContent>
+            <EformsExtension>
+              <FieldsPrivacy>
+                <FieldIdentifierCode listName="">
+
+                </FieldIdentifierCode>
+                <ReasonDescription languageID="">
+
+                </ReasonDescription>
+                <ReasonCode listName="">
+
+                </ReasonCode>
+                <PublicationDate></PublicationDate>
+              </FieldsPrivacy>
+            </EformsExtension>
+          </ExtensionContent>
+        </UBLExtension>
+      </UBLExtensions>
+    </ProcurementLegislationDocumentReference3>
+    <ProcurementLegislationDocumentReference2>
+      <ProcurementLegislationDocumentReference5>
+        <ID schemeName="LocalLegalBasis">
+					4
+        </ID>
+        <DocumentDescription languageID="POR">
+					5
+        </DocumentDescription>
+      </ProcurementLegislationDocumentReference5>
+    </ProcurementLegislationDocumentReference2>
+    <TendererQualificationRequest>
+      <SpecificTendererRequirement>
+        <SpecificTendererRequirement2>
+          <TendererRequirementTypeCode listName="exclusion-ground">
+
+          </TendererRequirementTypeCode>
+          <Description languageID="POR">
+
+          </Description>
+        </SpecificTendererRequirement2>
+      </SpecificTendererRequirement>
+    </TendererQualificationRequest>
+    <LotDistribution>
+      <MaximumLotsAwardedNumeric>0</MaximumLotsAwardedNumeric>
+      <MaximumLotsSubmittedNumeric>0</MaximumLotsSubmittedNumeric>
+      <LotsGroup>
+        <LotsGroup>
+          <LotsGroupID schemeName="notice-id">
+
+          </LotsGroupID>
+          <ProcurementProjectLotReference>
+          </ProcurementProjectLotReference>
+        </LotsGroup>
+      </LotsGroup>
+    </LotDistribution>
+  </TenderingTerms>
+  <TenderingProcess>
+    <UBLExtensions>
+      <UBLExtension>
+        <ExtensionContent>
+          <EformsExtension>
+            <ProcedureRelaunchIndicator></ProcedureRelaunchIndicator>
+            <FieldsPrivacy2>
+              <FieldIdentifierCode listName="">
+
+              </FieldIdentifierCode>
+              <ReasonDescription languageID="">
+
+              </ReasonDescription>
+              <ReasonCode listName="">
+
+              </ReasonCode>
+              <PublicationDate></PublicationDate>
+            </FieldsPrivacy2>
+            <FieldsPrivacy>
+              <FieldIdentifierCode listName="">
+
+              </FieldIdentifierCode>
+              <ReasonDescription languageID="">
+
+              </ReasonDescription>
+              <ReasonCode listName="">
+
+              </ReasonCode>
+              <PublicationDate></PublicationDate>
+            </FieldsPrivacy>
+          </EformsExtension>
+        </ExtensionContent>
+      </UBLExtension>
+    </UBLExtensions>
+    <Description languageID="">
+
+    </Description>
+    <ProcedureCode listName="">
+
+    </ProcedureCode>
+    <PartPresentationCode listName="">
+
+    </PartPresentationCode>
+    <TerminatedIndicator></TerminatedIndicator>
+    <NoticeDocumentReference>
+      <NoticeDocumentReference2>
+        <ID schemeName="ojs-notice-id">
+					1
+        </ID>
+      </NoticeDocumentReference2>
+    </NoticeDocumentReference>
+    <ProcessJustification>
+      <UBLExtensions>
+        <UBLExtension>
+          <ExtensionContent>
+            <EformsExtension>
+              <FieldsPrivacy2>
+                <FieldIdentifierCode listName="">
+
+                </FieldIdentifierCode>
+                <ReasonDescription languageID="">
+
+                </ReasonDescription>
+                <ReasonCode listName="">
+
+                </ReasonCode>
+                <PublicationDate></PublicationDate>
+              </FieldsPrivacy2>
+              <FieldsPrivacy>
+                <FieldIdentifierCode listName="">
+
+                </FieldIdentifierCode>
+                <ReasonDescription languageID="">
+
+                </ReasonDescription>
+                <ReasonCode listName="">
+
+                </ReasonCode>
+                <PublicationDate></PublicationDate>
+              </FieldsPrivacy>
+            </EformsExtension>
+          </ExtensionContent>
+        </UBLExtension>
+      </UBLExtensions>
+      <ProcessReasonCode listName="">
+
+      </ProcessReasonCode>
+      <ProcessReason languageID="">
+
+      </ProcessReason>
+    </ProcessJustification>
+    <ProcessJustification2>
+      <UBLExtensions>
+        <UBLExtension>
+          <ExtensionContent>
+            <EformsExtension>
+              <FieldsPrivacy>
+                <FieldIdentifierCode listName="">
+
+                </FieldIdentifierCode>
+                <ReasonDescription languageID="">
+
+                </ReasonDescription>
+                <ReasonCode listName="">
+
+                </ReasonCode>
+                <PublicationDate></PublicationDate>
+              </FieldsPrivacy>
+              <FieldsPrivacy2>
+                <FieldIdentifierCode listName="">
+
+                </FieldIdentifierCode>
+                <ReasonDescription languageID="">
+
+                </ReasonDescription>
+                <ReasonCode listName="">
+
+                </ReasonCode>
+                <PublicationDate></PublicationDate>
+              </FieldsPrivacy2>
+              <FieldsPrivacy3>
+                <FieldIdentifierCode listName="">
+
+                </FieldIdentifierCode>
+                <ReasonDescription languageID="">
+
+                </ReasonDescription>
+                <ReasonCode listName="">
+
+                </ReasonCode>
+                <PublicationDate></PublicationDate>
+              </FieldsPrivacy3>
+            </EformsExtension>
+          </ExtensionContent>
+        </UBLExtension>
+      </UBLExtensions>
+      <ProcessReasonCode listName="">
+
+      </ProcessReasonCode>
+      <ProcessReason languageID="">
+
+      </ProcessReason>
+      <Description></Description>
+    </ProcessJustification2>
+  </TenderingProcess>
+  <PlannedDate></PlannedDate>
+  <ProcurementProject>
+    <ID schemeName="notice-id">
+			6
+    </ID>
+    <Name languageID="">
+			7
+    </Name>
+    <Description languageID="">
+			8
+    </Description>
+    <ProcurementTypeCode listName="">
+			supplies
+    </ProcurementTypeCode>
+    <Note languageID="">
+
+    </Note>
+    <ProcurementAdditionalType>
+      <ProcurementAdditionalType>
+        <ProcurementTypeCode listName="contract-nature">
+					supplies
+        </ProcurementTypeCode>
+      </ProcurementAdditionalType>
+    </ProcurementAdditionalType>
+    <RequestedTenderTotal>
+      <UBLExtensions>
+        <UBLExtension>
+          <ExtensionContent>
+            <EformsExtension>
+              <FrameworkMaximumAmount currencyID="">
+								10
+              </FrameworkMaximumAmount>
+            </EformsExtension>
+          </ExtensionContent>
+        </UBLExtension>
+      </UBLExtensions>
+      <EstimatedOverallContractAmount currencyID="">
+				9
+      </EstimatedOverallContractAmount>
+    </RequestedTenderTotal>
+    <MainCommodityClassification>
+      <ItemClassificationCode listName="cpv">
+				03100000
+      </ItemClassificationCode>
+    </MainCommodityClassification>
+    <MainCommodityClassificationList>
+    </MainCommodityClassificationList>
+    <AdditionalCommodityClassification>
+      <AddittionalCommodityClassification>
+        <ItemClassificationCode listName="cpv">
+					03100000
+        </ItemClassificationCode>
+      </AddittionalCommodityClassification>
+    </AdditionalCommodityClassification>
+    <RealizedLocation>
+      <RealizedLocation>
+        <Description languageID="POR">
+
+        </Description>
+        <Address>
+          <StreetName>11</StreetName>
+          <AdditionalStreetName>12</AdditionalStreetName>
+          <CityName>14</CityName>
+          <PostalZone></PostalZone>
+          <CountrySubentityCode listName="nuts">
+
+          </CountrySubentityCode>
+          <Region></Region>
+          <AddressLine>
+            <Line>13</Line>
+          </AddressLine>
+          <Country>
+            <IdentificationCode listName="country">
+
+            </IdentificationCode>
+          </Country>
+        </Address>
+      </RealizedLocation>
+    </RealizedLocation>
+  </ProcurementProject>
+  <ProcurementProjectLot>
+  </ProcurementProjectLot>
+  <ProcurementProjectGroupLot>
+  </ProcurementProjectGroupLot>
+</Form>

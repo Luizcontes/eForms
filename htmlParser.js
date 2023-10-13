@@ -41,6 +41,7 @@ const commandArgumentSplitter = string => string.split("=");
 
 async function testFunc(filename) {
 
+  logObj = fileReader("log", `${filename}.json`);
   const tagObject = await pathArray(filename);
 
   console.log('What element would you like to interact with? ')
@@ -69,7 +70,7 @@ async function testFunc(filename) {
     let testar = await rl.question("Testar(s/n)?");
     if (/^n$/g.exec(testar) !== null) process.exit();
     xmlGen = new XmlDocGenerator(filename);
-    
+
     try {
       let tagInserted = await tagInserter(() => {
         if (element === "fieldset") return true;
@@ -127,7 +128,7 @@ async function tagInserter(getElement, tagArray) {
       tmpArray.push(tagArray[arrayToTrack.length]);
       let objMapped = await mapObjectRecursively(async (node, tag) => {
         let element;
-        let tagArrayIndex = tagArray.length -1;
+        let tagArrayIndex = tagArray.length - 1;
         let tmpTag = tagArray[tagArrayIndex];
         if (tag === tmpTag) element = getElement();
         let nodeLength = Object.keys(node).length;
@@ -143,7 +144,7 @@ async function tagInserter(getElement, tagArray) {
     } while (await testForm(filename, preprocessor));
     await tagInserter(getElement, tagArray);
     return true;
-  } 
+  }
   return false;
 }
 
@@ -365,7 +366,7 @@ function preprocessorSaver() {
     if (el.match("filename")) {
       filename = commandArgumentSplitter(el)[1];
       // xmlGen = new XmlDocGenerator(filename);
-      logObj = fileReader("log", `${filename}.json`);
+      // logObj = fileReader("log", `${filename}.json`);
       return false;
     }
     return true;
