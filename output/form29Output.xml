@@ -456,10 +456,10 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">67763420-3ed8-4c5b-ab83-72f31bcfd91b</cbc:ID>
+  <cbc:ID schemeName="notice-id">e3a81af6-525a-4a0a-a45e-c8d84b9ed0a0</cbc:ID>
   <cbc:ContractFolderID>314792be-3af9-4859-99ae-9ee97189b622</cbc:ContractFolderID>
-  <cbc:IssueDate>2023-10-09+01:00</cbc:IssueDate>
-  <cbc:IssueTime>09:00:00+01:00</cbc:IssueTime>
+  <cbc:IssueDate>2023-11-22+01:00</cbc:IssueDate>
+  <cbc:IssueTime>14:00:00+01:00</cbc:IssueTime>
   <cbc:VersionID>01</cbc:VersionID>
   <cbc:RequestedPublicationDate>2023-09-06+01:00</cbc:RequestedPublicationDate>
   <cbc:RegulatoryDomain>32014L0024</cbc:RegulatoryDomain>

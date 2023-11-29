@@ -121,10 +121,10 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.7</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">8a544965-56a5-428c-9939-64b63363b45e</cbc:ID>
+  <cbc:ID schemeName="notice-id">e39e0f80-4a2e-4ce5-b331-9924e457c79e</cbc:ID>
   <cbc:ContractFolderID>b918f7ef-d777-456a-a0e3-e98c1c6caa45</cbc:ContractFolderID>
-  <cbc:IssueDate>2023-10-13+01:00</cbc:IssueDate>
-  <cbc:IssueTime>13:00:00+01:00</cbc:IssueTime>
+  <cbc:IssueDate>2023-10-17+01:00</cbc:IssueDate>
+  <cbc:IssueTime>09:00:00+01:00</cbc:IssueTime>
   <cbc:VersionID>01</cbc:VersionID>
   <cbc:RequestedPublicationDate>2023-10-30+01:00</cbc:RequestedPublicationDate>
   <cbc:RegulatoryDomain>32014L0024</cbc:RegulatoryDomain>

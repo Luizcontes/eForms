@@ -7,6 +7,9 @@ import xml2js from 'xml2js';
 const parseString = xml2js.parseString;
 const builder = new xml2js.Builder();
 
+const args = process.argv[2];
+const line = process.argv[3];
+
 export async function testForm(filename, folder) {
 
   const dir = folder || "sample\\";
@@ -105,10 +108,10 @@ export async function testForm(filename, folder) {
               console.log("Errors: " + result['svrl:schematron-output']['svrl:failed-assert'].length)
               Object.keys(result['svrl:schematron-output']['svrl:failed-assert']).forEach((key, i) => {
                 // if (i < 5) {
-                  console.log("\nError " + (i + 1));
-                  console.log(result['svrl:schematron-output']['svrl:failed-assert'][key]['$'].location);
-                  console.log(result['svrl:schematron-output']['svrl:failed-assert'][key]['$'].test);
-                  console.log("---------------------------------\n");
+                console.log("\nError " + (i + 1));
+                console.log(result['svrl:schematron-output']['svrl:failed-assert'][key]['$'].location);
+                console.log(result['svrl:schematron-output']['svrl:failed-assert'][key]['$'].test);
+                console.log("---------------------------------\n");
                 // }
               });
               let fail = builder.buildObject(result);
@@ -126,10 +129,31 @@ export async function testForm(filename, folder) {
       }
     })
     .catch(err => {
-      console.log(err.response.data);
+      let error = err.response.data.message;
+      let regex = /\[.*\]/g;
+      let r = regex.exec(error);
+      try {
+        let errorsJson = JSON.parse(r[0]);
+        errorsJson.forEach((e, i, array) => {
+          e.num = i + 1;
+          e.line += 7;
+          if (line !== undefined && i === (line - 1)) {
+            console.log(e);
+            console.log(`Total de erros: ${array.length}`);
+          }
+          if (line === undefined)
+            console.log(e);
+        });
+      }
+      catch (e) {
+        console.log(err.response.data);
+      }
+
       return true;
     });
 }
+
+testForm(args);
 
 // async function timer() {
 //   return new Promise(resolve => setTimeout(resolve, 5000));

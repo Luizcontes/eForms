@@ -456,10 +456,10 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">b81e6ce2-bb4c-4f03-9e6e-11647500e7d7</cbc:ID>
+  <cbc:ID schemeName="notice-id">882e4206-6ed1-42da-a648-fa23bb511d84</cbc:ID>
   <cbc:ContractFolderID>314792be-3af9-4859-99ae-9ee97189b622</cbc:ContractFolderID>
-  <cbc:IssueDate>2023-10-02+01:00</cbc:IssueDate>
-  <cbc:IssueTime>15:00:00+01:00</cbc:IssueTime>
+  <cbc:IssueDate>2023-11-24+01:00</cbc:IssueDate>
+  <cbc:IssueTime>10:00:00+01:00</cbc:IssueTime>
   <cbc:VersionID>01</cbc:VersionID>
   <cbc:RequestedPublicationDate>2023-09-06+01:00</cbc:RequestedPublicationDate>
   <cbc:RegulatoryDomain>32014L0024</cbc:RegulatoryDomain>
@@ -817,7 +817,7 @@
       <cac:PlannedPeriod>
         <cbc:StartDate>2023-10-02+01:00</cbc:StartDate>
         <cbc:EndDate>2023-10-02+01:00</cbc:EndDate>
-        <cbc:DurationMeasure unitCode="MONTH">2</cbc:DurationMeasure>
+        <cbc:DurationMeasure unitCode="MONTH">1</cbc:DurationMeasure>
         <cbc:DescriptionCode/>
       </cac:PlannedPeriod>
     </cac:ProcurementProject>

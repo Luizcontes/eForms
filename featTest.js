@@ -32,4 +32,5 @@ while ((result = regex.exec(dataStr)) !== null) {
   counter++;
 }
 
+
 console.log(JSON.stringify(errors));

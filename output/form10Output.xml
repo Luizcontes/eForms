@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ContractNotice xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
-  xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-  xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1"
-  xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1"
-  xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="urn:oasis:names:specification:ubl:schema:xsd:ContractNotice-2">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ContractNotice xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1" xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1" xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:specification:ubl:schema:xsd:ContractNotice-2">
   <ext:UBLExtensions>
     <ext:UBLExtension>
       <ext:ExtensionContent>
         <efext:EformsExtension>
           <efac:NoticeSubType>
-            <cbc:SubTypeCode listName="notice-subtype">7</cbc:SubTypeCode>
+            <cbc:SubTypeCode listName="notice-subtype">10</cbc:SubTypeCode>
           </efac:NoticeSubType>
           <efac:Organizations>
             <efac:Organization>
@@ -69,9 +62,6 @@
                 </cac:Contact>
               </efac:TouchPoint>
             </efac:Organization>
-            <efac:UltimateBeneficialOwner>
-              <cbc:ID>UBO-0001</cbc:ID>
-            </efac:UltimateBeneficialOwner>
           </efac:Organizations>
         </efext:EformsExtension>
       </ext:ExtensionContent>
@@ -79,15 +69,14 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.7</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id"></cbc:ID>
+  <cbc:ID schemeName="notice-id">a793406c-2b06-43e1-a4e1-57f980e4b5ca</cbc:ID>
   <cbc:ContractFolderID>314792be-3af9-4859-99ae-9ee97189b622</cbc:ContractFolderID>
   <cbc:IssueDate>2023-11-27+01:00</cbc:IssueDate>
-  <cbc:IssueTime>16:06:15+01:00</cbc:IssueTime>
+  <cbc:IssueTime>14:00:00+01:00</cbc:IssueTime>
   <cbc:VersionID>01</cbc:VersionID>
   <cbc:RequestedPublicationDate>2023-11-29+01:00</cbc:RequestedPublicationDate>
-  <!-- <cbc:PlannedDate>2023-12-31+01:00</cbc:PlannedDate> -->
   <cbc:RegulatoryDomain>32014L0024</cbc:RegulatoryDomain>
-  <cbc:NoticeTypeCode listName="planning">pin-rtl</cbc:NoticeTypeCode>
+  <cbc:NoticeTypeCode listName="competition">pin-cfc-standard</cbc:NoticeTypeCode>
   <cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>
   <cac:ContractingParty>
     <cbc:BuyerProfileURI>1</cbc:BuyerProfileURI>
@@ -95,7 +84,7 @@
       <cbc:PartyTypeCode listName="buyer-legal-type">cga</cbc:PartyTypeCode>
     </cac:ContractingPartyType>
     <cac:ContractingActivity>
-      <cbc:ActivityTypeCode listName="authority-activity">econ-aff</cbc:ActivityTypeCode>
+      <cbc:ActivityTypeCode listName="authority-activity">rcr</cbc:ActivityTypeCode>
     </cac:ContractingActivity>
     <cac:Party>
       <cac:PartyIdentification>
@@ -136,12 +125,21 @@
       <cac:LotsGroup>
         <cbc:LotsGroupID>GLO-0001</cbc:LotsGroupID>
         <cac:ProcurementProjectLotReference>
-          <cbc:ID>GLO-0001</cbc:ID>
+          <cbc:ID>LOT-0001</cbc:ID>
         </cac:ProcurementProjectLotReference>
       </cac:LotsGroup>
     </cac:LotDistribution>
   </cac:TenderingTerms>
   <cac:TenderingProcess>
+    <ext:UBLExtensions>
+      <ext:UBLExtension>
+        <ext:ExtensionContent>
+          <efext:EformsExtension>
+            <efbc:ProcedureRelaunchIndicator>true</efbc:ProcedureRelaunchIndicator>
+          </efext:EformsExtension>
+        </ext:ExtensionContent>
+      </ext:UBLExtension>
+    </ext:UBLExtensions>
     <cbc:Description languageID="POR">1</cbc:Description>
     <cbc:ProcedureCode listName="procurement-procedure-type">comp-tend</cbc:ProcedureCode>
     <cbc:PartPresentationCode listName="tenderlot-presentation">all</cbc:PartPresentationCode>
@@ -168,7 +166,7 @@
       <cbc:EstimatedOverallContractAmount currencyID="EUR">1</cbc:EstimatedOverallContractAmount>
     </cac:RequestedTenderTotal>
     <cac:AdditionalCommodityClassification>
-      <cbc:ItemClassificationCode>03111100 - Soja</cbc:ItemClassificationCode>
+      <cbc:ItemClassificationCode>03110000 - Cereais, produtos de culturas industriais e da horticultura</cbc:ItemClassificationCode>
     </cac:AdditionalCommodityClassification>
     <cac:RealizedLocation>
       <cbc:Description languageID="POR">1</cbc:Description>
@@ -287,10 +285,10 @@
         <cbc:Description languageID="POR">1</cbc:Description>
       </cac:ContractExecutionRequirement>
       <cac:ContractExecutionRequirement>
-        <cbc:ExecutionRequirementCode listName="reserved-execution">yes</cbc:ExecutionRequirementCode>
+        <cbc:ExecutionRequirementCode listName="reserved-execution">not-known</cbc:ExecutionRequirementCode>
       </cac:ContractExecutionRequirement>
       <cac:ContractExecutionRequirement>
-        <cbc:ExecutionRequirementCode listName="ecatalog-submission">not-allowed</cbc:ExecutionRequirementCode>
+        <cbc:ExecutionRequirementCode listName="ecatalog-submission">allowed</cbc:ExecutionRequirementCode>
       </cac:ContractExecutionRequirement>
       <cac:ContractExecutionRequirement>
         <cbc:ExecutionRequirementCode listName="einvoicing">not-allowed</cbc:ExecutionRequirementCode>
@@ -311,7 +309,15 @@
                 <ext:ExtensionContent>
                   <efext:EformsExtension>
                     <efac:AwardCriterionParameter>
-                      <efbc:ParameterCode listName="number-threshold">max-pass</efbc:ParameterCode>
+                      <efbc:ParameterCode listName="number-weight">per-exa</efbc:ParameterCode>
+                      <efbc:ParameterNumeric>1</efbc:ParameterNumeric>
+                    </efac:AwardCriterionParameter>
+                    <efac:AwardCriterionParameter>
+                      <efbc:ParameterCode listName="number-fixed">fix-unit</efbc:ParameterCode>
+                      <efbc:ParameterNumeric>1</efbc:ParameterNumeric>
+                    </efac:AwardCriterionParameter>
+                    <efac:AwardCriterionParameter>
+                      <efbc:ParameterCode listName="number-threshold">min-score</efbc:ParameterCode>
                       <efbc:ParameterNumeric>1</efbc:ParameterNumeric>
                     </efac:AwardCriterionParameter>
                   </efext:EformsExtension>
@@ -378,6 +384,11 @@
           <ext:ExtensionContent>
             <efext:EformsExtension>
               <efbc:AccessToolName>1</efbc:AccessToolName>
+              <efbc:ProcedureRelaunchIndicator>true</efbc:ProcedureRelaunchIndicator>
+              <efac:InterestExpressionReceptionPeriod>
+                <cbc:EndDate>2023-12-31+01:00</cbc:EndDate>
+                <cbc:EndTime>12:59:00+01:00</cbc:EndTime>
+              </efac:InterestExpressionReceptionPeriod>
             </efext:EformsExtension>
           </ext:ExtensionContent>
         </ext:UBLExtension>
@@ -386,21 +397,20 @@
       <cbc:CandidateReductionConstraintIndicator>true</cbc:CandidateReductionConstraintIndicator>
       <cbc:GovernmentAgreementConstraintIndicator>true</cbc:GovernmentAgreementConstraintIndicator>
       <cbc:AccessToolsURI>1</cbc:AccessToolsURI>
-      <cac:TenderSubmissionDeadlinePeriod>
-        <cbc:EndDate>2023-12-31+01:00</cbc:EndDate>
-        <cbc:EndTime>12:59:00+01:00</cbc:EndTime>
-      </cac:TenderSubmissionDeadlinePeriod>
       <cac:InvitationSubmissionPeriod>
         <cbc:StartDate>2023-12-31+01:00</cbc:StartDate>
       </cac:InvitationSubmissionPeriod>
-      <cac:ParticipationRequestReceptionPeriod>
-        <cbc:EndDate>2023-12-31+01:00</cbc:EndDate>
-        <cbc:EndTime>12:59:00+01:00</cbc:EndTime>
-      </cac:ParticipationRequestReceptionPeriod>
+      <cac:ParticipationInvitationPeriod>
+        <cbc:StartDate>2023-12-31+01:00</cbc:StartDate>
+      </cac:ParticipationInvitationPeriod>
       <cac:AdditionalInformationRequestPeriod>
         <cbc:EndDate>2023-12-31+01:00</cbc:EndDate>
         <cbc:EndTime>12:59:00+01:00</cbc:EndTime>
       </cac:AdditionalInformationRequestPeriod>
+      <cac:NoticeDocumentReference>
+        <cbc:ID schemeName="notice-reference">1</cbc:ID>
+        <cbc:ReferencedDocumentInternalAddress>1</cbc:ReferencedDocumentInternalAddress>
+      </cac:NoticeDocumentReference>
       <cac:ProcessJustification>
         <cbc:ProcessReasonCode listName="no-esubmission-justification">sen-info</cbc:ProcessReasonCode>
         <cbc:Description languageID="POR">1</cbc:Description>
@@ -430,24 +440,31 @@
       <cbc:ID schemeName="InternalID">1</cbc:ID>
       <cbc:Name languageID="POR">1</cbc:Name>
       <cbc:Description languageID="POR">1</cbc:Description>
-      <cbc:ProcurementTypeCode listName="contract-nature">services</cbc:ProcurementTypeCode>
+      <cbc:ProcurementTypeCode listName="contract-nature">works</cbc:ProcurementTypeCode>
       <cbc:EstimatedOverallContractQuantity unitCode="HTZ">1</cbc:EstimatedOverallContractQuantity>
       <cbc:Note languageID="POR">1</cbc:Note>
       <cbc:SMESuitableIndicator>true</cbc:SMESuitableIndicator>
       <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="strategic-procurement">none</cbc:ProcurementTypeCode>
-        <cbc:ProcurementType languageID="POR">1</cbc:ProcurementType>
+        <cbc:ProcurementTypeCode>works</cbc:ProcurementTypeCode>
+      </cac:ProcurementAdditionalType>
+      <cac:ProcurementAdditionalType>
+        <cbc:ProcurementTypeCode listName="environmental-impact">clim-adapt</cbc:ProcurementTypeCode>
+      </cac:ProcurementAdditionalType>
+      <cac:ProcurementAdditionalType>
+        <cbc:ProcurementTypeCode listName="gpp-criteria">national</cbc:ProcurementTypeCode>
+      </cac:ProcurementAdditionalType>
+      <cac:ProcurementAdditionalType>
+        <cbc:ProcurementTypeCode listName="social-objective">work-cond</cbc:ProcurementTypeCode>
+      </cac:ProcurementAdditionalType>
+      <cac:ProcurementAdditionalType>
+        <cbc:ProcurementTypeCode listName="innovative-acquisition">other</cbc:ProcurementTypeCode>
       </cac:ProcurementAdditionalType>
       <cac:ProcurementAdditionalType>
         <cbc:ProcurementTypeCode listName="strategic-procurement">none</cbc:ProcurementTypeCode>
         <cbc:ProcurementType languageID="POR">1</cbc:ProcurementType>
       </cac:ProcurementAdditionalType>
       <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="accessibility">n-inc-just</cbc:ProcurementTypeCode>
-        <cbc:ProcurementType languageID="POR">1</cbc:ProcurementType>
-      </cac:ProcurementAdditionalType>
-      <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="accessibility">n-inc-just</cbc:ProcurementTypeCode>
+        <cbc:ProcurementTypeCode listName="accessibility">inc</cbc:ProcurementTypeCode>
         <cbc:ProcurementType languageID="POR">1</cbc:ProcurementType>
       </cac:ProcurementAdditionalType>
       <cac:RequestedTenderTotal>
@@ -463,29 +480,8 @@
         <cbc:EstimatedOverallContractAmount currencyID="EUR">1</cbc:EstimatedOverallContractAmount>
       </cac:RequestedTenderTotal>
       <cac:MainCommodityClassification>
-        <cbc:ItemClassificationCode listName="cpv">03000000</cbc:ItemClassificationCode>
-      </cac:MainCommodityClassification>
-      <cac:MainCommodityClassification>
         <cbc:ItemClassificationCode>03000000</cbc:ItemClassificationCode>
       </cac:MainCommodityClassification>
-      <cac:AdditionalCommodityClassification>
-        <cbc:ItemClassificationCode listName="cpv">03000000</cbc:ItemClassificationCode>
-      </cac:AdditionalCommodityClassification>
-      <cac:AdditionalCommodityClassification>
-        <cbc:ItemClassificationCode>03000000</cbc:ItemClassificationCode>
-      </cac:AdditionalCommodityClassification>
-      <cac:RealizedLocation>
-        <cbc:Description languageID="POR">1</cbc:Description>
-        <cac:Address>
-          <cbc:StreetName>1</cbc:StreetName>
-          <cbc:CityName>1</cbc:CityName>
-          <cbc:PostalZone>1</cbc:PostalZone>
-          <cbc:CountrySubentityCode listName="nuts">PT111</cbc:CountrySubentityCode>
-          <cac:Country>
-            <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
-          </cac:Country>
-        </cac:Address>
-      </cac:RealizedLocation>
       <cac:RealizedLocation>
         <cbc:Description languageID="POR">1</cbc:Description>
         <cac:Address>
@@ -527,6 +523,10 @@
                   <efext:EformsExtension>
                     <efac:AwardCriterionParameter>
                       <efbc:ParameterCode listName="number-weight">per-exa</efbc:ParameterCode>
+                      <efbc:ParameterNumeric>1</efbc:ParameterNumeric>
+                    </efac:AwardCriterionParameter>
+                    <efac:AwardCriterionParameter>
+                      <efbc:ParameterCode listName="number-fixed">fix-unit</efbc:ParameterCode>
                       <efbc:ParameterNumeric>1</efbc:ParameterNumeric>
                     </efac:AwardCriterionParameter>
                     <efac:AwardCriterionParameter>

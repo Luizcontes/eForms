@@ -824,7 +824,7 @@
       <cac:PlannedPeriod>
         <cbc:StartDate>2023-10-02+01:00</cbc:StartDate>
         <cbc:EndDate>2023-10-02+01:00</cbc:EndDate>
-        <cbc:DurationMeasure unitCode="MONTH">2</cbc:DurationMeasure>
+        <cbc:DurationMeasure unitCode="MONTH">1</cbc:DurationMeasure>
         <cbc:DescriptionCode></cbc:DescriptionCode>
       </cac:PlannedPeriod>
     </cac:ProcurementProject>
