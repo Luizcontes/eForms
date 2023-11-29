@@ -26,6 +26,7 @@
           </efac:ContractModification>
           <efac:NoticeResult>
             <efac:FieldsPrivacy>
+              <!-- <efbc:FieldIdentifierCode listName="non-publication-identifier"></efbc:FieldIdentifierCode> -->
               <cbc:ReasonCode>eo-int</cbc:ReasonCode>
               <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
               <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
@@ -307,10 +308,10 @@
   <cbc:CustomizationID>eforms-sdk-1.7</cbc:CustomizationID>
   <cbc:ID schemeName="notice-id"></cbc:ID>
   <cbc:ContractFolderID>314792be-3af9-4859-99ae-9ee97189b622</cbc:ContractFolderID>
-  <cbc:IssueDate>2023-11-28+01:00</cbc:IssueDate>
+  <cbc:IssueDate>2023-11-29+01:00</cbc:IssueDate>
   <cbc:IssueTime>16:21:54+01:00</cbc:IssueTime>
   <cbc:VersionID>01</cbc:VersionID>
-  <cbc:RequestedPublicationDate>2023-11-30+01:00</cbc:RequestedPublicationDate>
+  <cbc:RequestedPublicationDate>2023-12-10+01:00</cbc:RequestedPublicationDate>
   <cbc:RegulatoryDomain>32014L0024</cbc:RegulatoryDomain>
   <cbc:NoticeTypeCode listName="cont-modif">cont-modif</cbc:NoticeTypeCode>
   <cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>

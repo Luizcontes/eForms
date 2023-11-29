@@ -7,16 +7,18 @@ import xml2js from 'xml2js';
 const parseString = xml2js.parseString;
 const builder = new xml2js.Builder();
 
+const pwd = process.cwd();
+
 const args = process.argv[2];
 const line = process.argv[3];
 
 export async function testForm(filename, folder) {
 
   const dir = folder || "sample\\";
-  const readData = "C:\\Users\\a907441\\Projects\\INCM\\" + dir + "\\" + filename + ".xml";
-  const output = "C:\\Users\\a907441\\Projects\\INCM\\output\\" + filename + "Output.xml";
-  const report = "C:\\Users\\a907441\\Projects\\INCM\\report\\report.xml";
-  const errors = "C:\\Users\\a907441\\Projects\\INCM\\report\\errors.xml";
+  const readData = `${pwd}\\` + dir + "\\" + filename + ".xml";
+  const output = `${pwd}\\` + filename + "Output.xml";
+  const report = `${pwd}\\report\\report.xml`;
+  const errors = `${pwd}\\report\\errors.xml`;
 
   const XMLData = fs.readFileSync(readData);
   const date = new Date(Date.now());

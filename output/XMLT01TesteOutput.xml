@@ -93,11 +93,11 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">5529ce7c-f20e-499f-a2e5-912a71d502d9</cbc:ID>
-  <cbc:IssueDate>2023-11-24+01:00</cbc:IssueDate>
+  <cbc:ID schemeName="notice-id">72f596ca-61a6-419a-a6a8-8454c6b5be58</cbc:ID>
+  <cbc:IssueDate>2023-11-29+01:00</cbc:IssueDate>
   <cbc:IssueTime>10:00:00+01:00</cbc:IssueTime>
   <cbc:VersionID>02</cbc:VersionID>
-  <cbc:RequestedPublicationDate>2023-11-27+01:00</cbc:RequestedPublicationDate>
+  <cbc:RequestedPublicationDate>2023-11-28+01:00</cbc:RequestedPublicationDate>
   <cbc:RegulatoryDomain>32007R1370</cbc:RegulatoryDomain>
   <cbc:NoticeTypeCode listName="planning">pin-tran</cbc:NoticeTypeCode>
   <cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>

@@ -19,16 +19,19 @@
           </efac:ContractModification>
           <efac:NoticeResult>
             <efac:FieldsPrivacy>
+              <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
               <cbc:ReasonCode>eo-int</cbc:ReasonCode>
               <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
               <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
             </efac:FieldsPrivacy>
             <efac:FieldsPrivacy>
+              <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
               <cbc:ReasonCode>eo-int</cbc:ReasonCode>
               <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
               <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
             </efac:FieldsPrivacy>
             <efac:FieldsPrivacy>
+              <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
               <cbc:ReasonCode>eo-int</cbc:ReasonCode>
               <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
               <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
@@ -39,7 +42,7 @@
             <efac:GroupFramework>
               <efac:FieldsPrivacy>
                 <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                <cbc:ReasonCode listName="non-publication-justification">fair-comp</cbc:ReasonCode>
+                <cbc:ReasonCode listName="non-publication-justification">eo-int</cbc:ReasonCode>
                 <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
                 <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
               </efac:FieldsPrivacy>
@@ -93,15 +96,12 @@
                 <efbc:StatisticsCode>complainants</efbc:StatisticsCode>
                 <efbc:StatisticsNumeric>1</efbc:StatisticsNumeric>
               </efac:AppealRequestsStatistics>
-              <efac:TenderLot>
-                <cbc:ID schemeName="tender">TEN-0001</cbc:ID>
-              </efac:TenderLot>
-              <efac:TenderLot>
+              <efac:LotTender>
+                <cbc:ID>TEN-0001</cbc:ID>
+              </efac:LotTender>
+              <efac:LotTender>
                 <cbc:ID schemeName="contract">CON-0001</cbc:ID>
-              </efac:TenderLot>
-              <efac:TenderLot>
-                <cbc:ID schemeName="LotsGroup">LOT-0001</cbc:ID>
-              </efac:TenderLot>
+              </efac:LotTender>
               <efac:FrameworkAgreementValues>
                 <efac:FieldsPrivacy>
                   <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
@@ -122,8 +122,11 @@
                   </efac:ProcurementDetails>
                 </efac:StrategicProcurementInformation>
               </efac:StrategicProcurement>
+              <efac:TenderLot>
+                <cbc:ID schemeName="LotsGroup">LOT-0001</cbc:ID>
+              </efac:TenderLot>
             </efac:LotResult>
-            <LotTenderBLock>
+            <efac:LotTender>
               <efac:FieldsPrivacy>
                 <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
                 <cbc:ReasonCode listName="non-publication-justification">eo-int</cbc:ReasonCode>
@@ -165,7 +168,7 @@
                   <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
                   <cbc:ReasonCode listName="non-publication-justification">eo-int</cbc:ReasonCode>
                   <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
-                  <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
+                  <efbc:PublicationDate>2022-12-31+01:00</efbc:PublicationDate>
                 </efac:FieldsPrivacy>
                 <efac:FieldsPrivacy>
                   <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
@@ -193,13 +196,13 @@
                 <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
               </efac:TenderLot>
               <efac:TenderReference>
-                <ID>1</ID>
+                <cbc:ID>1</cbc:ID>
               </efac:TenderReference>
-            </LotTenderBLock>
+            </efac:LotTender>
             <efac:SettledContract>
               <cbc:ID schemeName="contract">CON-0001</cbc:ID>
               <cbc:AwardDate>2023-12-31+01:00</cbc:AwardDate>
-              <cbc:IssueDate>2023-12-31+01:00</cbc:IssueDate>
+              <cbc:IssueDate>2022-12-31+01:00</cbc:IssueDate>
               <cbc:Title languageID="POR">1</cbc:Title>
               <cbc:URI>1</cbc:URI>
               <cac:SignatoryParty>
@@ -210,9 +213,9 @@
               <efac:ContractReference>
                 <cbc:ID schemeName="contract">1</cbc:ID>
               </efac:ContractReference>
-              <efac:TenderLot>
+              <efac:LotTender>
                 <cbc:ID schemeName="tender">TEN-0001</cbc:ID>
-              </efac:TenderLot>
+              </efac:LotTender>
               <efac:Funding>
                 <efbc:FinancingIdentifier>1</efbc:FinancingIdentifier>
               </efac:Funding>
@@ -226,15 +229,13 @@
               <efac:SubContractor>
                 <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
                 <efac:MainContractor>
-                  <efac:TenderLot>
-                    <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
-                  </efac:TenderLot>
+                  <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
                 </efac:MainContractor>
               </efac:SubContractor>
             </efac:TenderingParty>
           </efac:NoticeResult>
           <efac:NoticeSubType>
-            <cbc:SubTypeCode listName="notice-subtype">38</cbc:SubTypeCode>
+            <cbc:SubTypeCode listName="notice-subtype">39</cbc:SubTypeCode>
           </efac:NoticeSubType>
           <efac:Organizations>
             <efac:Organization>
@@ -298,13 +299,13 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.7</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">a13191b2-3f4d-4fa7-b8d2-6bead40b7491</cbc:ID>
+  <cbc:ID schemeName="notice-id">b09628cd-d6a0-4e18-9e19-96eac45397ce</cbc:ID>
   <cbc:ContractFolderID>314792be-3af9-4859-99ae-9ee97189b622</cbc:ContractFolderID>
   <cbc:IssueDate>2023-11-29+01:00</cbc:IssueDate>
-  <cbc:IssueTime>11:00:00+01:00</cbc:IssueTime>
+  <cbc:IssueTime>14:00:00+01:00</cbc:IssueTime>
   <cbc:VersionID>01</cbc:VersionID>
-  <cbc:RequestedPublicationDate>2023-12-10+01:00</cbc:RequestedPublicationDate>
-  <cbc:RegulatoryDomain>32014L0024</cbc:RegulatoryDomain>
+  <cbc:RequestedPublicationDate>2023-12-01+01:00</cbc:RequestedPublicationDate>
+  <cbc:RegulatoryDomain>32014L0025</cbc:RegulatoryDomain>
   <cbc:NoticeTypeCode listName="cont-modif">cont-modif</cbc:NoticeTypeCode>
   <cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>
   <cac:ContractingParty>
@@ -313,7 +314,7 @@
         <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
       </cac:PartyIdentification>
       <cac:ServiceProviderParty>
-        <cbc:ServiceTypeCode listName="service-provider-type">ted-esen</cbc:ServiceTypeCode>
+        <cbc:ServiceTypeCode listName="service-provider-type">serv-prov</cbc:ServiceTypeCode>
         <cac:Party>
           <cac:PartyIdentification>
             <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
@@ -333,9 +334,9 @@
     </cac:ProcurementLegislationDocumentReference>
     <cac:LotDistribution>
       <cac:LotsGroup>
-        <cbc:LotsGroupID schemeName="LotsGroup">GLO-0001</cbc:LotsGroupID>
+        <cbc:LotsGroupID>GLO-0001</cbc:LotsGroupID>
         <cac:ProcurementProjectLotReference>
-          <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
+          <cbc:ID>LOT-0001</cbc:ID>
         </cac:ProcurementProjectLotReference>
       </cac:LotsGroup>
     </cac:LotDistribution>
@@ -350,7 +351,7 @@
       <cbc:ProcurementTypeCode listName="contract-nature">supplies</cbc:ProcurementTypeCode>
     </cac:ProcurementAdditionalType>
     <cac:AdditionalCommodityClassification>
-      <cbc:ItemClassificationCode listName="cpv">03000000 - Produtos da agricultura, da pesca, da silvicultura e afins</cbc:ItemClassificationCode>
+      <cbc:ItemClassificationCode listName="cpv">03111100 - Soja</cbc:ItemClassificationCode>
     </cac:AdditionalCommodityClassification>
     <cac:RealizedLocation>
       <cbc:Description languageID="POR">1</cbc:Description>
@@ -413,19 +414,8 @@
       <cac:PaymentTerms>
         <cbc:Note languageID="POR">1</cbc:Note>
       </cac:PaymentTerms>
-      <cac:TendererQualificationRequest>
-        <cbc:CompanyLegalFormCode>true</cbc:CompanyLegalFormCode>
-        <cbc:CompanyLegalForm languageID="POR">1</cbc:CompanyLegalForm>
-      </cac:TendererQualificationRequest>
-      <cac:ContractExecutionRequirement>
-        <cbc:ExecutionRequirementCode listName="reserved-execution">not-known</cbc:ExecutionRequirementCode>
-      </cac:ContractExecutionRequirement>
       <cac:ContractExecutionRequirement>
         <cbc:ExecutionRequirementCode listName="einvoicing">not-allowed</cbc:ExecutionRequirementCode>
-      </cac:ContractExecutionRequirement>
-      <cac:ContractExecutionRequirement>
-        <cbc:ExecutionRequirementCode listName="conditions">performance</cbc:ExecutionRequirementCode>
-        <cbc:Description languageID="POR">1</cbc:Description>
       </cac:ContractExecutionRequirement>
       <cac:AdditionalInformationParty>
         <cac:PartyIdentification>
@@ -463,20 +453,21 @@
     <cac:ProcurementProject>
       <cbc:ID schemeName="InternalID">1</cbc:ID>
       <cbc:Name languageID="POR">1</cbc:Name>
+      <cbc:Description languageID="POR">1</cbc:Description>
       <cbc:ProcurementTypeCode listName="contract-nature">works</cbc:ProcurementTypeCode>
       <cbc:EstimatedOverallContractQuantity unitCode="HTZ">1</cbc:EstimatedOverallContractQuantity>
       <cbc:Note languageID="POR">1</cbc:Note>
       <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="contract-nature">services</cbc:ProcurementTypeCode>
+        <cbc:ProcurementTypeCode listName="contract-nature">works</cbc:ProcurementTypeCode>
       </cac:ProcurementAdditionalType>
       <cac:ProcurementAdditionalType>
         <cbc:ProcurementTypeCode listName="environmental-impact">pollu-prev</cbc:ProcurementTypeCode>
       </cac:ProcurementAdditionalType>
       <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="social-objective">other</cbc:ProcurementTypeCode>
+        <cbc:ProcurementTypeCode listName="social-objective">hum-right</cbc:ProcurementTypeCode>
       </cac:ProcurementAdditionalType>
       <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="innovative-acquisition">mar-nov</cbc:ProcurementTypeCode>
+        <cbc:ProcurementTypeCode listName="innovative-acquisition">fp-requ</cbc:ProcurementTypeCode>
       </cac:ProcurementAdditionalType>
       <cac:ProcurementAdditionalType>
         <cbc:ProcurementTypeCode listName="strategic-procurement">none</cbc:ProcurementTypeCode>
@@ -498,7 +489,7 @@
           <cbc:StreetName>1</cbc:StreetName>
           <cbc:CityName>1</cbc:CityName>
           <cbc:PostalZone>1</cbc:PostalZone>
-          <cbc:CountrySubentityCode listName="nuts">PT111</cbc:CountrySubentityCode>
+          <cbc:Region>anyw-eea</cbc:Region>
           <cac:Country>
             <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
           </cac:Country>

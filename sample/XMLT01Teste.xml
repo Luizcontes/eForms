@@ -259,7 +259,7 @@ efbc > eForms specific extension basic components
   <cbc:IssueTime></cbc:IssueTime>  <!-- Preenchido automaticamente-->
   <cbc:VersionID>02</cbc:VersionID>
   <!-- Dispatch Date -->
-  <cbc:RequestedPublicationDate>2023-11-27+01:00</cbc:RequestedPublicationDate>  <!-- O que será este RequestedPublicationDate -->
+  <cbc:RequestedPublicationDate>2023-11-28+01:00</cbc:RequestedPublicationDate>  <!-- O que será este RequestedPublicationDate -->
 
   <!-- Procedure > Purpose > Legal basis -->
   <cbc:RegulatoryDomain>32007R1370</cbc:RegulatoryDomain>

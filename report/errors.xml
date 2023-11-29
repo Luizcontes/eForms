@@ -16,26 +16,26 @@
     <svrl:text>
 			O atributo obrigatório listName está em falta no elemento efbc:StatisticsCode</svrl:text>
   </svrl:failed-assert>
-  <svrl:failed-assert id="BR-OPT-00999-0047" location="/cn:ContractNotice" test="count(cac:TenderResult/cbc:AwardDate) > 0" role="ERROR">
-    <svrl:text>OPT-999 é obrigatório no tipo de anúncio '38'</svrl:text>
+  <svrl:failed-assert id="BR-OPT-00999-0048" location="/cn:ContractNotice" test="count(cac:TenderResult/cbc:AwardDate) > 0" role="ERROR">
+    <svrl:text>OPT-999 é obrigatório no tipo de anúncio '39'</svrl:text>
     <svrl:diagnostic-reference diagnostic="OPT-999" see="field:OPT-999">
       <svrl:text>cac:TenderResult/cbc:AwardDate</svrl:text>
     </svrl:diagnostic-reference>
   </svrl:failed-assert>
-  <svrl:failed-assert id="BR-BT-00262-0047" location="/cn:ContractNotice/cac:ProcurementProject" test="count(cac:MainCommodityClassification/cbc:ItemClassificationCode) > 0" role="ERROR">
-    <svrl:text>BT-262-Procedure é obrigatório no tipo de anúncio '38'</svrl:text>
+  <svrl:failed-assert id="BR-BT-00262-0048" location="/cn:ContractNotice/cac:ProcurementProject" test="count(cac:MainCommodityClassification/cbc:ItemClassificationCode) > 0" role="ERROR">
+    <svrl:text>BT-262-Procedure é obrigatório no tipo de anúncio '39'</svrl:text>
     <svrl:diagnostic-reference diagnostic="ND-ProcedureProcurementScope_BT-262-Procedure" see="field:BT-262-Procedure">
       <svrl:text>cac:MainCommodityClassification/cbc:ItemClassificationCode</svrl:text>
     </svrl:diagnostic-reference>
   </svrl:failed-assert>
-  <svrl:failed-assert id="BR-BT-00500-0047" location="/cn:ContractNotice/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company" test="count(cac:PartyName/cbc:Name) > 0" role="ERROR">
-    <svrl:text>BT-500-Organization-Company é obrigatório no tipo de anúncio '38'</svrl:text>
+  <svrl:failed-assert id="BR-BT-00500-0048" location="/cn:ContractNotice/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company" test="count(cac:PartyName/cbc:Name) > 0" role="ERROR">
+    <svrl:text>BT-500-Organization-Company é obrigatório no tipo de anúncio '39'</svrl:text>
     <svrl:diagnostic-reference diagnostic="BT-500-Organization-Company" see="field:BT-500-Organization-Company">
       <svrl:text>cac:PartyName/cbc:Name</svrl:text>
     </svrl:diagnostic-reference>
   </svrl:failed-assert>
-  <svrl:failed-assert id="BR-BT-00501-0047" location="/cn:ContractNotice/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company" test="count(cac:PartyLegalEntity/cbc:CompanyID) > 0" role="ERROR">
-    <svrl:text>BT-501-Organization-Company é obrigatório no tipo de anúncio '38'</svrl:text>
+  <svrl:failed-assert id="BR-BT-00501-0048" location="/cn:ContractNotice/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company" test="count(cac:PartyLegalEntity/cbc:CompanyID) > 0" role="ERROR">
+    <svrl:text>BT-501-Organization-Company é obrigatório no tipo de anúncio '39'</svrl:text>
     <svrl:diagnostic-reference diagnostic="BT-501-Organization-Company" see="field:BT-501-Organization-Company">
       <svrl:text>cac:PartyLegalEntity/cbc:CompanyID</svrl:text>
     </svrl:diagnostic-reference>
@@ -181,6 +181,12 @@
       <svrl:text>cac:ContractingParty/cac:Party/cac:PartyIdentification/cbc:ID</svrl:text>
     </svrl:diagnostic-reference>
   </svrl:failed-assert>
+  <svrl:failed-assert id="BR-BT-00023-0202" location="/cn:ContractNotice/cac:ProcurementProject" test="(not(cbc:ProcurementTypeCode/normalize-space(text()) = cac:ProcurementAdditionalType/cbc:ProcurementTypeCode[not(@listName='transport-service')])) or not((cbc:ProcurementTypeCode) and (cac:ProcurementAdditionalType/cbc:ProcurementTypeCode[not(@listName='transport-service')]))" role="ERROR">
+    <svrl:text>'Natureza do contrato' (BT-23) e 'Natureza adicional do contrato' (BT-531) devem ser diferentes</svrl:text>
+    <svrl:diagnostic-reference diagnostic="BT-23-Procedure" see="field:BT-23-Procedure">
+      <svrl:text>cbc:ProcurementTypeCode</svrl:text>
+    </svrl:diagnostic-reference>
+  </svrl:failed-assert>
   <svrl:failed-assert id="BR-BT-00023-0203" location="/cn:ContractNotice/cac:ProcurementProjectLot[1]/cac:ProcurementProject" test="(not(cbc:ProcurementTypeCode[@listName='contract-nature']/normalize-space(text()) = cac:ProcurementAdditionalType/cbc:ProcurementTypeCode[@listName='contract-nature'])) or not((cbc:ProcurementTypeCode[@listName='contract-nature']) and (cac:ProcurementAdditionalType/cbc:ProcurementTypeCode[@listName='contract-nature']))" role="ERROR">
     <svrl:text>'Natureza do contrato' (BT-23) e 'Natureza adicional do contrato' (BT-531) devem ser diferentes</svrl:text>
     <svrl:diagnostic-reference diagnostic="BT-23-Lot" see="field:BT-23-Lot">
@@ -203,6 +209,12 @@
     <svrl:text>Se 'Base jurídica' (BT-01) for diferente de 'Outros', então 'Faturação eletrónica' (BT-743) deve ser 'Necessário'</svrl:text>
     <svrl:diagnostic-reference diagnostic="BT-743-Lot" see="field:BT-743-Lot">
       <svrl:text>cac:ContractExecutionRequirement/cbc:ExecutionRequirementCode[@listName='einvoicing']</svrl:text>
+    </svrl:diagnostic-reference>
+  </svrl:failed-assert>
+  <svrl:failed-assert id="BR-BT-01375-0100" location="/cn:ContractNotice/cac:TenderingTerms/cac:LotDistribution/cac:LotsGroup" test="cac:ProcurementProjectLotReference/cbc:ID[@schemeName='Lot']/normalize-space(text()) = ../../../cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cbc:ID/normalize-space(text())" role="ERROR">
+    <svrl:text>'Lotes incluídos' (BT-1375) deve estar vazio ou igual a um dos valores de 'Lote' (BT-137)</svrl:text>
+    <svrl:diagnostic-reference diagnostic="BT-1375-Procedure" see="field:BT-1375-Procedure">
+      <svrl:text>cac:ProcurementProjectLotReference/cbc:ID[@schemeName='Lot']</svrl:text>
     </svrl:diagnostic-reference>
   </svrl:failed-assert>
   <svrl:failed-assert id="BR-BT-01375-0101" location="/cn:ContractNotice/cac:TenderingTerms/cac:LotDistribution/cac:LotsGroup" test="count(cac:ProcurementProjectLotReference/cbc:ID[@schemeName='Lot']) > 1" role="ERROR">
