@@ -16,7 +16,7 @@ export async function testForm(filename, folder) {
 
   const dir = folder || "sample\\";
   const readData = `${pwd}\\` + dir + "\\" + filename + ".xml";
-  const output = `${pwd}\\` + filename + "Output.xml";
+  const output = `${pwd}\\output\\` + filename + "Output.xml";
   const report = `${pwd}\\report\\report.xml`;
   const errors = `${pwd}\\report\\errors.xml`;
 

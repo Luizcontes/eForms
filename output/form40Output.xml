@@ -1,69 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ContractNotice xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1" xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1" xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:specification:ubl:schema:xsd:ContractNotice-2">
+<PriorInformationNotice xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1" xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1" xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2">
   <ext:UBLExtensions>
     <ext:UBLExtension>
       <ext:ExtensionContent>
         <efext:EformsExtension>
           <efac:ContractModification>
             <efbc:ChangedNoticeIdentifier>1</efbc:ChangedNoticeIdentifier>
-            <efac:Change>
-              <efbc:ChangeDescription languageID="POR">1</efbc:ChangeDescription>
-              <efac:ChangedSection>
-                <efbc:ChangedSectionIdentifier>1</efbc:ChangedSectionIdentifier>
-              </efac:ChangedSection>
-            </efac:Change>
             <efac:ChangeReason>
               <cbc:ReasonCode listName="modification-justification">mod-nons</cbc:ReasonCode>
               <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
             </efac:ChangeReason>
+            <efac:Change>
+              <efac:ChangedSection>
+                <efbc:ChangedSectionIdentifier>1</efbc:ChangedSectionIdentifier>
+              </efac:ChangedSection>
+              <efbc:ChangeDescription languageID="POR">1</efbc:ChangeDescription>
+            </efac:Change>
           </efac:ContractModification>
           <efac:NoticeResult>
             <efac:FieldsPrivacy>
-              <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-              <cbc:ReasonCode>eo-int</cbc:ReasonCode>
-              <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
-              <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
-            </efac:FieldsPrivacy>
-            <efac:FieldsPrivacy>
-              <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-              <cbc:ReasonCode>eo-int</cbc:ReasonCode>
-              <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
-              <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
-            </efac:FieldsPrivacy>
-            <efac:FieldsPrivacy>
-              <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-              <cbc:ReasonCode>eo-int</cbc:ReasonCode>
+              <cbc:ReasonCode>fair-comp</cbc:ReasonCode>
               <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
               <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
             </efac:FieldsPrivacy>
             <cbc:TotalAmount currencyID="EUR">1</cbc:TotalAmount>
-            <efbc:OverallApproximateFrameworkContractsAmount currencyID="EUR">1</efbc:OverallApproximateFrameworkContractsAmount>
-            <efbc:OverallMaximumFrameworkContractsAmount currencyID="EUR">1</efbc:OverallMaximumFrameworkContractsAmount>
-            <efac:GroupFramework>
-              <efac:FieldsPrivacy>
-                <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                <cbc:ReasonCode listName="non-publication-justification">eo-int</cbc:ReasonCode>
-                <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
-                <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
-              </efac:FieldsPrivacy>
-              <efac:FieldsPrivacy>
-                <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                <cbc:ReasonCode listName="non-publication-justification">eo-int</cbc:ReasonCode>
-                <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
-                <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
-              </efac:FieldsPrivacy>
-              <efac:FieldsPrivacy>
-                <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                <cbc:ReasonCode listName="non-publication-justification">eo-int</cbc:ReasonCode>
-                <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
-                <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
-              </efac:FieldsPrivacy>
-              <efbc:GroupFrameworkMaximumValueAmount currencyID="EUR">1</efbc:GroupFrameworkMaximumValueAmount>
-              <efbc:GroupFrameworkReestimatedValueAmount currencyID="EUR">1</efbc:GroupFrameworkReestimatedValueAmount>
-              <efac:TenderLot>
-                <cbc:ID schemeName="LotsGroup">GLO-0001</cbc:ID>
-              </efac:TenderLot>
-            </efac:GroupFramework>
             <efac:LotResult>
               <cbc:ID schemeName="result">RES-0001</cbc:ID>
               <cac:FinancingParty>
@@ -96,22 +56,15 @@
                 <efbc:StatisticsCode>complainants</efbc:StatisticsCode>
                 <efbc:StatisticsNumeric>1</efbc:StatisticsNumeric>
               </efac:AppealRequestsStatistics>
-              <efac:LotTender>
-                <cbc:ID>TEN-0001</cbc:ID>
-              </efac:LotTender>
-              <efac:LotTender>
+              <efac:TenderLot>
+                <cbc:ID schemeName="tender">TEN-0001</cbc:ID>
+              </efac:TenderLot>
+              <efac:TenderLot>
                 <cbc:ID schemeName="contract">CON-0001</cbc:ID>
-              </efac:LotTender>
-              <efac:FrameworkAgreementValues>
-                <efac:FieldsPrivacy>
-                  <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                  <cbc:ReasonCode listName="non-publication-justification">eo-int</cbc:ReasonCode>
-                  <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
-                  <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
-                </efac:FieldsPrivacy>
-                <cbc:MaximumValueAmount currencyID="EUR">1</cbc:MaximumValueAmount>
-                <efbc:ReestimatedValueAmount currencyID="EUR">1</efbc:ReestimatedValueAmount>
-              </efac:FrameworkAgreementValues>
+              </efac:TenderLot>
+              <efac:TenderLot>
+                <cbc:ID schemeName="LotsGroup">LOT-0001</cbc:ID>
+              </efac:TenderLot>
               <efac:StrategicProcurement>
                 <efac:StrategicProcurementInformation>
                   <efac:ProcurementDetails>
@@ -122,11 +75,8 @@
                   </efac:ProcurementDetails>
                 </efac:StrategicProcurementInformation>
               </efac:StrategicProcurement>
-              <efac:TenderLot>
-                <cbc:ID schemeName="LotsGroup">LOT-0001</cbc:ID>
-              </efac:TenderLot>
             </efac:LotResult>
-            <efac:LotTender>
+            <LotTenderBLock>
               <efac:FieldsPrivacy>
                 <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
                 <cbc:ReasonCode listName="non-publication-justification">eo-int</cbc:ReasonCode>
@@ -168,13 +118,12 @@
                   <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
                   <cbc:ReasonCode listName="non-publication-justification">eo-int</cbc:ReasonCode>
                   <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
-                  <efbc:PublicationDate>2022-12-31+01:00</efbc:PublicationDate>
+                  <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
                 </efac:FieldsPrivacy>
                 <efac:FieldsPrivacy>
                   <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
                   <cbc:ReasonCode listName="non-publication-justification">eo-int</cbc:ReasonCode>
                   <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
-                  <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
                 </efac:FieldsPrivacy>
                 <efac:FieldsPrivacy>
                   <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
@@ -196,13 +145,33 @@
                 <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
               </efac:TenderLot>
               <efac:TenderReference>
-                <cbc:ID>1</cbc:ID>
+                <ID>1</ID>
               </efac:TenderReference>
-            </efac:LotTender>
+              <ConcessionRevenue>
+                <efac:FieldsPrivacy>
+                  <cbc:ReasonCode>eo-int</cbc:ReasonCode>
+                  <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
+                  <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
+                </efac:FieldsPrivacy>
+                <efac:FieldsPrivacy>
+                  <cbc:ReasonCode>eo-int</cbc:ReasonCode>
+                  <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
+                  <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
+                </efac:FieldsPrivacy>
+                <efac:FieldsPrivacy>
+                  <cbc:ReasonCode>eo-int</cbc:ReasonCode>
+                  <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
+                  <efbc:PublicationDate>2023-12-31+01:00</efbc:PublicationDate>
+                </efac:FieldsPrivacy>
+                <RevenueBuyerAmount currencyID="EUR">1</RevenueBuyerAmount>
+                <RevenueUserAmount currencyID="EUR">1</RevenueUserAmount>
+                <ValueDescription languageID="POR">1</ValueDescription>
+              </ConcessionRevenue>
+            </LotTenderBLock>
             <efac:SettledContract>
               <cbc:ID schemeName="contract">CON-0001</cbc:ID>
               <cbc:AwardDate>2023-12-31+01:00</cbc:AwardDate>
-              <cbc:IssueDate>2022-12-31+01:00</cbc:IssueDate>
+              <cbc:IssueDate>2023-12-31+01:00</cbc:IssueDate>
               <cbc:Title languageID="POR">1</cbc:Title>
               <cbc:URI>1</cbc:URI>
               <cac:SignatoryParty>
@@ -213,9 +182,9 @@
               <efac:ContractReference>
                 <cbc:ID schemeName="contract">1</cbc:ID>
               </efac:ContractReference>
-              <efac:LotTender>
+              <efac:TenderLot>
                 <cbc:ID schemeName="tender">TEN-0001</cbc:ID>
-              </efac:LotTender>
+              </efac:TenderLot>
               <efac:Funding>
                 <efbc:FinancingIdentifier>1</efbc:FinancingIdentifier>
               </efac:Funding>
@@ -229,19 +198,19 @@
               <efac:SubContractor>
                 <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
                 <efac:MainContractor>
-                  <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
+                  <efac:TenderLot>
+                    <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
+                  </efac:TenderLot>
                 </efac:MainContractor>
               </efac:SubContractor>
             </efac:TenderingParty>
           </efac:NoticeResult>
           <efac:NoticeSubType>
-            <cbc:SubTypeCode listName="notice-subtype">39</cbc:SubTypeCode>
+            <cbc:SubTypeCode listName="notice-subtype">40</cbc:SubTypeCode>
           </efac:NoticeSubType>
           <efac:Organizations>
             <efac:Organization>
               <efbc:GroupLeadIndicator>true</efbc:GroupLeadIndicator>
-              <efbc:AcquiringCPBIndicator>true</efbc:AcquiringCPBIndicator>
-              <efbc:AwardingCPBIndicator>true</efbc:AwardingCPBIndicator>
               <efac:Company>
                 <cbc:WebsiteURI>1</cbc:WebsiteURI>
                 <cbc:EndpointID>1</cbc:EndpointID>
@@ -299,13 +268,12 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.7</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">45250163-e46e-4155-b542-f0cec21e838d</cbc:ID>
-  <cbc:ContractFolderID>314792be-3af9-4859-99ae-9ee97189b622</cbc:ContractFolderID>
-  <cbc:IssueDate>2023-11-29+01:00</cbc:IssueDate>
-  <cbc:IssueTime>14:00:00+01:00</cbc:IssueTime>
+  <cbc:ID schemeName="notice-id">e080b2dd-dbde-4736-b266-22e49cd17ffd</cbc:ID>
+  <cbc:IssueDate>2023-12-05+01:00</cbc:IssueDate>
+  <cbc:IssueTime>10:00:00+01:00</cbc:IssueTime>
   <cbc:VersionID>01</cbc:VersionID>
   <cbc:RequestedPublicationDate>2023-12-01+01:00</cbc:RequestedPublicationDate>
-  <cbc:RegulatoryDomain>32014L0025</cbc:RegulatoryDomain>
+  <cbc:RegulatoryDomain>32014L0023</cbc:RegulatoryDomain>
   <cbc:NoticeTypeCode listName="cont-modif">cont-modif</cbc:NoticeTypeCode>
   <cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>
   <cac:ContractingParty>
@@ -351,7 +319,7 @@
       <cbc:ProcurementTypeCode listName="contract-nature">supplies</cbc:ProcurementTypeCode>
     </cac:ProcurementAdditionalType>
     <cac:AdditionalCommodityClassification>
-      <cbc:ItemClassificationCode listName="cpv">03111100 - Soja</cbc:ItemClassificationCode>
+      <cbc:ItemClassificationCode listName="cpv">03111200 - Amendoins</cbc:ItemClassificationCode>
     </cac:AdditionalCommodityClassification>
     <cac:RealizedLocation>
       <cbc:Description languageID="POR">1</cbc:Description>
@@ -414,8 +382,19 @@
       <cac:PaymentTerms>
         <cbc:Note languageID="POR">1</cbc:Note>
       </cac:PaymentTerms>
+      <cac:TendererQualificationRequest>
+        <cbc:CompanyLegalFormCode>true</cbc:CompanyLegalFormCode>
+        <cbc:CompanyLegalForm languageID="POR">1</cbc:CompanyLegalForm>
+      </cac:TendererQualificationRequest>
+      <cac:ContractExecutionRequirement>
+        <cbc:ExecutionRequirementCode listName="reserved-execution">not-known</cbc:ExecutionRequirementCode>
+      </cac:ContractExecutionRequirement>
       <cac:ContractExecutionRequirement>
         <cbc:ExecutionRequirementCode listName="einvoicing">not-allowed</cbc:ExecutionRequirementCode>
+      </cac:ContractExecutionRequirement>
+      <cac:ContractExecutionRequirement>
+        <cbc:ExecutionRequirementCode listName="conditions">performance</cbc:ExecutionRequirementCode>
+        <cbc:Description languageID="POR">1</cbc:Description>
       </cac:ContractExecutionRequirement>
       <cac:AdditionalInformationParty>
         <cac:PartyIdentification>
@@ -424,7 +403,7 @@
       </cac:AdditionalInformationParty>
       <cac:DocumentProviderParty>
         <cac:PartyIdentification>
-          <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
+          <cbc:ID schemeName="touchpoint">TPO-0001</cbc:ID>
         </cac:PartyIdentification>
       </cac:DocumentProviderParty>
       <cac:AppealTerms>
@@ -464,13 +443,13 @@
         <cbc:ProcurementTypeCode listName="environmental-impact">pollu-prev</cbc:ProcurementTypeCode>
       </cac:ProcurementAdditionalType>
       <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="social-objective">hum-right</cbc:ProcurementTypeCode>
+        <cbc:ProcurementTypeCode listName="social-objective">work-cond</cbc:ProcurementTypeCode>
       </cac:ProcurementAdditionalType>
       <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="innovative-acquisition">fp-requ</cbc:ProcurementTypeCode>
+        <cbc:ProcurementTypeCode listName="innovative-acquisition">rd-act</cbc:ProcurementTypeCode>
       </cac:ProcurementAdditionalType>
       <cac:ProcurementAdditionalType>
-        <cbc:ProcurementTypeCode listName="strategic-procurement">none</cbc:ProcurementTypeCode>
+        <cbc:ProcurementTypeCode listName="strategic-procurement">env-imp</cbc:ProcurementTypeCode>
         <cbc:ProcurementType languageID="POR">1</cbc:ProcurementType>
       </cac:ProcurementAdditionalType>
       <cac:ProcurementAdditionalType>
@@ -489,7 +468,7 @@
           <cbc:StreetName>1</cbc:StreetName>
           <cbc:CityName>1</cbc:CityName>
           <cbc:PostalZone>1</cbc:PostalZone>
-          <cbc:Region>anyw-eea</cbc:Region>
+          <cbc:CountrySubentityCode listName="nuts">PT111</cbc:CountrySubentityCode>
           <cac:Country>
             <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
           </cac:Country>
@@ -519,4 +498,4 @@
       <cbc:Note languageID="POR">1</cbc:Note>
     </cac:ProcurementProject>
   </cac:ProcurementProjectLot>
-</ContractNotice>
+</PriorInformationNotice>
