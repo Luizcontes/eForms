@@ -268,9 +268,9 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.7</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">e080b2dd-dbde-4736-b266-22e49cd17ffd</cbc:ID>
-  <cbc:IssueDate>2023-12-05+01:00</cbc:IssueDate>
-  <cbc:IssueTime>10:00:00+01:00</cbc:IssueTime>
+  <cbc:ID schemeName="notice-id"/>
+  <cbc:IssueDate>2023-11-29+01:00</cbc:IssueDate>
+  <cbc:IssueTime>15:27:56+01:00</cbc:IssueTime>
   <cbc:VersionID>01</cbc:VersionID>
   <cbc:RequestedPublicationDate>2023-12-01+01:00</cbc:RequestedPublicationDate>
   <cbc:RegulatoryDomain>32014L0023</cbc:RegulatoryDomain>
