@@ -9,7 +9,7 @@
         ]
     },
     "input": {
-        "count": 29,
+        "count": 30,
         "codes": [
             {
                 "id": "BT-701-notice",
@@ -58,6 +58,10 @@
             {
                 "id": "BT-01(c)-Procedure",
                 "xpathAbsolute": "/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]/cbc:ID[not(text()=('CrossBorderLaw','LocalLegalBasis'))]"
+            },
+            {
+                "id": "BT-01(e)-Procedure",
+                "xpathAbsolute": "/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[cbc:ID/text()='LocalLegalBasis']/cbc:ID[text()='LocalLegalBasis']"
             },
             {
                 "id": "BT-22-Procedure",
@@ -130,7 +134,7 @@
         ]
     },
     "select": {
-        "count": 25,
+        "count": 26,
         "codes": [
             {
                 "id": "BT-02-notice",
@@ -163,6 +167,10 @@
             {
                 "id": "BT-10-Procedure-Buyer",
                 "xpathAbsolute": "/*/cac:ContractingParty/cac:ContractingActivity/cbc:ActivityTypeCode[@listName='authority-activity']"
+            },
+            {
+                "id": "BT-610-Procedure-Buyer",
+                "xpathAbsolute": "/*/cac:ContractingParty/cac:ContractingActivity/cbc:ActivityTypeCode[@listName='entity-activity']"
             },
             {
                 "id": "OPT-300-Procedure-SProvider",
@@ -235,11 +243,15 @@
         ]
     },
     "textarea": {
-        "count": 28,
+        "count": 29,
         "codes": [
             {
                 "id": "BT-01(d)-Procedure",
                 "xpathAbsolute": "/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]/cbc:DocumentDescription"
+            },
+            {
+                "id": "BT-01(f)-Procedure",
+                "xpathAbsolute": "/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[cbc:ID/text()='LocalLegalBasis']/cbc:DocumentDescription"
             },
             {
                 "id": "BT-21-Procedure",

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PriorInformationNotice xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+<ContractNotice xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
   xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1"
   xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1"
   xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2">
+  xmlns="urn:oasis:names:specification:ubl:schema:xsd:ContractNotice-2">
   <ext:UBLExtensions>
     <ext:UBLExtension>
       <ext:ExtensionContent>
         <efext:EformsExtension>
           <efac:NoticeSubType>
-            <cbc:SubTypeCode listName="notice-subtype">4</cbc:SubTypeCode>
+            <cbc:SubTypeCode listName="notice-subtype">16</cbc:SubTypeCode>
           </efac:NoticeSubType>
           <efac:Organizations>
             <efac:Organization>
@@ -33,16 +33,88 @@
     </ext:UBLExtension>
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
-  <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id"></cbc:ID>
-  <cbc:IssueDate>2023-11-22+01:00</cbc:IssueDate>
-  <cbc:IssueTime>11:55:23+01:00</cbc:IssueTime>
+  <cbc:CustomizationID>eforms-sdk-1.7</cbc:CustomizationID>
+  <cbc:ID schemeName="notice-id">1c9badba-95c3-44b3-aa44-e5df3ac10777</cbc:ID>
+  <cbc:ContractFolderID>84f247ee-34e1-4705-8c53-4523150b3d6d</cbc:ContractFolderID>
+  <cbc:IssueDate>2023-12-21+01:00</cbc:IssueDate>
+  <cbc:IssueTime>14:57:35+01:00</cbc:IssueTime>
   <cbc:VersionID>01</cbc:VersionID>
-  <cbc:RequestedPublicationDate>2023-11-24+01:00</cbc:RequestedPublicationDate>
+  <cbc:RequestedPublicationDate>2023-12-23+01:00</cbc:RequestedPublicationDate>
   <cbc:RegulatoryDomain>32014L0024</cbc:RegulatoryDomain>
-  <cbc:NoticeTypeCode listName="planning">pin-only</cbc:NoticeTypeCode>
+  <cbc:NoticeTypeCode listName="competition">cn-standard</cbc:NoticeTypeCode>
   <cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>
+  <cac:TenderingTerms>
+    <cac:LotDistribution>
+      <cac:LotsGroup>
+        <cbc:LotsGroupID schemeName="LotsGroup">GLO-0001</cbc:LotsGroupID>
+        <cac:ProcurementProjectLotReference>
+          <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
+        </cac:ProcurementProjectLotReference>
+        <cac:ProcurementProjectLotReference>
+          <cbc:ID schemeName="Lot">LOT-0002</cbc:ID>
+        </cac:ProcurementProjectLotReference>
+      </cac:LotsGroup>
+      <cac:LotsGroup>
+        <cbc:LotsGroupID schemeName="LotsGroup">GLO-0002</cbc:LotsGroupID>
+        <cac:ProcurementProjectLotReference>
+          <cbc:ID schemeName="Lot">LOT-0003</cbc:ID>
+        </cac:ProcurementProjectLotReference>
+      </cac:LotsGroup>
+    </cac:LotDistribution>
+  </cac:TenderingTerms>
   <cac:ProcurementProjectLot>
-    <cbc:ID schemeName="Part">PAR-0001</cbc:ID>
+    <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
+    <cac:TenderingTerms>
+      <cac:TenderValidityPeriod>
+        <cbc:DurationMeasure>0</cbc:DurationMeasure>
+      </cac:TenderValidityPeriod>
+    </cac:TenderingTerms>
+    <cac:TenderingProcess>
+      <cac:FrameworkAgreement>
+        <cac:SubsequentProcessTenderRequirement>
+          <cbc:Name languageID="POR">buyer-categories</cbc:Name>
+        </cac:SubsequentProcessTenderRequirement>
+      </cac:FrameworkAgreement>
+    </cac:TenderingProcess>
+    <cac:ProcurementProject>
+      <cbc:EstimatedOverallContractQuantity>0</cbc:EstimatedOverallContractQuantity>
+      <cac:PlannedPeriod>
+        <cbc:DurationMeasure unitCode="MOTH">0</cbc:DurationMeasure>
+      </cac:PlannedPeriod>
+    </cac:ProcurementProject>
   </cac:ProcurementProjectLot>
-</PriorInformationNotice>
+  <cac:ProcurementProjectLot>
+    <cbc:ID schemeName="Lot">LOT-0002</cbc:ID>
+    <cac:TenderingTerms>
+      <cac:TenderValidityPeriod>
+        <cbc:DurationMeasure>0</cbc:DurationMeasure>
+      </cac:TenderValidityPeriod>
+    </cac:TenderingTerms>
+    <cac:ProcurementProject>
+      <cbc:EstimatedOverallContractQuantity>0</cbc:EstimatedOverallContractQuantity>
+      <cac:PlannedPeriod>
+        <cbc:DurationMeasure unitCode="MOTH">0</cbc:DurationMeasure>
+      </cac:PlannedPeriod>
+    </cac:ProcurementProject>
+  </cac:ProcurementProjectLot>
+  <cac:ProcurementProjectLot>
+    <cbc:ID schemeName="Lot">LOT-0003</cbc:ID>
+    <cac:TenderingTerms>
+      <cac:TenderValidityPeriod>
+        <cbc:DurationMeasure>0</cbc:DurationMeasure>
+      </cac:TenderValidityPeriod>
+    </cac:TenderingTerms>
+    <cac:ProcurementProject>
+      <cbc:EstimatedOverallContractQuantity>0</cbc:EstimatedOverallContractQuantity>
+      <cac:PlannedPeriod>
+        <cbc:DurationMeasure unitCode="MOTH">0</cbc:DurationMeasure>
+      </cac:PlannedPeriod>
+    </cac:ProcurementProject>
+  </cac:ProcurementProjectLot>
+  <cac:ProcurementProjectLot>
+    <cbc:ID schemeName="LotsGroup">GLO-0001</cbc:ID>
+  </cac:ProcurementProjectLot>
+  <cac:ProcurementProjectLot>
+    <cbc:ID schemeName="LotsGroup">GLO-0002</cbc:ID>
+  </cac:ProcurementProjectLot>
+</ContractNotice>

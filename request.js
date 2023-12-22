@@ -55,13 +55,13 @@ export async function testForm(filename, folder) {
     try {
       if (xmlObj === undefined) throw "Cannot parse XML, wrong format";
 
-      // let contractType = Object.keys(xmlObj)[0];
+      let contractType = Object.keys(xmlObj)[0];
 
-      // let noticeId = xmlObj[contractType]['cbc:ID'];
+      let noticeId = xmlObj[contractType]['cbc:ID'];
+      if (noticeId) noticeId[0]._ = uuid()
+
       // xmlObj[contractType]['cbc:IssueDate'][0] = fullDate;
       // xmlObj[contractType]['cbc:IssueTime'][0] = fullHour;
-
-      // if (noticeId) noticeId[0]._ = uuid()
 
       let xml = builder.buildObject(xmlObj)
       fs.writeFileSync(output, xml);

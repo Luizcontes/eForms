@@ -19,4 +19,4 @@ function arrayFlatter(obj) {
 
 let t = fieldCompartor(formExample, formToCompare);
 
-console.log(t);
+console.log(t.length);

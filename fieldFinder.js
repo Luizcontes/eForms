@@ -6,5 +6,10 @@ export function fieldFinder(fieldCode) {
   const fieldsString = fieldsData.toString()
   const fieldsJson = JSON.parse(fieldsString)
   const fields = fieldsJson.fieldsJson.fields;
-  return fields.filter(f => f.id === fieldCode)[0];
+  let t = fields.filter((f, i) => {
+    // if (f.id === fieldCode) console.log(f);
+    return f.id === fieldCode;
+  })[0];
+  // console.log(t);
+  return {id: t.id, xpathAbsolute: t.xpathAbsolute};
 }

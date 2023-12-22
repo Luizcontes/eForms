@@ -517,8 +517,21 @@
       </cac:SpecificTendererRequirement>
     </cac:TendererQualificationRequest>
     <cac:LotDistribution>
-      <cbc:MaximumLotsAwardedNumeric>1</cbc:MaximumLotsAwardedNumeric>
-      <cbc:MaximumLotsSubmittedNumeric>1</cbc:MaximumLotsSubmittedNumeric>
+      <!-- <cbc:MaximumLotsAwardedNumeric>1</cbc:MaximumLotsAwardedNumeric>
+      <cbc:MaximumLotsSubmittedNumeric>1</cbc:MaximumLotsSubmittedNumeric> -->
+      
+      <cac:LotsGroup>
+        <cbc:LotsGroupID></cbc:LotsGroupID>
+        <cac:ProcurementProjectLotReference>
+          <cbc:ID schemeName="Lot"></cbc:ID>
+        </cac:ProcurementProjectLotReference>
+        <cac:ProcurementProjectLotReference>
+          <cbc:ID schemeName="Lot"></cbc:ID>
+        </cac:ProcurementProjectLotReference>
+        <cac:ProcurementProjectLotReference>
+          <cbc:ID schemeName="Lot"></cbc:ID>
+        </cac:ProcurementProjectLotReference>
+      </cac:LotsGroup>
       <cac:LotsGroup>
         <cbc:LotsGroupID></cbc:LotsGroupID>
         <cac:ProcurementProjectLotReference>
