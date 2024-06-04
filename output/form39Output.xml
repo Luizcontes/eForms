@@ -1,41 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ContractNotice xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1" xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1" xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:specification:ubl:schema:xsd:ContractNotice-2">
+<ContractAwardNotice xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1" xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1" xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:specification:ubl:schema:xsd:ContractAwardNotice-2">
   <ext:UBLExtensions>
     <ext:UBLExtension>
       <ext:ExtensionContent>
         <efext:EformsExtension>
-          <efac:NoticeResult>
-            <efac:FieldsPrivacy>
-              <efbc:FieldIdentifierCode>not-val</efbc:FieldIdentifierCode>
+          <efac:ContractModification>
+            <efbc:ChangedNoticeIdentifier>4b65aa2a-d04e-4d18-bb1a-112f6ddee2d5-99</efbc:ChangedNoticeIdentifier>
+            <efac:Change>
+              <efbc:ChangeDescription languageID="POR">1</efbc:ChangeDescription>
+              <efac:ChangedSection>
+                <efbc:ChangedSectionIdentifier>CON-0001</efbc:ChangedSectionIdentifier>
+              </efac:ChangedSection>
+            </efac:Change>
+            <efac:ChangeReason>
+              <cbc:ReasonCode listName="modification-justification">mod-nons</cbc:ReasonCode>
               <efbc:ReasonDescription languageID="POR">1</efbc:ReasonDescription>
-            </efac:FieldsPrivacy>
-            <efac:FieldsPrivacy>
-              <efbc:FieldIdentifierCode>not-max-val</efbc:FieldIdentifierCode>
-              <efbc:ReasonDescription languageID="POR">2</efbc:ReasonDescription>
-            </efac:FieldsPrivacy>
-            <efac:FieldsPrivacy>
-              <efbc:FieldIdentifierCode>not-app-val</efbc:FieldIdentifierCode>
-              <efbc:ReasonDescription languageID="POR">3</efbc:ReasonDescription>
-            </efac:FieldsPrivacy>
-            <efac:GroupFramework>
-              <efac:FieldsPrivacy>
-                <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                <efbc:ReasonDescription languageID="POR">4</efbc:ReasonDescription>
-              </efac:FieldsPrivacy>
-              <efac:FieldsPrivacy>
-                <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                <efbc:ReasonDescription languageID="POR">6</efbc:ReasonDescription>
-              </efac:FieldsPrivacy>
-              <efac:FieldsPrivacy>
-                <efbc:FieldIdentifierCode listName="non-publication-identifier"/>
-                <efbc:ReasonDescription languageID="POR">5</efbc:ReasonDescription>
-              </efac:FieldsPrivacy>
-            </efac:GroupFramework>
-            <efac:LotResult>
-              <cbc:ID schemeName="result">RES-0001</cbc:ID>
-            </efac:LotResult>
+            </efac:ChangeReason>
+          </efac:ContractModification>
+          <efac:NoticeResult>
             <efac:LotTender>
-              <cbc:ID schemeName="tender">TEN-0001</cbc:ID>
+              <cbc:ID>TEN-0001</cbc:ID>
+              <cac:LegalMonetaryTotal>
+                <cbc:PayableAmount currencyID="EUR">1</cbc:PayableAmount>
+              </cac:LegalMonetaryTotal>
+              <efac:TenderingParty>
+                <cbc:ID>TPA-0001</cbc:ID>
+              </efac:TenderingParty>
+              <efac:TenderLot>
+                <cbc:ID>LOT-0001</cbc:ID>
+              </efac:TenderLot>
+              <efac:TenderReference>
+                <cbc:ID>1</cbc:ID>
+              </efac:TenderReference>
             </efac:LotTender>
             <efac:SettledContract>
               <cbc:ID schemeName="contract">CON-0001</cbc:ID>
@@ -53,12 +49,23 @@
                 <cac:PartyIdentification>
                   <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
                 </cac:PartyIdentification>
+                <cac:PartyName>
+                  <cbc:Name languageID="POR">1</cbc:Name>
+                </cac:PartyName>
+                <cac:PostalAddress>
+                  <cbc:CityName>1</cbc:CityName>
+                  <cac:Country>
+                    <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
+                  </cac:Country>
+                </cac:PostalAddress>
+                <cac:PartyLegalEntity>
+                  <cbc:CompanyID>1</cbc:CompanyID>
+                </cac:PartyLegalEntity>
+                <cac:Contact>
+                  <cbc:Telephone>123456789</cbc:Telephone>
+                  <cbc:ElectronicMail>mail@mail.com</cbc:ElectronicMail>
+                </cac:Contact>
               </efac:Company>
-              <efac:TouchPoint>
-                <cac:PartyIdentification>
-                  <cbc:ID schemeName="touchpoint">TPO-0001</cbc:ID>
-                </cac:PartyIdentification>
-              </efac:TouchPoint>
             </efac:Organization>
           </efac:Organizations>
         </efext:EformsExtension>
@@ -67,30 +74,53 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.7</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">f2c6c2e0-82c3-4b0e-82c1-3ee437109dd6</cbc:ID>
-  <cbc:ContractFolderID>55e65ce1-394e-4748-8839-eb1053dd1f2d</cbc:ContractFolderID>
-  <cbc:IssueDate>2023-12-19+01:00</cbc:IssueDate>
-  <cbc:IssueTime>15:02:33+01:00</cbc:IssueTime>
+  <cbc:ID schemeName="notice-id">dde6a3e6-3366-4b5b-bf26-5cbcadff4ddb</cbc:ID>
+  <cbc:ContractFolderID>96da4511-1ab6-4df6-b215-2d3155fade02</cbc:ContractFolderID>
+  <cbc:IssueDate>2024-05-02+01:00</cbc:IssueDate>
+  <cbc:IssueTime>16:04:40+01:00</cbc:IssueTime>
   <cbc:VersionID>01</cbc:VersionID>
-  <cbc:RequestedPublicationDate>2023-12-21+01:00</cbc:RequestedPublicationDate>
   <cbc:RegulatoryDomain>32014L0025</cbc:RegulatoryDomain>
-  <cbc:NoticeTypeCode listName="cont-modif">cont-modif</cbc:NoticeTypeCode>
+  <cbc:NoticeTypeCode listName="cont-modif">can-modif</cbc:NoticeTypeCode>
   <cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>
+  <cac:ContractingParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
+      </cac:PartyIdentification>
+    </cac:Party>
+  </cac:ContractingParty>
+  <cac:ProcurementProject>
+    <cbc:Name languageID="POR">1</cbc:Name>
+    <cbc:Description languageID="POR">1</cbc:Description>
+    <cac:MainCommodityClassification>
+      <cbc:ItemClassificationCode listName="cpv">98500000</cbc:ItemClassificationCode>
+    </cac:MainCommodityClassification>
+  </cac:ProcurementProject>
   <cac:ProcurementProjectLot>
     <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
     <cac:TenderingTerms>
-      <cac:TenderValidityPeriod>
-        <cbc:DurationMeasure unitCode="3C">0</cbc:DurationMeasure>
-      </cac:TenderValidityPeriod>
+      <cac:ContractExecutionRequirement>
+        <cbc:Description languageID="POR">1</cbc:Description>
+      </cac:ContractExecutionRequirement>
+      <cac:AdditionalInformationParty>
+        <cac:PartyIdentification>
+          <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
+        </cac:PartyIdentification>
+      </cac:AdditionalInformationParty>
+      <cac:AppealTerms>
+        <cac:AppealReceiverParty>
+          <cac:PartyIdentification>
+            <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
+          </cac:PartyIdentification>
+        </cac:AppealReceiverParty>
+      </cac:AppealTerms>
     </cac:TenderingTerms>
     <cac:ProcurementProject>
-      <cbc:EstimatedOverallContractQuantity>0</cbc:EstimatedOverallContractQuantity>
-      <cac:PlannedPeriod>
-        <cbc:DurationMeasure unitCode="MOTH">0</cbc:DurationMeasure>
-      </cac:PlannedPeriod>
+      <cbc:ID schemeName="InternalID">1</cbc:ID>
+      <cbc:Description languageID="POR">1</cbc:Description>
     </cac:ProcurementProject>
   </cac:ProcurementProjectLot>
-  <cac:ProcurementProjectLot>
-    <cbc:ID schemeName="LotsGroup">GLO-0001</cbc:ID>
-  </cac:ProcurementProjectLot>
-</ContractNotice>
+  <cac:TenderResult>
+    <cbc:AwardDate>2024-04-30</cbc:AwardDate>
+  </cac:TenderResult>
+</ContractAwardNotice>

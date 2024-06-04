@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ContractNotice xmlns="urn:oasis:names:specification:ubl:schema:xsd:ContractNotice-2"
+	xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1"
+	xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1"
+	xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ext:UBLExtensions>
+		<ext:UBLExtension>
+			<ext:ExtensionContent>
+				<efext:EformsExtension>
+					<efac:NoticeSubType>
+
+						<!-- OPP-070-notice 24-->
+						<cbc:SubTypeCode>24</cbc:SubTypeCode>
+
+					</efac:NoticeSubType>
+					<efac:Organizations>
+						<efac:Organization>
+							<efac:Company>
+								<cac:PartyIdentification>
+
+									<!-- OPT-200-Organization-Company  24-->
+									<cbc:ID schemeName="organization">ORG-0001</cbc:ID>
+
+								</cac:PartyIdentification>
+								<cac:PartyName>
+
+									<!-- BT-500-Organization-Company 24-->
+									<cbc:Name languageID="POR">Município</cbc:Name>
+
+								</cac:PartyName>
+								<cac:PostalAddress>
+
+									<!-- BT-513-Organization-Company 24-->
+									<cbc:CityName>lisboa</cbc:CityName>
+
+									<cbc:CountrySubentityCode listName="nuts">PT16D</cbc:CountrySubentityCode>
+									<cac:Country>
+
+										<!-- BT-514-Organization-Company 24-->
+										<cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
+
+									</cac:Country>
+								</cac:PostalAddress>
+								<cac:PartyLegalEntity>
+
+									<!-- BT-501-Organization-Company 24-->
+									<cbc:CompanyID>PartyLegalEntityCID1234</cbc:CompanyID>
+
+								</cac:PartyLegalEntity>
+								<cac:Contact>
+
+									<!-- BT-503-Organization-Company 24-->
+									<cbc:Telephone>+351 286555145</cbc:Telephone>
+
+									<!-- BT-506-Organization-Company 24-->
+									<cbc:ElectronicMail>atos@net.com</cbc:ElectronicMail>
+								</cac:Contact>
+							</efac:Company>
+						</efac:Organization>
+					</efac:Organizations>
+
+				</efext:EformsExtension>
+			</ext:ExtensionContent>
+		</ext:UBLExtension>
+	</ext:UBLExtensions>
+
+	<!-- OPT-001-notice 24 -->
+	<cbc:UBLVersionID>2.3</cbc:UBLVersionID>
+
+	<!-- OPT-002-notice 24 -->
+	<cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
+
+	<!-- BT-701-notice 24 -->
+	<cbc:ID schemeName="notice-id">d9d83656-f882-4782-9acc-9a6d6e77eda6</cbc:ID>
+
+	<!-- BT-04-notice 24 -->
+	<cbc:ContractFolderID>314792be-3af9-4859-99ae-9ee97189b622</cbc:ContractFolderID>
+
+	<!-- BT-05(a)-notice 24 -->
+	<cbc:IssueDate>2024-05-08+01:00</cbc:IssueDate>
+
+	<!-- BT-05(b)-notice 24 -->
+	<cbc:IssueTime>14:00:00+01:00</cbc:IssueTime>
+
+	<!-- BT-757-notice 24 -->
+	<cbc:VersionID>01</cbc:VersionID>
+
+	<!-- BT-01-notice 24 -->
+	<cbc:RegulatoryDomain>32014L0025</cbc:RegulatoryDomain>
+
+	<!-- BT-02-notice contValue 24-->
+	<!-- BT-03-notice listName 24 -->
+	<cbc:NoticeTypeCode listName="competition">cn-desg</cbc:NoticeTypeCode>
+
+	<!-- BT-702(a)-notice 24 -->
+	<cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>
+
+	<cac:ContractingParty>
+
+		<cac:ContractingActivity>
+
+			<!-- BT-610-Procedure-Buyer 24-->
+			<cbc:ActivityTypeCode listName="entity-activity">water</cbc:ActivityTypeCode>
+
+		</cac:ContractingActivity>
+		<cac:Party>
+			<cac:PartyIdentification>
+
+				<!-- OPT-300-Procedure-Buyer 24-->
+				<cbc:ID schemeName="organization">ORG-0001</cbc:ID>
+
+			</cac:PartyIdentification>
+		</cac:Party>
+	</cac:ContractingParty>
+	<cac:TenderingProcess>
+
+		<!--  BT-105-Procedure  24-->
+		<cbc:ProcedureCode listName="procurement-procedure-type">open</cbc:ProcedureCode>
+
+	</cac:TenderingProcess>
+
+	<cac:ProcurementProject>
+
+		<!-- BT-21-Procedure 24-->
+		<cbc:Name languageID="POR">Public road transport services</cbc:Name>
+
+		<!-- BT-24-Procedure 24-->
+		<cbc:Description languageID="POR">AUCTION</cbc:Description>
+
+		<!-- BT-23-Procedure 24-->
+		<cbc:ProcurementTypeCode listName="contract-nature">supplies</cbc:ProcurementTypeCode>
+
+		<cac:MainCommodityClassification>
+
+			<!-- BT-26(m)-Procedure listName 24-->
+			<!--  BT-262-Procedure contValue 24-->
+			<cbc:ItemClassificationCode listName="cpv">03111900</cbc:ItemClassificationCode>
+
+		</cac:MainCommodityClassification>
+
+
+	</cac:ProcurementProject>
+
+	<cac:ProcurementProjectLot>
+
+		<!-- BT-137-Lot 24 -->
+		<cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
+
+		<cac:TenderingTerms>
+			<ext:UBLExtensions>
+				<ext:UBLExtension>
+					<ext:ExtensionContent>
+						<efext:EformsExtension>
+							<efac:SelectionCriteria>
+
+								<!-- BT-747-Lot 24-->
+								<cbc:CriterionTypeCode listName="selection-criterion">sui-act</cbc:CriterionTypeCode>
+
+							</efac:SelectionCriteria>
+						</efext:EformsExtension>
+					</ext:ExtensionContent>
+				</ext:UBLExtension>
+			</ext:UBLExtensions>
+
+			<cac:CallForTendersDocumentReference>
+				<!-- OPT-140-Lot 24 obrigatorio para o serviço de validacao -->
+				<cbc:ID>1</cbc:ID>
+
+
+				<!-- BT-14-Lot 24 -->
+				<cbc:DocumentType>non-restricted-document</cbc:DocumentType>
+
+				<cac:Attachment>
+					<cac:ExternalReference>
+
+						<!-- BT-615-Lot 24 cac:Attachment[../cbc:DocumentType/text()='restricted-document']",-->
+						<!-- BT-15-Lot 24 cac:Attachment[not(../cbc:DocumentType/text()='restricted-document') -->
+						<cbc:URI>https://teste.com</cbc:URI>
+					</cac:ExternalReference>
+				</cac:Attachment>
+			</cac:CallForTendersDocumentReference>
+
+			<cac:AwardingTerms>
+
+				<!-- BT-41-Lot 24-->
+				<cbc:FollowupContractIndicator>true</cbc:FollowupContractIndicator>
+
+				<!-- BT-42-Lot 24-->
+				<cbc:BindingOnBuyerIndicator>true</cbc:BindingOnBuyerIndicator>
+
+			</cac:AwardingTerms>
+
+			<cac:AdditionalInformationParty>
+                <cac:PartyIdentification>
+
+                    <!-- OPT-301-Lot-AddInfo 24-->
+                    <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
+
+                </cac:PartyIdentification>
+            </cac:AdditionalInformationParty>
+		</cac:TenderingTerms>
+		<cac:TenderingProcess>
+
+			<!-- BT-17-Lot 24-->
+			<cbc:SubmissionMethodCode listName="esubmission">not-allowed</cbc:SubmissionMethodCode>
+
+			<!-- se este container estiver enabled, o  ParticipationRequestReceptionPeriod nao deve existir-->
+			<cac:TenderSubmissionDeadlinePeriod>
+
+				<!-- BT-131(d)-Lot 24-->
+				<cbc:EndDate>2024-06-15+01:00</cbc:EndDate>
+
+				<!-- BT-131(t)-Lot 24-->
+				<cbc:EndTime>10:10:10+01:00</cbc:EndTime>
+			</cac:TenderSubmissionDeadlinePeriod>
+
+			<!-- se este container estiver enabled, o  TenderSubmissionDeadlinePeriod nao deve existir-->
+			<!-- <cac:ParticipationRequestReceptionPeriod> -->
+
+			<!-- BT-1311(d)-Lot 24-->
+			<!-- <cbc:EndDate>2023-09-17+01:00</cbc:EndDate> -->
+
+			<!-- BT-1311(t)-Lot 24-->
+			<!-- <cbc:EndTime>10:00:00+01:00</cbc:EndTime> -->
+
+			<!-- </cac:ParticipationRequestReceptionPeriod> -->
+
+		</cac:TenderingProcess>
+		<cac:ProcurementProject>
+
+			<!-- BT-22-Lot  24-->
+			<cbc:ID>RA/DAF/SERV-96/18</cbc:ID>
+
+			<!-- BT-21-Lot 24-->
+			<cbc:Name languageID="POR">Serviço público de transportes de passageiros de Águeda</cbc:Name>
+
+			<!-- BT-24-Lot 24-->
+			<cbc:Description languageID="POR">Serviço público de transportes de passageiros de Águeda.</cbc:Description>
+
+			<!-- BT-23-Lot 24-->
+			<cbc:ProcurementTypeCode listName="contract-nature">services</cbc:ProcurementTypeCode>
+
+
+			<cac:MainCommodityClassification>
+
+				<!-- BT-26(m)-Lot listName 24-->
+				<!--  BT-262-Lot contValue 24-->
+				<cbc:ItemClassificationCode listName="cpv">50420000</cbc:ItemClassificationCode>
+
+			</cac:MainCommodityClassification>
+		</cac:ProcurementProject>
+	</cac:ProcurementProjectLot>
+</ContractNotice>

@@ -58,7 +58,7 @@ export async function testForm(filename, folder) {
       let contractType = Object.keys(xmlObj)[0];
 
       let noticeId = xmlObj[contractType]['cbc:ID'];
-      if (noticeId) noticeId[0]._ = uuid()
+      if (noticeId) noticeId[0]._ = uuid();
 
       // xmlObj[contractType]['cbc:IssueDate'][0] = fullDate;
       // xmlObj[contractType]['cbc:IssueTime'][0] = fullHour;
